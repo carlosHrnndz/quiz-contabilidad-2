@@ -291,12 +291,23 @@ class QuizApp {
         matches.forEach(q => {
             const el = document.createElement('div');
             el.className = 'search-item';
+            el.style.cursor = 'pointer';
             el.innerHTML = `
                 <span class="search-item-unit">Unidad ${q.unidad} · Pregunta ${q.numero}</span>
                 <div>${q.pregunta}</div>
             `;
-            // Optional: Click to jump to question? 
-            // For now, just searching is useful. Jumping is complex if query not in current set.
+            el.addEventListener('click', () => {
+                // Find this question in the currently active question list
+                const idx = this.questions.findIndex(aq => aq.id === q.id);
+                if (idx === -1) {
+                    alert(`Esta pregunta (U${q.unidad}·P${q.numero}) no está en el set activo. Añade la unidad ${q.unidad} a la selección y reinicia.`);
+                    return;
+                }
+                this.getModeData().currentQuestionIndex = idx;
+                this.ui.modalSearch.classList.add('hidden');
+                this.ui.searchInput.value = '';
+                this.renderQuestion();
+            });
             container.appendChild(el);
         });
     }
