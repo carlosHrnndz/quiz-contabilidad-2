@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Test Interactivo - Contabilidad II de Gestión</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- PWA Support -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#121212">
+    <link rel="apple-touch-icon" href="icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+
+<body>
+    <!-- ============ SPLASH SCREEN ============ -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <div class="splash-logo">📚</div>
+            <h1 class="splash-title">Contabilidad II Quiz</h1>
+            <p class="splash-subtitle" id="subject-questions-summary">Cargando datos...</p>
+
+            <!-- Session Code -->
+            <div class="splash-section">
+                <h3>Tu Sesión</h3>
+                <div class="session-input-wrap">
+                    <input type="text" id="session-code" class="session-input" placeholder="Tu nombre o código..."
+                        maxlength="20">
+                    <button id="btn-load-session" class="session-btn" title="Cargar sesión guardada">📥</button>
+                </div>
+                <p class="session-hint">Usa el mismo código en todos tus dispositivos para sincronizar.</p>
+                <div class="sync-actions">
+                    <button id="btn-export" class="unit-action-btn">📤 Exportar</button>
+                    <button id="btn-import" class="unit-action-btn">📥 Importar</button>
+                </div>
+            </div>
+
+            <!-- Mode Selection -->
+            <div class="splash-section">
+                <h3>Modo</h3>
+                <div class="mode-grid">
+                    <button id="mode-quiz" class="mode-btn active" data-mode="quiz">
+                        🎓 Quiz
+                    </button>
+                    <button id="mode-exam" class="mode-btn" data-mode="exam">
+                        ⏱️ Examen
+                    </button>
+                    <button id="mode-smart" class="mode-btn" data-mode="smart">
+                        🧠 Repaso
+                    </button>
+                    <button id="mode-study" class="mode-btn" data-mode="study">
+                        📖 Estudio
+                    </button>
+                </div>
+                <p class="mode-desc" id="mode-description">Responde preguntas y obtén tu puntuación.</p>
+                <div style="margin-top: 10px;">
+                    <button id="btn-stats" class="nav-btn secondary full-width">📊 Ver Estadísticas</button>
+                    <button id="btn-ranking" class="nav-btn secondary full-width" style="margin-top: 8px;">🏆 Ranking
+                        Global</button>
+                </div>
+            </div>
+
+            <!-- Unit Selection -->
+            <div class="splash-section">
+                <h3>Unidades</h3>
+                <div class="unit-actions">
+                    <button id="btn-select-all" class="unit-action-btn">Todas</button>
+                    <button id="btn-select-none" class="unit-action-btn">Ninguna</button>
+                </div>
+                <div id="unit-grid" class="unit-grid">
+                    <!-- Unit checkboxes will be injected here -->
+                </div>
+            </div>
+
+            <!-- Start Button -->
+            <button id="btn-start" class="start-btn">
+                ¡Comenzar! 🚀
+            </button>
+
+            <p id="selected-count" class="selected-count">Preguntas seleccionadas: 320</p>
+
+            <footer class="splash-footer">
+                <p>ContaQuiz II v1.0 · Creado con IA</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- ============ QUIZ APP ============ -->
+    <div id="quiz-app" class="app-container hidden">
+        <!-- Header / Stats -->
+        <header class="app-header">
+            <div class="header-left">
+                <button id="btn-theme" class="icon-btn" title="Cambiar Tema">🌙</button>
+                <button id="btn-search" class="icon-btn" title="Buscar Pregunta">🔍</button>
+                <button id="btn-home" class="icon-btn" title="Menú Principal">
+                    🏠
+                </button>
+                <span id="question-counter">-- / --</span>
+                <span id="unit-badge" class="badge">Unidad --</span>
+            </div>
+            <div class="header-right">
+                <div class="score-pill">
+                    <span class="score-label">Aciertos</span>
+                    <span id="score-val">0</span>
+                </div>
+                <button id="btn-mode-toggle" class="icon-btn" title="Cambiar Modo (Quiz/Estudio)">
+                    🎓
+                </button>
+                <button id="btn-restart" class="icon-btn" title="Reiniciar">
+                    🔄
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Question Area -->
+        <main class="question-area">
+            <div class="progress-bar-container">
+                <div id="progress-fill" class="progress-fill"></div>
+            </div>
+
+            <div id="question-text" class="question-text">
+                Cargando preguntas...
+            </div>
+
+            <div id="options-container" class="options-container">
+                <!-- Options injected by JS -->
+            </div>
+
+            <div id="feedback-area" class="feedback-area hidden">
+                <div id="feedback-icon"></div>
+                <div id="feedback-text"></div>
+                <div id="explanation-container" class="explanation-container hidden">
+                    <div class="explanation-icon">ℹ️</div>
+                    <div id="explanation-text" class="explanation-text"></div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer / Navigation -->
+        <footer class="app-footer">
+            <button id="btn-prev" class="nav-btn secondary">
+                <span class="arrow">❮</span>
+            </button>
+
+            <button id="btn-wrong" class="nav-btn wrong-btn" title="Ver preguntas falladas">
+                ❌ <span class="btn-count" id="wrong-count"></span>
+            </button>
+
+            <button id="btn-pending" class="nav-btn secondary" title="Ver preguntas marcadas">
+                📝 <span class="btn-count" id="pending-count"></span>
+            </button>
+
+            <button id="btn-next" class="nav-btn primary">
+                <span class="arrow">❯</span>
+            </button>
+        </footer>
+    </div>
+
+    <!-- ============ MODALS ============ -->
+    <div id="modal-pending" class="modal hidden">
+        <div class="modal-content">
+            <h3>📝 Preguntas Marcadas</h3>
+            <div id="pending-list" class="pending-list">
+                <!-- List items -->
+            </div>
+            <button id="btn-close-modal" class="nav-btn secondary full-width">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Wrong Answers Modal -->
+    <div id="modal-wrong" class="modal hidden">
+        <div class="modal-content">
+            <h3>❌ Preguntas Falladas</h3>
+            <div id="wrong-list" class="pending-list">
+                <!-- List items -->
+            </div>
+            <button id="btn-close-wrong-modal" class="nav-btn secondary full-width">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Stats Modal -->
+    <div id="modal-stats" class="modal hidden">
+        <div class="modal-content stats-modal-content">
+            <h3>📊 Progreso y Estadísticas</h3>
+
+            <div class="stats-overview">
+                <div class="stat-card">
+                    <span class="stat-num" id="global-accuracy">0%</span>
+                    <span class="stat-lbl">Precisión Global</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num" id="total-answered">0</span>
+                    <span class="stat-lbl">Preguntas Respondidas</span>
+                </div>
+            </div>
+
+            <h4>Unidades más débiles (¡Estúdialas!)</h4>
+            <div id="weak-units-list" class="weak-list">
+                <!-- Injected JS -->
+                <div class="empty-state">No hay datos suficientes aún.</div>
+            </div>
+
+            <button id="btn-reset-progress" class="nav-btn full-width"
+                style="margin-top: 20px; background: #e74c3c; color: white;">🗑️ Resetear Todo el Progreso</button>
+            <button id="btn-close-stats" class="nav-btn secondary full-width" style="margin-top: 8px;">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div id="modal-search" class="modal hidden">
+        <div class="modal-content search-modal-content">
+            <h3>🔍 Buscar Pregunta</h3>
+            <input type="text" id="search-input" class="search-input" placeholder="Escribe para buscar...">
+            <div id="search-results" class="search-results-list">
+                <div class="empty-state">Escribe al menos 3 caracteres...</div>
+            </div>
+            <button id="btn-close-search" class="nav-btn secondary full-width" style="margin-top: 10px;">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Results Modal -->
+    <div id="modal-results" class="modal hidden">
+        <div class="modal-content results-modal">
+            <h2 id="results-title">¡Completado!</h2>
+            <div class="results-icon" id="results-icon">🎉</div>
+
+            <div class="stats-grid">
+                <div class="stat-item correct">
+                    <span class="stat-value" id="stat-correct">0</span>
+                    <span class="stat-label">Correctas</span>
+                </div>
+                <div class="stat-item wrong">
+                    <span class="stat-value" id="stat-wrong">0</span>
+                    <span class="stat-label">Incorrectas</span>
+                </div>
+            </div>
+
+            <div class="score-display" id="stat-score">0%</div>
+
+            <div class="results-actions">
+                <button id="btn-review-wrong" class="nav-btn wrong-btn full-width"
+                    style="display: none; margin-bottom: 10px;">
+                    ❌ Repasar Falladas
+                </button>
+                <button id="btn-restart-results" class="nav-btn primary full-width">Volver al Inicio</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaderboard Modal -->
+    <div id="modal-leaderboard" class="modal hidden">
+        <div class="modal-content ranking-modal-content">
+            <h3>🏆 Tabla de Clasificación</h3>
+            <div id="leaderboard-list" class="leaderboard-list">
+                <div class="empty-state">Cargando...</div>
+            </div>
+
+            <div class="submit-score-section">
+                <input type="text" id="username-input" class="session-input" placeholder="Tu nombre" maxlength="15">
+                <button id="btn-submit-score" class="nav-btn primary full-width" style="margin-top: 5px;">Enviar mi
+                    Puntuación</button>
+            </div>
+
+            <button id="btn-close-leaderboard" class="nav-btn secondary full-width"
+                style="margin-top: 15px;">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Image Zoom Modal -->
+    <div id="modal-image-zoom" class="modal hidden">
+        <div class="modal-content image-zoom-content">
+            <span class="close-zoom">&times;</span>
+            <img id="zoomed-image" class="zoomed-image" src="" alt="Zoom">
+        </div>
+    </div>
+
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js').catch(err => console.log('SW ref failed', err));
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+{
+  "unidad": 3,
+  "titulo": "Autoevaluación de Contabilidad de Gestión",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "La diferencia entre coste e inversión radica en:",
+      "opciones": {
+        "a": "El crédito.",
+        "b": "El plazo.",
+        "c": "En el criterio contable.",
+        "d": "El pago."
+      },
+      "explicacion": "La principal diferencia entre un coste (o gasto) y una inversión es el plazo en el que se espera obtener un retorno o beneficio. Un coste se consume en el ejercicio actual (corto plazo), mientras que una inversión se espera que genere beneficios durante varios ejercicios (largo plazo). Ejemplo práctico: Comprar folios para la impresora es un coste porque se consumen rápidamente. Comprar la impresora en sí es una inversión, ya que se utilizará durante varios años para generar valor en la empresa.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 2,
+      "pregunta": "Los costes hundidos:",
+      "opciones": {
+        "a": "Son muy relevantes a la hora de tomar decisiones.",
+        "b": "Son costes variables.",
+        "c": "No son recuperables.",
+        "d": "Se recuperan al final de la vida útil de la inversión."
+      },
+      "explicacion": "Los costes hundidos son aquellos gastos que ya se han realizado en el pasado y que no se pueden recuperar, independientemente de las decisiones futuras que se tomen. Por lo tanto, no deben influir en las decisiones económicas actuales. Ejemplo práctico: Imagina que pagas 500 euros por un estudio de mercado para lanzar un producto. Si luego descubres que el producto no será rentable, esos 500 euros son un coste hundido; no puedes recuperarlos y no deben forzarte a lanzar el producto solo por haberlos gastado.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 3,
+      "pregunta": "Los costes diferenciales:",
+      "opciones": {
+        "a": "Son inherentes a cada opción de inversión.",
+        "b": "Dependen del criterio del plan contable.",
+        "c": "Son costes indirectos.",
+        "d": "No tiene relevancia en el análisis de costes."
+      },
+      "explicacion": "Los costes diferenciales (o incrementales) son la diferencia de coste total entre dos alternativas de decisión. Son específicos e inherentes a cada opción que se está evaluando, ya que representan el cambio en los costes si se elige una alternativa sobre otra. Ejemplo práctico: Si una empresa duda entre reparar una máquina vieja (coste de 2.000 euros) o comprar una nueva (coste de 10.000 euros), el coste diferencial entre ambas opciones es de 8.000 euros. Este valor es inherente a la comparación de estas dos opciones específicas.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 4,
+      "pregunta": "El coste de oportunidad hace referencia a:",
+      "opciones": {
+        "a": "La rentabilidad de una inversión.",
+        "b": "La actividad de la empresa.",
+        "c": "Los costes fijos.",
+        "d": "Lo que deja de ganar eligiendo una opción determinada."
+      },
+      "explicacion": "El coste de oportunidad representa el valor de la mejor alternativa a la que se renuncia cuando se toma una decisión. Es el beneficio potencial que se pierde al elegir una opción y descartar otra. Ejemplo práctico: Si tienes 10.000 euros y decides usarlos para comprar un coche en lugar de invertirlos en un fondo que te daría un 5% de interés anual (500 euros), tu coste de oportunidad son esos 500 euros que dejas de ganar por haber elegido comprar el coche.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 5,
+      "pregunta": "La cuenta de resultados analítica:",
+      "opciones": {
+        "a": "Es más resumida que la cuenta de resultados tradicional.",
+        "b": "Es muy útil para la toma de decisiones.",
+        "c": "Es muy detallada.",
+        "d": "B y c."
+      },
+      "explicacion": "La cuenta de resultados analítica (o funcional) desglosa los ingresos y costes por funciones, departamentos o productos, haciéndola mucho más detallada que la tradicional. Este nivel de detalle permite a los directivos identificar qué áreas son rentables y cuáles no, siendo una herramienta fundamental y muy útil para la toma de decisiones internas. Ejemplo práctico: Mientras una cuenta tradicional solo dice 'Gastos de personal: 50.000 euros', una cuenta analítica detallará 'Gastos personal Ventas: 30.000 euros' y 'Gastos personal Producción: 20.000 euros', permitiendo decidir si se debe ajustar la plantilla en un departamento específico.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 6,
+      "pregunta": "El margen bruto:",
+      "opciones": {
+        "a": "Refleja los costes indirectos.",
+        "b": "No varía con la actividad.",
+        "c": "Recoge el beneficio o pérdida teniendo en cuenta el coste de los bienes vendidos.",
+        "d": "Es el beneficio neto."
+      },
+      "explicacion": "El margen bruto es un indicador financiero que se calcula restando los costes directos asociados a la producción o adquisición de los bienes vendidos (Coste de Ventas) de los ingresos totales por ventas. Representa el beneficio directo antes de descontar gastos operativos, impuestos o intereses. Ejemplo práctico: Si una tienda de zapatos vende un par por 100 euros y el coste de comprar ese zapato al fabricante fue de 40 euros, el margen bruto de esa venta es de 60 euros. Este margen servirá luego para cubrir el alquiler del local, sueldos, etc.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 7,
+      "pregunta": "La cuenta de resultados analítica:",
+      "opciones": {
+        "a": "Cumple un papel poco relevante.",
+        "b": "Puede estructurarse por departamentos.",
+        "c": "Es obligatoria.",
+        "d": "Es similar a la financiera."
+      },
+      "explicacion": "La cuenta de resultados analítica (o interna) tiene como objetivo principal ofrecer información detallada para la toma de decisiones dentro de la empresa. A diferencia de la contabilidad financiera, no es obligatoria ni tiene un formato estándar legal, por lo que es altamente flexible y suele estructurarse por departamentos, líneas de producto o centros de coste para evaluar el rendimiento específico de cada área. Ejemplo práctico: Una empresa de tecnología puede dividir su cuenta de resultados analítica en los departamentos de 'Hardware', 'Software' y 'Servicios de Consultoría' para saber exactamente cuál de ellos es más rentable, algo que la cuenta de resultados financiera global no mostraría con ese nivel de detalle interno.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 8,
+      "pregunta": "Los Costes Variables:",
+      "opciones": {
+        "a": "Es necesario identificarlos para la contabilidad analítica.",
+        "b": "Son típicos de las empresas manufactureras.",
+        "c": "Son similares a los semifijos.",
+        "d": "No existen en las empresas de servicios."
+      },
+      "explicacion": "En la contabilidad analítica o de gestión, es fundamental clasificar los costes según su comportamiento (fijos o variables) para poder calcular márgenes de contribución, puntos de equilibrio y tomar decisiones operativas. Identificar los costes variables es el primer paso para cualquier análisis de rentabilidad. Ejemplo práctico: En una pizzería, la harina y el queso son costes variables porque aumentan directamente con cada pizza vendida. Identificar estos costes permite al gerente saber cuánto le cuesta exactamente producir una unidad adicional y, por tanto, fijar un precio de venta adecuado para cubrir los costes fijos (como el alquiler del local).",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 9,
+      "pregunta": "Una dificultad característica de la contabilidad de costes es:",
+      "opciones": {
+        "a": "El coste financiero.",
+        "b": "El número de cuenta de cada partida.",
+        "c": "La gestión de los recursos.",
+        "d": "La identificación e imputación de cada coste."
+      },
+      "explicacion": "El mayor reto en la contabilidad de costes es determinar cómo repartir (imputar) los costes indirectos a los diferentes productos, servicios o departamentos de manera justa y precisa. Mientras que los costes directos son fáciles de asignar, los indirectos requieren criterios de reparto que a menudo son subjetivos o complejos. Ejemplo práctico: Si una fábrica produce zapatos y bolsos en la misma nave industrial, la factura de la luz de toda la fábrica es un coste indirecto. La dificultad radica en decidir qué porcentaje de esa factura de luz debe imputarse al coste de fabricar un zapato y qué porcentaje al de un bolso (¿por horas de máquina?, ¿por metros cuadrados utilizados?).",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 10,
+      "pregunta": "En la producción:",
+      "opciones": {
+        "a": "Los costes indirectos crecen según el nivel de actividad.",
+        "b": "Los costes fijos crecen según el nivel de actividad.",
+        "c": "Los costes directos decrecen según el nivel de actividad.",
+        "d": "Los costes directos crecen según el nivel de actividad."
+      },
+      "explicacion": "Los costes directos son aquellos que se pueden vincular de forma clara y proporcional a la producción de un bien o servicio. Por su naturaleza, suelen ser costes variables, lo que significa que su importe total aumenta a medida que aumenta el volumen de producción o nivel de actividad. Ejemplo práctico: En una fábrica de bicicletas, los neumáticos son un coste directo. Si la fábrica produce 100 bicicletas, necesitará 200 neumáticos. Si el nivel de actividad crece y deciden producir 500 bicicletas, el coste total en neumáticos crecerá proporcionalmente, ya que necesitarán 1000 neumáticos.",
+      "respuesta_correcta": "d"
+    }
+  ]
+}

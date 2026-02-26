@@ -1,0 +1,126 @@
+{
+  "unidad": 9,
+  "titulo": "Autoevaluación de Contabilidad de Gestión: Sistemas de Costes",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "El Activity Based Costing reparte costes:",
+      "opciones": {
+        "a": "En función del consumo de actividades.",
+        "b": "En función de la mano de obra directa.",
+        "c": "En función de los costes fijos.",
+        "d": "En función del volumen de activos."
+      },
+      "explicacion": "El sistema Activity Based Costing (ABC) o Costeo Basado en Actividades se fundamenta en la premisa de que los productos consumen actividades y las actividades consumen recursos. Por lo tanto, los costes indirectos se asignan a los productos en función de la cantidad de actividades que requieren para su elaboración. Ejemplo práctico: Si una fábrica produce zapatos y botas, el coste del departamento de control de calidad (un recurso) se reparte basándose en el número de inspecciones (la actividad) que requiere cada tipo de calzado, en lugar de hacerlo simplemente por las horas de trabajo de los operarios.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 2,
+      "pregunta": "¿Cuántos sistemas de costes existen?",
+      "opciones": {
+        "a": "Tantos como empresas.",
+        "b": "Solo hay tres sistemas.",
+        "c": "Uno tradicional y dos modernos.",
+        "d": "Dos muy genéricos."
+      },
+      "explicacion": "Aunque existen marcos teóricos generales (como el modelo ABC, el direct costing o el full costing), en la práctica cada empresa adapta estos modelos a su propia realidad operativa, estructura organizativa y necesidades de información. Por ello, no hay dos sistemas de costes exactamente iguales. Ejemplo práctico: Dos pizzerías pueden usar un sistema de costes variables, pero una podría calcular el coste por cada ingrediente individual añadido a la pizza, mientras que la otra podría calcular un coste estándar por tamaño de pizza, resultando en dos sistemas únicos adaptados a cada negocio.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 3,
+      "pregunta": "Son sistemas tradicionales de costes:",
+      "opciones": {
+        "a": "El Sistema ABC.",
+        "b": "El full costing y direct costing.",
+        "c": "El Sistema JHK.",
+        "d": "El sistema modular."
+      },
+      "explicacion": "El 'full costing' (costeo absorbente) y el 'direct costing' (costeo variable) son los métodos clásicos de contabilidad de costes desarrollados antes de la aparición de entornos de fabricación complejos. Estos sistemas suelen asignar los costes indirectos basándose en medidas de volumen, como las horas de mano de obra o de máquina. Ejemplo práctico: Una fábrica de muebles tradicional de los años 70 utilizaría el 'full costing' para sumar todos los costes de la fábrica (madera, salarios, alquiler de la nave) y dividirlos entre el número de sillas producidas, sin analizar en detalle las actividades específicas que generaban esos costes.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 4,
+      "pregunta": "El objetivo de un sistema de costes es:",
+      "opciones": {
+        "a": "Informar solo al departamento de recursos humanos.",
+        "b": "Generar información que facilite la toma de decisiones en la empresa.",
+        "c": "Informar solo a los accionistas.",
+        "d": "Facilitar las decisiones de financiación."
+      },
+      "explicacion": "La contabilidad de gestión y los sistemas de costes tienen un propósito fundamentalmente interno: proveer a los directivos y gerentes de datos precisos sobre cuánto cuesta producir un bien o servicio para que puedan tomar decisiones estratégicas y operativas acertadas. Ejemplo práctico: Si el gerente de una empresa de software conoce gracias a su sistema de costes que el mantenimiento de una aplicación antigua cuesta más de lo que genera en suscripciones, puede tomar la decisión informada de retirar ese producto del mercado o subir su precio.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 5,
+      "pregunta": "El direct costing:",
+      "opciones": {
+        "a": "Da mucha importancia a los costes variables de cada producto.",
+        "b": "Incide especialmente en la relevancia de los costes fijos.",
+        "c": "Incide especialmente en la relevancia de los costes indirectos.",
+        "d": "Se basa en los costes hundidos."
+      },
+      "explicacion": "El 'direct costing' o costeo variable es un método que asigna a los productos únicamente los costes que varían directamente con el volumen de producción (como la materia prima y la mano de obra directa). Los costes fijos se consideran gastos del periodo y no se incorporan al valor del inventario. Ejemplo práctico: En un puesto de venta de limonada, el 'direct costing' se centraría en calcular el coste exacto de los limones, el azúcar y los vasos (costes variables) para cada unidad vendida, permitiendo saber el margen de contribución de cada vaso antes de pagar el alquiler fijo del puesto.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 6,
+      "pregunta": "El modelo ABC permite una adecuada gestión de los costes actuando sobre:",
+      "opciones": {
+        "a": "Los centros de responsabilidad.",
+        "b": "Los gastos generales de administración.",
+        "c": "Las actividades.",
+        "d": "Los ingresos."
+      },
+      "explicacion": "El modelo ABC (Activity Based Costing) no solo sirve para calcular costes, sino también para gestionarlos (Activity Based Management). Al identificar qué actividades consumen más recursos, la gerencia puede actuar directamente sobre ellas para optimizarlas, reducirlas o eliminarlas si no añaden valor. Ejemplo práctico: Si un hospital descubre mediante el modelo ABC que la actividad de 'admisión de pacientes' consume una cantidad desproporcionada de recursos administrativos, la dirección actuará sobre esa actividad específica implementando un sistema de registro online para hacerla más eficiente y reducir su coste.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 7,
+      "pregunta": "Los generadores del coste son:",
+      "opciones": {
+        "a": "Documentos en los que aparece la determinación de los costes.",
+        "b": "Unidades de medida y control que relacionan actividades y productos.",
+        "c": "Vehículos especiales.",
+        "d": "Un sistema de gestión de productos."
+      },
+      "explicacion": "Los generadores de coste (cost drivers) son las bases utilizadas para asignar los costes de las actividades a los productos u otros objetos de coste. Son la causa principal de que se incurra en un coste en una actividad. Por ejemplo, en una actividad de 'preparación de máquinas', el generador de coste podría ser el 'número de preparaciones'. Si se hacen más preparaciones, el coste de esta actividad aumentará.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 8,
+      "pregunta": "El ABC pretende:",
+      "opciones": {
+        "a": "Repartir los costes entre los productos.",
+        "b": "Resolver problemas especiales que aparecen en la elección de los generadores de costes.",
+        "c": "Gestionar los costes a través de las actividades.",
+        "d": "Relacionar los costes con los ingresos."
+      },
+      "explicacion": "El sistema ABC (Activity Based Costing) o Costeo Basado en Actividades, tiene como objetivo principal gestionar los costes centrándose en las actividades que realiza la empresa. La premisa es que los productos consumen actividades y las actividades consumen recursos (costes). Por lo tanto, al gestionar y optimizar las actividades, se gestionan los costes de manera más eficiente. Un ejemplo sería analizar la actividad de 'atención al cliente'; si se descubre que consume muchos recursos por ineficiencias, el ABC permite identificarlo y tomar medidas para mejorar el proceso, reduciendo así el coste asociado a esa actividad.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 9,
+      "pregunta": "Con relación a una actividad:",
+      "opciones": {
+        "a": "Pueden existir varios generadores de costes.",
+        "b": "Solamente puede haber un generador de costes.",
+        "c": "Pueden existir como máximo dos generadores de costes.",
+        "d": "Nunca hay generadores de costes."
+      },
+      "explicacion": "Una misma actividad puede tener múltiples factores que influyen en su coste, es decir, varios generadores de costes. La elección del generador más adecuado dependerá de cuál refleje mejor la relación causa-efecto entre la actividad y el consumo de recursos. Por ejemplo, para la actividad de 'inspección de calidad', los generadores de coste podrían ser el 'número de inspecciones realizadas' o las 'horas de inspección'. Dependiendo de la complejidad de los productos, uno u otro podría ser más representativo del coste real.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 10,
+      "pregunta": "El modelo ABC permite:",
+      "opciones": {
+        "a": "Determinar el coste de los productos.",
+        "b": "Analizar la capacidad de producción pero no los costes.",
+        "c": "Calcular los costes que son muy sencillos solamente.",
+        "d": "Estudiar los costes en función de la producción."
+      },
+      "explicacion": "El modelo ABC es fundamentalmente un sistema de cálculo de costes. Su propósito final, tras asignar los costes a las actividades, es imputar esos costes de las actividades a los productos o servicios finales en función del uso que estos hacen de dichas actividades. Esto permite obtener un coste de producto mucho más preciso que los métodos tradicionales, especialmente en entornos con altos costes indirectos. Por ejemplo, si una empresa fabrica dos tipos de sillas, una estándar y otra personalizada, el modelo ABC asignará más costes de la actividad 'diseño' a la silla personalizada, reflejando su verdadero coste de producción.",
+      "respuesta_correcta": "a"
+    }
+  ]
+}

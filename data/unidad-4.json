@@ -1,0 +1,126 @@
+{
+  "unidad": 4,
+  "titulo": "Autoevaluación Contabilidad de Gestión",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "El coste del capital se reparte entre:",
+      "opciones": {
+        "a": "Recursos propios.",
+        "b": "Recursos ajenos.",
+        "c": "Recursos propios y ajenos.",
+        "d": "Recursos ajenos y activos."
+      },
+      "explicacion": "El coste de capital de una empresa (conocido como WACC) se calcula ponderando el coste de todas sus fuentes de financiación, que se dividen fundamentalmente en recursos propios (patrimonio neto) y recursos ajenos (deuda). Ejemplo práctico: Si una empresa financia una nueva fábrica usando un 60% de un préstamo bancario (recursos ajenos) y un 40% de dinero de los accionistas (recursos propios), el coste total del capital debe tener en cuenta el coste de ambas partes.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 2,
+      "pregunta": "Una dificultad fundamental del coste de capital radica:",
+      "opciones": {
+        "a": "En su imputación a los costes de los productos.",
+        "b": "En su cálculo.",
+        "c": "En su importe.",
+        "d": "En su valor."
+      },
+      "explicacion": "Asignar el coste financiero a productos específicos es complejo porque la financiación generalmente se obtiene para la empresa en su conjunto, no para un producto individual. Ejemplo práctico: Si una empresa pide un préstamo general para mejorar sus instalaciones donde fabrica 10 productos distintos, determinar qué porcentaje exacto de los intereses de ese préstamo debe sumarse al coste de fabricación del 'Producto A' requiere criterios de reparto (claves de imputación) que suelen ser subjetivos.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 3,
+      "pregunta": "El coste financiero radica en tres variables que son:",
+      "opciones": {
+        "a": "El tipo de interés, la deuda y el plazo.",
+        "b": "El tipo de interés, el capital y el plazo.",
+        "c": "El tipo de interés, el inmovilizado y el plazo.",
+        "d": "El tipo de interés, el importe de fondos y el plazo."
+      },
+      "explicacion": "El coste de cualquier financiación ajena se determina matemáticamente multiplicando el importe prestado (importe de fondos), por el precio del dinero (tipo de interés) y por el tiempo que se dispone de ese dinero (plazo). Ejemplo práctico: Si solicitas un crédito, el banco calculará los intereses a pagar basándose en cuánto dinero te ha prestado (ej. 10.000 euros), a qué tasa (ej. 5% anual) y durante cuánto tiempo lo vas a devolver (ej. 3 años).",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 4,
+      "pregunta": "El coste de la deuda, en función de mayor o menor riesgo, será:",
+      "opciones": {
+        "a": "Más alto que el coste de los capitales propios.",
+        "b": "Más bajo que el coste de los capitales propios.",
+        "c": "Aproximadamente igual que el coste de los capitales propios.",
+        "d": "No tiene relación con el coste de los capitales propios."
+      },
+      "explicacion": "La deuda suele ser más barata que los recursos propios porque los acreedores (como los bancos) asumen menos riesgo que los accionistas; en caso de quiebra, los acreedores tienen prioridad para cobrar. Además, los intereses de la deuda suelen ser deducibles de impuestos. Ejemplo práctico: Un banco puede cobrar un 4% de interés por un préstamo porque tiene garantías de cobro, mientras que un inversor (accionista) exigirá una rentabilidad esperada del 10% o más para compensar el riesgo de perder su dinero si el negocio fracasa.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 5,
+      "pregunta": "Las fuentes de recursos ajenos más comunes son:",
+      "opciones": {
+        "a": "Los accionistas.",
+        "b": "Los proveedores.",
+        "c": "Los clientes.",
+        "d": "Las entidades financieras."
+      },
+      "explicacion": "Los recursos ajenos representan la deuda de la empresa con terceros. La fuente externa de financiación por excelencia para la mayoría de las empresas son los bancos y cajas de ahorro. Ejemplo práctico: Cuando una pyme necesita liquidez inmediata para comprar maquinaria nueva, lo más habitual es que acuda a su banco de confianza para solicitar un préstamo o una línea de crédito, convirtiendo a la entidad financiera en su principal fuente de recursos ajenos.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 6,
+      "pregunta": "Las fuentes de recursos propios más comunes son:",
+      "opciones": {
+        "a": "Los accionistas.",
+        "b": "Los proveedores.",
+        "c": "Los clientes.",
+        "d": "Las entidades financieras."
+      },
+      "explicacion": "Los recursos propios (o patrimonio neto) están formados principalmente por las aportaciones de los dueños de la empresa y por los beneficios no distribuidos (reservas). Ejemplo práctico: Al constituir una Sociedad Limitada, los socios fundadores (accionistas) aportan un capital inicial de 3.000 euros. Ese dinero aportado directamente por los dueños es la fuente más común y básica de recursos propios de la compañía.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 7,
+      "pregunta": "La amortización de una maquinaria en función del número de kilómetros es:",
+      "opciones": {
+        "a": "Un coste fijo.",
+        "b": "Un coste hundido.",
+        "c": "Ninguna de las anteriores.",
+        "d": "Un coste variable."
+      },
+      "explicacion": "La amortización en función del uso (como kilómetros recorridos) varía directamente con el nivel de actividad. Por lo tanto, se clasifica como un coste variable. Ejemplo: Si un camión se amortiza a 0.10€ por kilómetro, el coste de amortización será de 100€ si recorre 1000 km y de 200€ si recorre 2000 km.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 8,
+      "pregunta": "Las amortizaciones tienen un impacto fiscal porque:",
+      "opciones": {
+        "a": "Aumentan el beneficio.",
+        "b": "Disminuyen el beneficio.",
+        "c": "Incrementan el activo.",
+        "d": "Reducen el pasivo."
+      },
+      "explicacion": "La amortización es un gasto contable que refleja la pérdida de valor de un activo. Al registrarse como gasto en la cuenta de resultados, reduce el beneficio antes de impuestos, lo que a su vez disminuye la cantidad de impuestos a pagar. Ejemplo: Si una empresa tiene ingresos de 10,000€ y gastos operativos de 5,000€, su beneficio es 5,000€. Si además registra una amortización de 1,000€, su beneficio se reduce a 4,000€, pagando impuestos sobre esta cantidad menor.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 9,
+      "pregunta": "La depreciación tiene lugar con motivo de la:",
+      "opciones": {
+        "a": "Obsolescencia.",
+        "b": "Pérdida de valor, fundamentalmente por el uso del bien.",
+        "c": "Renovación de los activos.",
+        "d": "A y b."
+      },
+      "explicacion": "La depreciación (o amortización) reconoce la pérdida de valor de un activo a lo largo del tiempo. Esta pérdida puede deberse al desgaste físico por el uso normal (opción b) o a la obsolescencia tecnológica o económica, donde el activo pierde valor porque surgen alternativas mejores o más eficientes (opción a). Ejemplo: Un ordenador pierde valor tanto por el uso diario (desgaste de componentes) como porque en pocos años salen modelos mucho más rápidos (obsolescencia).",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 10,
+      "pregunta": "Los diferentes métodos de amortización deberán adecuarse a:",
+      "opciones": {
+        "a": "El coste de la inversión.",
+        "b": "El plazo o vida útil del bien.",
+        "c": "El tipo y uso del activo.",
+        "d": "El tamaño de la empresa."
+      },
+      "explicacion": "El método de amortización elegido debe reflejar de la manera más fiel posible el patrón de consumo de los beneficios económicos del activo. Por lo tanto, depende de la naturaleza del activo (tipo) y de cómo se espera utilizarlo (uso). Ejemplo: Una máquina que se desgasta uniformemente a lo largo del tiempo podría amortizarse linealmente, mientras que un vehículo cuyo desgaste depende de los kilómetros recorridos podría amortizarse en función de su uso.",
+      "respuesta_correcta": "c"
+    }
+  ]
+}

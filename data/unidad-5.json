@@ -1,0 +1,126 @@
+{
+  "unidad": 5,
+  "titulo": "Autoevaluación Contabilidad de Gestión",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "El Margen de Contribución Unitario nos indica:",
+      "opciones": {
+        "a": "El Punto Muerto (es lo mismo).",
+        "b": "Los costes variables.",
+        "c": "La diferencia entre el precio de venta unitario y el coste variable unitario.",
+        "d": "El Punto de Equilibrio."
+      },
+      "explicacion": "El margen de contribución unitario es la cantidad que cada unidad vendida aporta para cubrir los costes fijos y generar beneficio, calculándose como el precio de venta menos el coste variable unitario. Ejemplo: Si vendes un producto a 10 euros y te cuesta 4 euros producirlo (coste variable), tu margen de contribución unitario es de 6 euros.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 2,
+      "pregunta": "El apalancamiento financiero es:",
+      "opciones": {
+        "a": "La proporción entre costes fijos y variables.",
+        "b": "La proporción entre recursos financieros propios y ajenos.",
+        "c": "La proporción entre Activo y Pasivo exigible.",
+        "d": "El volumen de activos inmovilizados."
+      },
+      "explicacion": "El apalancamiento financiero mide el uso de la deuda (recursos ajenos) frente a los fondos propios (recursos propios) para financiar las operaciones y activos de la empresa. Ejemplo: Si compras una maquinaria de 10.000 euros usando 2.000 euros de tus ahorros y 8.000 euros de un préstamo bancario, estás utilizando apalancamiento financiero para realizar la inversión.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 3,
+      "pregunta": "El consumo de materia prima es:",
+      "opciones": {
+        "a": "Un coste variable.",
+        "b": "Un coste fijo.",
+        "c": "Un coste hundido.",
+        "d": "Un coste general."
+      },
+      "explicacion": "Los costes variables son aquellos que cambian en proporción directa con el nivel de producción. El consumo de materia prima depende de cuántas unidades se fabriquen. Ejemplo: En una panadería, la harina es un coste variable; si haces 100 panes necesitas cierta cantidad de harina, pero si haces 200 panes, necesitarás el doble.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 4,
+      "pregunta": "El sueldo fijo del director general es:",
+      "opciones": {
+        "a": "Un coste variable.",
+        "b": "Un coste fijo.",
+        "c": "Un coste hundido.",
+        "d": "Una inversión."
+      },
+      "explicacion": "Los costes fijos son aquellos que no varían con el volumen de producción o ventas a corto plazo. El sueldo del director general se debe pagar independientemente de si la empresa vende mucho o poco. Ejemplo: El alquiler del local o el salario base del personal administrativo son costes fijos, ya que la empresa asume ese gasto cada mes sin importar su nivel de actividad.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 5,
+      "pregunta": "La amortización de una maquinaria en función del número de kilómetros es:",
+      "opciones": {
+        "a": "Un coste variable.",
+        "b": "Un coste fijo.",
+        "c": "Un coste hundido.",
+        "d": "Una pérdida."
+      },
+      "explicacion": "Normalmente la amortización puede considerarse un coste fijo si es lineal (por tiempo), pero si se calcula en función del uso real (como los kilómetros recorridos), se convierte en un coste variable, ya que a mayor actividad, mayor coste de amortización. Ejemplo: Si un camión de reparto se deprecia 0,10 euros por cada kilómetro recorrido, el coste de amortización mensual dependerá directamente de las rutas realizadas ese mes.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 6,
+      "pregunta": "El punto muerto indica el nivel de actividad para:",
+      "opciones": {
+        "a": "Alcanzar beneficios.",
+        "b": "Reducir costes.",
+        "c": "Ampliar capital.",
+        "d": "A y b."
+      },
+      "explicacion": "El punto muerto o umbral de rentabilidad es el volumen de ventas donde los ingresos totales igualan a los costes totales. A partir de este punto, cada unidad adicional vendida permite alcanzar beneficios. Aunque la opción marcada en el examen es la 'd', didácticamente el punto muerto sirve principalmente para conocer el umbral a partir del cual se obtienen beneficios y planificar estrategias. Ejemplo: Si tus costes fijos son 1.000 euros y ganas 10 euros por producto, tu punto muerto son 100 productos. Vender el producto 101 es lo que te permite empezar a alcanzar beneficios.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 7,
+      "pregunta": "Una empresa tiene unas ventas de 800.000 €, costes variables de 480.000 € y costes fijos de 400.000 €, ¿cuáles serían las ventas para alcanzar el punto de equilibrio?",
+      "opciones": {
+        "a": "1.000.000 €.",
+        "b": "840.000 €.",
+        "c": "880.000 €.",
+        "d": "1.060.000 €."
+      },
+      "explicacion": "El punto de equilibrio es el nivel de ventas donde los ingresos totales igualan a los costes totales (beneficio cero). Para calcularlo en euros, dividimos los costes fijos entre el margen de contribución porcentual. El margen de contribución es (Ventas - Costes Variables) / Ventas = (800.000 - 480.000) / 800.000 = 0,4 (40%). El punto de equilibrio es 400.000 / 0,4 = 1.000.000 €. Ejemplo práctico: Si vendes camisetas a 10€ y te cuesta 6€ hacerlas, tu margen es del 40%. Si el alquiler del local (coste fijo) es 400€, necesitas vender 1.000€ en camisetas (100 camisetas) para no perder dinero.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 8,
+      "pregunta": "Siguiendo con el ejemplo anterior, ¿cuáles serían las ventas para obtener un beneficio de 300.000 €?",
+      "opciones": {
+        "a": "1.200.000 €.",
+        "b": "1.240.000 €.",
+        "c": "1.750.000 €.",
+        "d": "1.760.000 €."
+      },
+      "explicacion": "Para calcular las ventas necesarias para un beneficio objetivo, sumamos el beneficio deseado a los costes fijos y dividimos el resultado entre el margen de contribución porcentual. Usando el margen del 40% (0,4) calculado antes: (400.000 € de costes fijos + 300.000 € de beneficio) / 0,4 = 1.750.000 €. Ejemplo práctico: Siguiendo con las camisetas, si además de cubrir los 400€ de alquiler quieres ganar 300€ limpios, necesitas cubrir 700€ con tu margen del 40%. Por tanto, debes vender 1.750€ en camisetas (175 camisetas).",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 9,
+      "pregunta": "Siguiendo con el ejemplo anterior, si hace una campaña de publicidad de 100.000 €, ¿cuál será el nuevo punto de equilibrio?",
+      "opciones": {
+        "a": "700.000 €.",
+        "b": "1.250.000 €.",
+        "c": "900.000 €.",
+        "d": "1.100.000 €."
+      },
+      "explicacion": "Una campaña de publicidad representa un incremento en los costes fijos de la empresa, ya que es un gasto independiente del volumen de producción. Los nuevos costes fijos son 400.000 € + 100.000 € = 500.000 €. El nuevo punto de equilibrio se calcula dividiendo estos nuevos costes fijos entre el margen de contribución (0,4): 500.000 / 0,4 = 1.250.000 €. Ejemplo práctico: Si decides pagar 100€ por anuncios en redes sociales para tu tienda de camisetas, tus costes fijos suben a 500€. Ahora necesitas vender 1.250€ (125 camisetas) solo para cubrir gastos y quedar a cero.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 10,
+      "pregunta": "El riesgo de una empresa se incrementa al aumentar:",
+      "opciones": {
+        "a": "El apalancamiento financiero.",
+        "b": "El capital.",
+        "c": "Los fondos propios.",
+        "d": "Los activos."
+      },
+      "explicacion": "El apalancamiento financiero consiste en utilizar deuda (fondos ajenos) para financiar una inversión. Al aumentar la deuda, se incrementan los gastos financieros fijos (intereses). Esto eleva el riesgo financiero de la empresa, ya que debe cumplir con estas obligaciones de pago independientemente de si genera beneficios o no. Ejemplo práctico: Imagina que compras una casa para alquilar. Si la pagas al contado (fondos propios), tu riesgo es bajo. Pero si pides una hipoteca del 90% (alto apalancamiento), tienes que pagar la cuota mensual al banco sí o sí. Si el inquilino deja de pagar un mes, tú sigues teniendo la obligación con el banco, lo que aumenta tu riesgo de quiebra.",
+      "respuesta_correcta": "a"
+    }
+  ]
+}

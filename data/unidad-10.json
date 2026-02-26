@@ -1,0 +1,126 @@
+{
+  "unidad": 10,
+  "titulo": "Autoevaluación Contabilidad de Gestión",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "¿Qué elemento es fundamental para controlar los costes?",
+      "opciones": {
+        "a": "La existencia de un presupuesto.",
+        "b": "El plan de marketing.",
+        "c": "Bajar los precios.",
+        "d": "Aumentar la producción."
+      },
+      "explicacion": "Un presupuesto establece los límites financieros y las expectativas de gasto. Sin él, no hay un punto de referencia para saber si los costes reales son excesivos o están bajo control. Ejemplo: Si una empresa asigna 1000€ para material de oficina (presupuesto), puede controlar los costes comparando los gastos reales mensuales contra este límite.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 2,
+      "pregunta": "Un coste estándar es:",
+      "opciones": {
+        "a": "El coste unitario en condiciones normales.",
+        "b": "Es el coste fijo.",
+        "c": "Indica el punto muerto.",
+        "d": "Un coste hundido."
+      },
+      "explicacion": "El coste estándar representa lo que debería costar un producto o servicio bajo condiciones operativas normales y eficientes. Sirve como meta o patrón de medida. Ejemplo: Una fábrica de sillas determina que, trabajando a ritmo normal y sin desperdicios inusuales, fabricar una silla cuesta exactamente 15€ en madera y mano de obra. Ese es su coste estándar.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 3,
+      "pregunta": "¿Qué está más limitado por los recursos de la empresa?",
+      "opciones": {
+        "a": "La planificación.",
+        "b": "El presupuesto.",
+        "c": "La producción.",
+        "d": "Las ventas."
+      },
+      "explicacion": "El presupuesto es la cuantificación financiera de los planes de la empresa y está estrictamente condicionado por los recursos económicos, materiales y humanos disponibles. Aunque la producción también se limita, el presupuesto es la expresión financiera directa de esa limitación. Ejemplo: Una startup puede planificar expandirse a tres países, pero su presupuesto se limitará al capital que realmente tiene en el banco o que ha levantado en rondas de inversión.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 4,
+      "pregunta": "En la preparación del presupuesto...",
+      "opciones": {
+        "a": "Se definen las principales líneas comerciales.",
+        "b": "Se determinan las consecuencias financieras del plan operativo.",
+        "c": "Se establece el coste de producción.",
+        "d": "Se asignan los puntos de distribución."
+      },
+      "explicacion": "El presupuesto traduce las actividades operativas planificadas (ventas, producción, compras) a términos monetarios, mostrando el impacto financiero de dichas decisiones. Ejemplo: Si el plan operativo dicta contratar a 5 nuevos ingenieros, la preparación del presupuesto determinará la consecuencia financiera de esto: un aumento de 200.000€ en la partida de salarios anuales.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 5,
+      "pregunta": "¿Qué se establece una vez aprobado el programa de ventas?",
+      "opciones": {
+        "a": "El programa de producción.",
+        "b": "El plan de marketing.",
+        "c": "La estrategia comercial.",
+        "d": "Los canales de distribución."
+      },
+      "explicacion": "En la secuencia lógica de la elaboración de presupuestos industriales, primero se debe saber cuánto se espera vender (programa de ventas) para luego calcular cuánto se necesita fabricar (programa de producción) para satisfacer esa demanda y mantener los inventarios deseados. Ejemplo: Si una panadería proyecta vender 500 barras de pan el fin de semana (programa de ventas), establecerá su programa de producción para amasar y hornear exactamente esas 500 barras más un pequeño margen de seguridad.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 6,
+      "pregunta": "Una característica fundamental de los costes estándar es...",
+      "opciones": {
+        "a": "Que son costes calculados a posteriori.",
+        "b": "Que son valores de referencia para compararlos con la actividad.",
+        "c": "Que se establecen después del ejercicio económico.",
+        "d": "Que se calculan de forma diferente a los costes históricos."
+      },
+      "explicacion": "Los costes estándar actúan como un termómetro o punto de referencia predeterminado. Al compararlos con los costes reales incurridos durante la actividad, la empresa puede identificar desviaciones y tomar medidas correctivas. Ejemplo: Si el coste estándar de pintar un coche es de 200€ y el coste real resulta ser 250€, la empresa usa el estándar como referencia para investigar por qué se gastaron 50€ de más.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 7,
+      "pregunta": "El coste real es:",
+      "opciones": {
+        "a": "El previsto.",
+        "b": "El que se produce de manera efectiva.",
+        "c": "Coincide con el coste estándar siempre.",
+        "d": "El coste estimado."
+      },
+      "explicacion": "El coste real (o histórico) es el gasto que efectivamente ha ocurrido y se ha registrado en la contabilidad tras realizar una actividad o fabricar un producto, a diferencia de los costes estimados o estándar que son proyecciones. Ejemplo: Al final del mes, la factura de electricidad de la fábrica llega por 1.250€. Ese es el coste real, independientemente de si el presupuesto era de 1.000€.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 8,
+      "pregunta": "¿Cuál es una de las ventajas del análisis económico basado en los estándares?",
+      "opciones": {
+        "a": "Que constituye un instrumento de referencia con el que comparar los históricos.",
+        "b": "Que no exige una definición de responsabilidades dentro de la estructura de la empresa.",
+        "c": "Que aumenta el trabajo de la administración al mostrar claramente las operaciones anormales.",
+        "d": "Que dificulta la elaboración de los presupuestos."
+      },
+      "explicacion": "Los costes estándares sirven como una meta o punto de referencia (benchmark). Al compararlos con los costes históricos (reales), la empresa puede identificar desviaciones y evaluar el rendimiento. Ejemplo práctico: Si el estándar para fabricar una silla es de 20 euros en madera, y el coste histórico del mes pasado fue de 25 euros, el estándar sirve como referencia para detectar una ineficiencia de 5 euros y tomar medidas correctivas.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 9,
+      "pregunta": "¿Cuál es la principal desventaja del uso de costes estándares?",
+      "opciones": {
+        "a": "Que el grado de rigidez de los estándares se calcula de manera específica.",
+        "b": "Que con frecuencia, las normas tienden a adquirir rigidez aun en periodos relativamente cortos.",
+        "c": "Que su efectividad para evaluar la actuación se fortalece.",
+        "d": "Que facilita aislar los elementos controlables y los no controlables de las variaciones."
+      },
+      "explicacion": "Los estándares pueden volverse obsoletos rápidamente si cambian las condiciones del mercado (inflación, cambio en precios de materias primas, nuevas tecnologías), volviéndose rígidos y poco realistas. Ejemplo práctico: Una empresa establece en enero un coste estándar de 1 euro por litro de combustible para sus camiones de reparto. Si en marzo hay una crisis petrolera y el precio sube a 1.50 euros, el estándar se vuelve rígido e inútil para evaluar la eficiencia del conductor, ya que la variación de precio está fuera de su control y el estándar no se adaptó al nuevo entorno.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 10,
+      "pregunta": "Los costes predeterminados o estándares:",
+      "opciones": {
+        "a": "Reflejan los costes que ya han sucedido en la empresa.",
+        "b": "Reflejan los costes en los que puede incurrir la empresa en el futuro.",
+        "c": "No deben emplearse porque tienden a confundirnos.",
+        "d": "No tienen relación con los costes reales."
+      },
+      "explicacion": "A diferencia de los costes históricos (que ya ocurrieron), los costes predeterminados o estándares son estimaciones científicas de lo que debería costar un producto o servicio en el futuro bajo condiciones operativas normales. Ejemplo práctico: Antes de iniciar el año escolar, una fábrica de cuadernos calcula que, basándose en contratos futuros de papel y salarios acordados, cada cuaderno debería costar 0.50 euros producirlo. Este es un coste predeterminado que refleja una expectativa futura, no un gasto pasado.",
+      "respuesta_correcta": "b"
+    }
+  ]
+}

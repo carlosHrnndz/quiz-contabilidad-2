@@ -1,0 +1,126 @@
+{
+  "unidad": 6,
+  "titulo": "Autoevaluación de Contabilidad de Gestión: Costes de Capital y Apalancamiento",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "La remuneración de capitales propios (fondos propios) no se considera:",
+      "opciones": {
+        "a": "En la contabilidad de gestión.",
+        "b": "En la contabilidad financiera.",
+        "c": "En ninguna.",
+        "d": "Solo se considera en circunstancias especiales en ambas contabilidades."
+      },
+      "explicacion": "En la contabilidad financiera, la remuneración de los fondos propios (como el pago de dividendos) no se registra como un gasto en la cuenta de resultados, sino como un reparto del beneficio. Por el contrario, la contabilidad de gestión sí suele incluir un coste de oportunidad por el uso de estos fondos para evaluar la rentabilidad real. Ejemplo práctico: Si inviertes 50.000 euros de tus ahorros para abrir una tienda, la contabilidad financiera no anota un 'sueldo' o interés por ese dinero como gasto. Sin embargo, en tu contabilidad de gestión interna, deberías restar un 4% (lo que te daría el banco por ese dinero) para saber si la tienda es verdaderamente rentable por sí misma.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 2,
+      "pregunta": "Para el cálculo del coste medio ponderado de capital:",
+      "opciones": {
+        "a": "Tenemos en cuenta el coste de la deuda y el coste del capital propio.",
+        "b": "Tenemos en cuenta solo el coste de la deuda.",
+        "c": "Tenemos en cuenta solo el coste del capital propio.",
+        "d": "Tenemos en cuenta el coste de la financiación de proveedores y clientes."
+      },
+      "explicacion": "El Coste Medio Ponderado de Capital (CMPC o WACC por sus siglas en inglés) es una tasa que agrupa y pondera los costes de todas las fuentes de financiación a largo plazo de una empresa, que fundamentalmente son dos: los recursos ajenos (deuda) y los recursos propios (capital). Ejemplo práctico: Si una empresa necesita 100.000 euros para un proyecto y consigue 60.000 euros mediante un préstamo bancario (deuda al 5%) y 40.000 euros de inversores (capital propio que exige un 10%), el CMPC calculará un coste promedio teniendo en cuenta ambas fuentes y sus respectivos pesos (60% y 40%).",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 3,
+      "pregunta": "La tasa de interés es un factor básico en el cálculo del coste:",
+      "opciones": {
+        "a": "De la deuda.",
+        "b": "De la deuda y del capital propio.",
+        "c": "Del capital propio.",
+        "d": "No tiene relevancia."
+      },
+      "explicacion": "La tasa de interés representa el precio explícito que se paga por pedir dinero prestado a terceros, es decir, es el componente principal para determinar el coste de la deuda. El coste del capital propio, en cambio, se calcula en base a las expectativas de rentabilidad y el riesgo (por ejemplo, usando el modelo CAPM), no con una simple tasa de interés. Ejemplo práctico: Cuando una empresa solicita un crédito hipotecario para comprar una nave industrial, el banco le asigna una tasa de interés del 6%. Ese 6% es el factor directo y básico que define cuánto le cuesta a la empresa mantener esa deuda viva.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 4,
+      "pregunta": "El coste de capital medio ponderado influye:",
+      "opciones": {
+        "a": "La deuda total.",
+        "b": "El capital total.",
+        "c": "La tasa de interés.",
+        "d": "Todos los anteriores."
+      },
+      "explicacion": "El coste de capital medio ponderado (WACC) está determinado por la estructura financiera completa de la empresa. Por lo tanto, cualquier variación en el volumen de la deuda total, en el volumen del capital propio total, o en los costes asociados a estos (como la tasa de interés de la deuda), modificará el resultado final del WACC. Ejemplo práctico: Si el Banco Central Europeo sube las tasas de interés, los nuevos préstamos serán más caros. Esto aumenta el coste de la deuda de la empresa y, en consecuencia, eleva su coste de capital medio ponderado global, afectando a la viabilidad de futuros proyectos.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 5,
+      "pregunta": "El apalancamiento operativo:",
+      "opciones": {
+        "a": "Refleja la relación entre capital y deuda.",
+        "b": "Depende de los gastos generales.",
+        "c": "Recoge la relación entre costes fijos y variables.",
+        "d": "Depende del patrimonio neto."
+      },
+      "explicacion": "El apalancamiento operativo mide cómo los costes fijos y los costes variables interactúan en la estructura de costes de una empresa y cómo esto afecta al beneficio operativo ante cambios en el volumen de ventas. Una empresa con altos costes fijos y bajos costes variables tiene un alto apalancamiento operativo. Ejemplo práctico: Una aerolínea tiene un alto apalancamiento operativo porque sus costes fijos (comprar aviones, pagar a la tripulación) son enormes, mientras que el coste variable de llevar a un pasajero más es mínimo (un poco de combustible y la comida). Si logran vender esos billetes extra, casi todo el ingreso se convierte en beneficio puro.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 6,
+      "pregunta": "Un préstamo por importe de 100.000 € tiene un tipo de interés del 5%. La tasa fiscal de la empresa es del 30%, ¿cuál sería su coste de la deuda?",
+      "opciones": {
+        "a": "5%.",
+        "b": "3,5%.",
+        "c": "4%.",
+        "d": "2%."
+      },
+      "explicacion": "Los intereses de la deuda son un gasto deducible de impuestos, lo que genera un 'escudo fiscal'. La fórmula para calcular el coste de la deuda después de impuestos es: Tipo de interés * (1 - Tasa impositiva). Aplicando los datos: 5% * (1 - 0,30) = 5% * 0,70 = 3,5%. Ejemplo práctico: Pagas 5.000 euros de intereses al año (el 5% de 100.000). Al restar esos 5.000 euros de tus beneficios antes de impuestos, te ahorras pagar el 30% de esa cantidad a Hacienda, es decir, te ahorras 1.500 euros en impuestos. Por tanto, el coste real de tu bolsillo es 5.000 - 1.500 = 3.500 euros, lo que equivale exactamente a un 3,5% del préstamo.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 7,
+      "pregunta": "La empresa HERTE, S.A. tiene un beneficio anual de 85.000 € y un valor de mercado de sus acciones de 790.000 €. Su coste de capital sería:",
+      "opciones": {
+        "a": "1,95%.",
+        "b": "9,87%.",
+        "c": "10,76%.",
+        "d": "15.000 €"
+      },
+      "explicacion": "El coste de capital (o coste de los recursos propios, Ke) se puede estimar dividiendo el beneficio anual entre el valor de mercado de las acciones (Ke = Beneficio / Valor de Mercado). En este caso: 85.000 € / 790.000 € = 0,10759, que expresado en porcentaje es aproximadamente 10,76%. Ejemplo práctico: Si compras un negocio por 100.000 € y te genera 10.000 € de beneficio al año, tu rentabilidad o coste de ese capital invertido es del 10% (10.000/100.000).",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 8,
+      "pregunta": "Una empresa paga un dividendo anual de 3 € y tiene una tasa de descuento sobre los dividendos del 9%. Asumiendo que la inversión durará 10 años, ¿cuál sería el valor teórico de la acción?",
+      "opciones": {
+        "a": "1,25 €.",
+        "b": "3,8 €.",
+        "c": "0,79 €.",
+        "d": "1,27 €."
+      },
+      "explicacion": "Aunque el enunciado pide el 'valor teórico de la acción', matemáticamente la respuesta correcta (1,27 €) corresponde al cálculo del valor actual de un único dividendo de 3 € recibido en el año 10, descontado al 9%. La fórmula del valor actual (VA) es VA = Valor Futuro / (1 + r)^n. Aplicando los datos: VA = 3 / (1 + 0,09)^10 = 3 / 2,36736 = 1,267... que se redondea a 1,27 €. Ejemplo práctico: Imagina que un amigo te promete darte 3 € dentro de 10 años. Si tú exiges una rentabilidad del 9% anual por tu dinero, hoy solo estarías dispuesto a pagarle 1,27 € por esa promesa futura.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 9,
+      "pregunta": "Si el coste de la deuda de una empresa es del 7% y su coste de capital es 11%, asumiendo que tiene una deuda de 80.000 € y un capital de 35.000 €, calcular su coste medio ponderado de capital:",
+      "opciones": {
+        "a": "7%.",
+        "b": "8,22%.",
+        "c": "11%.",
+        "d": "9%."
+      },
+      "explicacion": "El Coste Medio Ponderado de Capital (WACC) se calcula ponderando el coste de cada fuente de financiación por su peso en el total. Valor total (V) = Deuda (80.000) + Capital (35.000) = 115.000 €. Peso de la deuda = 80.000 / 115.000 = 69,56%. Peso del capital = 35.000 / 115.000 = 30,43%. WACC = (0,6956 * 7%) + (0,3043 * 11%) = 4,869% + 3,347% = 8,216%, que redondeado es 8,22%. Ejemplo práctico: Si para comprar una casa de 100.000 € pones 20.000 € de tus ahorros (que te rentaban un 5%) y pides 80.000 € al banco (al 2%), el coste medio de tu financiación estará mucho más cerca del 2% del banco porque representa la mayor parte del dinero.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 10,
+      "pregunta": "El apalancamiento operativo es más relevante:",
+      "opciones": {
+        "a": "En la contabilidad financiera.",
+        "b": "En la contabilidad de gestión.",
+        "c": "En las empresas de servicios.",
+        "d": "En las empresas con un alto número de empleados."
+      },
+      "explicacion": "El apalancamiento operativo mide la proporción de costes fijos frente a los costes variables en la estructura de una empresa. Este análisis es fundamental en la contabilidad de gestión (o analítica), ya que su objetivo es proveer información interna para la toma de decisiones, planificación y control (como calcular el punto de equilibrio), a diferencia de la contabilidad financiera que se enfoca en reportes externos. Ejemplo práctico: Un gerente (usuario de contabilidad de gestión) necesita saber si automatizar una fábrica (aumentando costes fijos y reduciendo variables) será rentable si las ventas suben un 10%. Este análisis de escenarios es puro apalancamiento operativo.",
+      "respuesta_correcta": "b"
+    }
+  ]
+}

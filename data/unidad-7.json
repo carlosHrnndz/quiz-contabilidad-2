@@ -1,0 +1,126 @@
+{
+  "unidad": 7,
+  "titulo": "Autoevaluación de Contabilidad de Gestión",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "El coste del material directo:",
+      "opciones": {
+        "a": "Se puede identificar de manera indudable.",
+        "b": "Es difícil de identificar.",
+        "c": "Carece de relevancia.",
+        "d": "Es similar al coste general."
+      },
+      "explicacion": "Los costes directos, como el material directo, son aquellos que se pueden rastrear y asignar de forma clara, inequívoca y económicamente factible a un producto o servicio específico. Ejemplo práctico: En la fabricación de una mesa de madera, la madera utilizada es un material directo porque se puede medir exactamente cuánta madera se usó para esa mesa específica y calcular su coste sin ambigüedades.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 2,
+      "pregunta": "El coste de las ventas en una empresa industrial:",
+      "opciones": {
+        "a": "Es complejo por el proceso productivo.",
+        "b": "Está basado en los costes indirectos.",
+        "c": "No tiene en cuenta las existencias finales.",
+        "d": "Es un proceso basado en las existencias iniciales."
+      },
+      "explicacion": "A diferencia de una empresa comercial que simplemente compra y vende, una empresa industrial transforma materias primas. Esto añade capas de complejidad al cálculo del coste de ventas, ya que implica sumar costes de materias primas, mano de obra directa y costes indirectos de fabricación, además de ajustar por variaciones en inventarios de productos en curso y terminados. Ejemplo práctico: Una fábrica de bicicletas no solo calcula lo que le costó el aluminio, sino también el tiempo de los soldadores, la electricidad de la planta y la depreciación de la maquinaria para determinar el coste real de la bicicleta vendida.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 3,
+      "pregunta": "Las decisiones de inversión se caracterizan por:",
+      "opciones": {
+        "a": "La asignación de recursos a corto plazo.",
+        "b": "Se pueden modificar en cualquier momento.",
+        "c": "La asignación de recursos a largo plazo.",
+        "d": "La asignación de recursos al proceso productivo."
+      },
+      "explicacion": "Las decisiones de inversión implican comprometer recursos financieros actuales con la expectativa de obtener beneficios durante un período prolongado en el futuro (largo plazo). Suelen ser decisiones estratégicas y difíciles de revertir sin incurrir en pérdidas. Ejemplo práctico: La compra de una nueva nave industrial o maquinaria pesada por parte de una empresa es una decisión de inversión, ya que inmoviliza capital hoy para generar producción y ventas durante los próximos 10 o 20 años.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 4,
+      "pregunta": "La capacidad técnica es:",
+      "opciones": {
+        "a": "Superior a la capacidad teórica.",
+        "b": "Inferior a la capacidad teórica.",
+        "c": "Igual a la capacidad teórica.",
+        "d": "No tiene relación con la capacidad teórica."
+      },
+      "explicacion": "La capacidad teórica (o ideal) es la producción máxima posible bajo condiciones perfectas, sin interrupciones. La capacidad técnica (o práctica) reconoce que en el mundo real hay paradas inevitables (mantenimiento, descansos, fallos menores), por lo que siempre será inferior a la teórica. Ejemplo práctico: Una máquina embotelladora teóricamente puede llenar 1000 botellas por hora si funciona 24/7 sin parar. Sin embargo, su capacidad técnica podría ser de 850 botellas por hora, considerando el tiempo necesario para limpiar la máquina, cambiar etiquetas y los descansos del operador.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 5,
+      "pregunta": "Los costes afectados por una decisión:",
+      "opciones": {
+        "a": "Son costes fijos.",
+        "b": "Son costes indirectos.",
+        "c": "Son costes incrementales.",
+        "d": "Dependen de los gastos generales."
+      },
+      "explicacion": "Los costes incrementales (o diferenciales) son aquellos que cambian o surgen como resultado directo de elegir una alternativa sobre otra en la toma de decisiones. Son los costes relevantes para esa decisión específica. Ejemplo práctico: Si una empresa decide lanzar una campaña de marketing adicional, el coste de esa campaña es un coste incremental. El alquiler del edificio de la empresa no se ve afectado por esta decisión, por lo que no es un coste incremental en este contexto.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 6,
+      "pregunta": "Los costes hundidos:",
+      "opciones": {
+        "a": "Son costes directos.",
+        "b": "No se pueden evitar aunque no se realice la inversión.",
+        "c": "Son costes pospuestos.",
+        "d": "Siempre se recuperan."
+      },
+      "explicacion": "Los costes hundidos son gastos que ya se han realizado en el pasado y que no se pueden recuperar, independientemente de las decisiones futuras que se tomen. Por lo tanto, no deben influir en las decisiones de inversión actuales. Ejemplo práctico: Una empresa gasta 10,000 euros en un estudio de mercado para evaluar si lanza un nuevo producto. El resultado del estudio es negativo. Esos 10,000 euros son un coste hundido; la empresa no puede recuperar ese dinero decidiendo no lanzar el producto, ni tampoco lanzándolo.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 7,
+      "pregunta": "Una de las claves el sistema Just in Time es:",
+      "opciones": {
+        "a": "Cambiar los proveedores.",
+        "b": "Incremento de la cadena de abastecimiento.",
+        "c": "Eliminación de las sobreexistencias.",
+        "d": "Mejor gestión de activos inmobiliarios."
+      },
+      "explicacion": "El sistema Just in Time (JIT) o 'Justo a Tiempo' es una filosofía industrial que busca eliminar todo tipo de desperdicio en el proceso de producción. Una de sus premisas fundamentales es producir exactamente lo que se necesita, en el momento que se necesita, lo que implica reducir el inventario al mínimo indispensable y eliminar las sobreexistencias. Ejemplo práctico: Una fábrica de automóviles que utiliza JIT no almacena miles de parabrisas en un almacén (lo cual genera costes de espacio y riesgo de rotura), sino que coordina con su proveedor para que le entregue los parabrisas exactos horas antes de que los coches pasen por la línea de ensamblaje.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 8,
+      "pregunta": "En las decisiones de sustitución de equipos productivos:",
+      "opciones": {
+        "a": "Es fundamental el valor de mercado de los bienes a sustituir.",
+        "b": "La amortización no se tiene en cuenta.",
+        "c": "Se utilizan criterios de contabilidad financiera.",
+        "d": "El coste de los equipos a sustituir es un coste hundido."
+      },
+      "explicacion": "En la contabilidad de gestión, un coste hundido es aquel que ya se ha incurrido en el pasado y no puede recuperarse, independientemente de la decisión que se tome en el futuro. Por lo tanto, al decidir si se sustituye un equipo, el coste original de compra del equipo viejo es irrelevante para la decisión actual. Ejemplo práctico: Si compraste una impresora industrial por 5.000 euros hace tres años (coste hundido), y hoy evalúas comprar una nueva más eficiente, esos 5.000 euros ya están gastados. Tu decisión debe basarse en comparar los costes de mantenimiento actuales frente al precio y ahorro que te dará la nueva impresora, no en lo que pagaste en el pasado.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 9,
+      "pregunta": "En las decisiones de fabricación o subcontratación:",
+      "opciones": {
+        "a": "Influyen factores ajenos a la contabilidad.",
+        "b": "Es decisoria la voluntad de los trabajadores.",
+        "c": "Exige un análisis de los costes hundidos.",
+        "d": "No se tienen en cuenta los costes variables."
+      },
+      "explicacion": "La decisión de 'hacer o comprar' (fabricar o subcontratar) no se basa únicamente en un análisis cuantitativo de costes (contabilidad). Existen factores cualitativos o estratégicos que son vitales, como la calidad del producto, la fiabilidad del proveedor, la protección del conocimiento técnico (know-how) o el impacto en la imagen de la empresa. Ejemplo práctico: Una empresa de tecnología puede descubrir que es más barato subcontratar el desarrollo de su software principal a terceros. Sin embargo, decide fabricarlo internamente (in-house) para proteger su código fuente de posibles robos o copias, un factor estratégico ajeno a los costes contables directos.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 10,
+      "pregunta": "El sistema Just in Time:",
+      "opciones": {
+        "a": "Agiliza la producción.",
+        "b": "Reduce las existencias.",
+        "c": "Involucra a los trabajadores.",
+        "d": "Todas las anteriores."
+      },
+      "explicacion": "El sistema Just in Time es integral. Al eliminar cuellos de botella y tiempos de espera, agiliza la producción. Al pedir materiales solo cuando se necesitan, reduce drásticamente las existencias. Además, requiere un control de calidad total en el origen, lo que significa que los trabajadores están altamente involucrados y tienen la autoridad para detener la producción si detectan un defecto. Ejemplo práctico: En una planta de Toyota (pionera del JIT), el inventario es mínimo (reduce existencias), los coches fluyen rápidamente por la línea (agiliza la producción) y cualquier operario puede tirar de una cuerda (sistema Andon) para detener la cinta si ve un error, demostrando su total involucración en la calidad del proceso.",
+      "respuesta_correcta": "d"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "unidad": 2,
+  "titulo": "Autoevaluación de Contabilidad de Gestión: Conceptos Básicos de Costes",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "Un coste surge:",
+      "opciones": {
+        "a": "Al nacer la obligación de pago.",
+        "b": "Cuando el gasto es aplicado como recurso productivo.",
+        "c": "Cuando se produce el consumo.",
+        "d": "Al aplicarse un criterio contable."
+      },
+      "explicacion": "En contabilidad de gestión, la diferencia entre gasto y coste es fundamental. Un gasto se produce cuando se adquiere un bien o servicio (nace la obligación de pago), pero solo se convierte en coste cuando ese bien o servicio se incorpora al proceso productivo para generar valor. Por ejemplo, si compras madera para fabricar muebles, el gasto ocurre en la compra, pero el coste se genera cuando cortas y usas esa madera en la fábrica para hacer una silla.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 2,
+      "pregunta": "El coste histórico sirve para:",
+      "opciones": {
+        "a": "Evaluar acciones pasadas.",
+        "b": "Tomar decisiones.",
+        "c": "Evaluar un presupuesto de producción.",
+        "d": "Analizar una decisión de inversión."
+      },
+      "explicacion": "El coste histórico representa el valor real que se pagó por un activo o recurso en el pasado. Su principal utilidad es el control y la evaluación a posteriori de lo que ya ha ocurrido, permitiendo comparar lo presupuestado con lo real. No es ideal para tomar decisiones futuras (donde se usan costes de oportunidad o estándar) ni para evaluar inversiones futuras. Por ejemplo, saber que una máquina costó 10.000€ hace 5 años (coste histórico) sirve para calcular su amortización pasada, pero no te dice si debes comprar una nueva hoy.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 3,
+      "pregunta": "El coste del consumo de agua en una fábrica de tornillos se puede considerar:",
+      "opciones": {
+        "a": "Un coste directo.",
+        "b": "Un coste variable.",
+        "c": "Un coste indirecto.",
+        "d": "Un coste futuro."
+      },
+      "explicacion": "Un coste indirecto es aquel que no se puede asignar de forma clara, evidente y económicamente viable a un producto específico (la unidad de referencia). En una fábrica de tornillos, el agua se usa para limpieza, refrigeración general, baños, etc. Es muy difícil y costoso medir exactamente cuánta agua se usó para fabricar un tornillo en particular. Por lo tanto, se considera un coste indirecto que debe repartirse entre toda la producción usando criterios de reparto. Ejemplo: La factura de la luz de la nave industrial es un coste indirecto; no sabes cuántos céntimos de luz corresponden a cada tornillo fabricado.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 4,
+      "pregunta": "Un Coste Directo es aquel que:",
+      "opciones": {
+        "a": "No varía con la actividad.",
+        "b": "Sí varía con la actividad.",
+        "c": "Es fácilmente identificable con la unidad de referencia.",
+        "d": "Es decreciente siempre."
+      },
+      "explicacion": "La definición fundamental de un coste directo es su trazabilidad. Si puedes medir y asignar de forma inequívoca y sencilla cuánto de ese recurso se ha consumido para producir una unidad concreta (producto, servicio, departamento), es un coste directo. La variación con la actividad define si es fijo o variable, no si es directo o indirecto. Ejemplo: En la fabricación de una bicicleta, el coste de las dos ruedas es un coste directo; sabes exactamente que cada bicicleta lleva dos ruedas y cuánto cuestan.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 5,
+      "pregunta": "En una fábrica de muebles, la madera se podría considerar como un coste:",
+      "opciones": {
+        "a": "Indirecto.",
+        "b": "Fijo.",
+        "c": "Variable.",
+        "d": "Independiente."
+      },
+      "explicacion": "Un coste variable es aquel cuyo total cambia en proporción directa a los cambios en el nivel de actividad o volumen de producción. En una fábrica de muebles, cuantas más mesas o sillas fabriques, más madera necesitarás consumir. Si no fabricas nada, el coste de madera consumida es cero. Por tanto, varía con la producción. Ejemplo: La harina en una panadería es un coste variable; a más pan horneado, más kilos de harina se gastan.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 6,
+      "pregunta": "Un Coste Variable es aquel que:",
+      "opciones": {
+        "a": "No varía con la actividad.",
+        "b": "Sí varía con la actividad.",
+        "c": "Es fácilmente identificable con la unidad de referencia.",
+        "d": "No se puede eliminar."
+      },
+      "explicacion": "Esta es la definición teórica de coste variable. Su comportamiento está ligado al volumen de producción o actividad. Si la actividad aumenta, el coste total variable aumenta; si la actividad disminuye, el coste total variable disminuye. La opción 'c' define un coste directo, no variable. Ejemplo: Las comisiones de ventas de los comerciales son un coste variable; si venden más (mayor actividad), la empresa paga más comisiones; si no venden, no hay coste por comisiones.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 7,
+      "pregunta": "Los Costes Fijos unitarios:",
+      "opciones": {
+        "a": "Decrecen con el nivel de actividad.",
+        "b": "Permanecen constantes.",
+        "c": "Son crecientes.",
+        "d": "Varían en función del pasivo."
+      },
+      "explicacion": "Los costes fijos totales no cambian con el volumen de producción. Sin embargo, al calcular el coste fijo unitario (coste fijo total dividido por el número de unidades producidas), este disminuye a medida que se producen más unidades, ya que el mismo coste se reparte entre una mayor cantidad de productos. Ejemplo práctico: Si el alquiler de una fábrica es de 1000 euros al mes (coste fijo) y produces 100 unidades, el coste fijo unitario es de 10 euros. Si produces 200 unidades, el coste fijo unitario baja a 5 euros.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 8,
+      "pregunta": "Los Costes Variables unitarios:",
+      "opciones": {
+        "a": "Crecen con el nivel de actividad.",
+        "b": "Permanecen constantes.",
+        "c": "Son crecientes.",
+        "d": "Dependen del activo de la empresa."
+      },
+      "explicacion": "Los costes variables totales cambian en proporción directa al volumen de producción, pero el coste variable por cada unidad producida se mantiene constante. Ejemplo práctico: Si fabricar una silla requiere 2 metros de madera que cuestan 10 euros (coste variable unitario), este coste será siempre de 10 euros por silla, independientemente de si fabricas 1 o 100 sillas. El coste total de madera variará, pero el unitario permanece constante.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 9,
+      "pregunta": "Los Costes Semifijos:",
+      "opciones": {
+        "a": "Se incrementan con el tiempo.",
+        "b": "Permanecen constantes.",
+        "c": "Son crecientes.",
+        "d": "Reflejan un escalonamiento de los costes."
+      },
+      "explicacion": "Los costes semifijos (o escalonados) son aquellos que permanecen constantes dentro de un cierto rango de actividad, pero dan un salto (se escalonan) a un nivel superior cuando la actividad supera ese rango. Ejemplo práctico: El salario de un supervisor de calidad. Un supervisor puede controlar hasta 1000 unidades producidas. Si la producción aumenta a 1001 unidades, se necesitará contratar a un segundo supervisor, lo que provoca un salto o escalón en el coste fijo total.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 10,
+      "pregunta": "Los Costes Totales unitarios:",
+      "opciones": {
+        "a": "Decrecen con el nivel de actividad.",
+        "b": "Permanecen constantes.",
+        "c": "Son crecientes.",
+        "d": "No generan variación de tesorería."
+      },
+      "explicacion": "El coste total unitario es la suma del coste fijo unitario y el coste variable unitario. Como el coste variable unitario es constante y el coste fijo unitario decrece al aumentar el nivel de actividad (se reparte entre más unidades), la suma de ambos (el coste total unitario) también decrecerá a medida que aumente la producción. Ejemplo práctico: Siguiendo los ejemplos anteriores, si el coste variable unitario es 10 euros y el fijo unitario pasa de 10 euros (a 100 unidades) a 5 euros (a 200 unidades), el coste total unitario bajará de 20 euros a 15 euros al aumentar la producción.",
+      "respuesta_correcta": "a"
+    }
+  ]
+}

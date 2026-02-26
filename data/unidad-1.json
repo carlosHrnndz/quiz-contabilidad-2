@@ -1,0 +1,126 @@
+{
+  "unidad": 1,
+  "titulo": "Autoevaluación Unidad 1 - Contabilidad de Gestión",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "La Contabilidad de Costes:",
+      "opciones": {
+        "a": "Al igual que la Contabilidad Financiera, tiene unas normas muy rígidas.",
+        "b": "Es muy útil para los gestores de la empresa.",
+        "c": "Elabora balances y cuentas de pérdidas y ganancias para depositar en el registro mercantil.",
+        "d": "Es muy útil para los accionistas."
+      },
+      "explicacion": "La Contabilidad de Costes (o analítica) es una herramienta interna diseñada para la toma de decisiones de la dirección, por lo que su principal utilidad recae en los gestores. A diferencia de la financiera, no está sujeta a normativas externas rígidas. Ejemplo práctico: Un gerente de producción utiliza la contabilidad de costes para decidir si es más rentable fabricar una pieza internamente o comprarla a un proveedor externo, basándose en el coste detallado de materiales y mano de obra.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 2,
+      "pregunta": "La Contabilidad Financiera:",
+      "opciones": {
+        "a": "Es obligatoria y tiene unas normas muy rígidas.",
+        "b": "Es muy poco útil para los accionistas.",
+        "c": "Es lo mismo que la Contabilidad Analítica.",
+        "d": "Solo es válida para empresas industriales."
+      },
+      "explicacion": "La Contabilidad Financiera está regulada por normativas legales (como el Plan General Contable) para garantizar que la información sea estandarizada, comparable y fiable para terceros (Estado, inversores, bancos). Ejemplo práctico: Cuando una empresa presenta sus cuentas anuales en el Registro Mercantil, debe seguir estrictamente las normas de valoración y formatos establecidos por la ley para que cualquier inversor pueda interpretar su salud financiera correctamente.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 3,
+      "pregunta": "La Contabilidad Analítica:",
+      "opciones": {
+        "a": "Al igual que la Contabilidad Financiera, tiene unas normas muy rígidas.",
+        "b": "Es muy útil solo para los accionistas.",
+        "c": "Elabora balances y cuentas de pérdidas y ganancias para depositar en el Registro Mercantil.",
+        "d": "Es lo mismo que la Contabilidad de Costes."
+      },
+      "explicacion": "En el ámbito empresarial y académico, los términos Contabilidad Analítica y Contabilidad de Costes se utilizan como sinónimos. Ambas se refieren a la rama de la contabilidad que analiza internamente los costes de los procesos, productos o servicios. Ejemplo práctico: Si el departamento financiero habla de implementar un sistema de contabilidad analítica para rastrear los gastos por departamento, es exactamente lo mismo que decir que van a implementar un sistema de contabilidad de costes.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 4,
+      "pregunta": "La Contabilidad Financiera:",
+      "opciones": {
+        "a": "Se denomina también Contabilidad de Costes.",
+        "b": "Se denomina también Contabilidad Externa o General.",
+        "c": "Se denomina también Contabilidad Interna.",
+        "d": "Es aquella que requiere datos operativos."
+      },
+      "explicacion": "La Contabilidad Financiera se conoce como Externa porque su objetivo principal es informar a agentes externos a la empresa (Hacienda, acreedores, accionistas) sobre la situación patrimonial y los resultados. También se le llama General porque abarca la totalidad de la empresa. Ejemplo práctico: Un banco que evalúa conceder un préstamo a una empresa solicitará los informes de su Contabilidad Externa (balances, cuenta de resultados) para analizar su solvencia global, no los informes internos de costes de cada producto.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 5,
+      "pregunta": "El controller:",
+      "opciones": {
+        "a": "Pertenece al departamento de marketing.",
+        "b": "Se involucra en la Contabilidad Analítica.",
+        "c": "No tiene nada que ver con la Contabilidad Analítica.",
+        "d": "Gestiona la tesorería de la empresa."
+      },
+      "explicacion": "El controller (o controlador de gestión) es el profesional responsable del control de gestión y de la contabilidad analítica o de costes. Su función es diseñar los sistemas de información interna y analizar las desviaciones para ayudar a la dirección. Ejemplo práctico: Si los costes de producción de una fábrica aumentan un 15% en un mes, el controller es quien analiza los datos de la contabilidad analítica para descubrir si el aumento se debe a un encarecimiento de la materia prima o a ineficiencias en la mano de obra, e informa a la gerencia.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 6,
+      "pregunta": "Indica cuáles son características de la Contabilidad Analítica:",
+      "opciones": {
+        "a": "Carácter interno; no sujeta a principios rígidos; elabora estados financieros.",
+        "b": "Carácter externo. No sujeta a principios rígidos.",
+        "c": "Carácter externo. Implica al tesorero Sujeta a la regulación mercantil.",
+        "d": "Carácter interno. Implica al controller."
+      },
+      "explicacion": "La Contabilidad Analítica es de uso estrictamente interno (para la toma de decisiones de la dirección) y su principal responsable o usuario experto es el controller de gestión. No elabora estados financieros oficiales ni tiene carácter externo. Ejemplo práctico: El controller de una cadena de restaurantes utiliza la contabilidad analítica (carácter interno) para determinar el margen de beneficio exacto de cada plato del menú, información que es confidencial y no se comparte con el público ni con el Registro Mercantil.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 7,
+      "pregunta": "La importancia de la Contabilidad Analítica:",
+      "opciones": {
+        "a": "Radica en las normas contables.",
+        "b": "Reside en el entorno de la empresa y su actividad.",
+        "c": "Es solo relevante para los accionistas.",
+        "d": "No tiene aplicación fuera del contexto financiero."
+      },
+      "explicacion": "La contabilidad analítica (o de costes) es una herramienta interna diseñada para la toma de decisiones de la dirección. A diferencia de la contabilidad financiera, no está estrictamente regulada por normas externas, sino que se adapta a las necesidades específicas, el entorno y la actividad de cada empresa. Ejemplo práctico: Una fábrica de muebles y una empresa de software usarán sistemas de contabilidad analítica muy distintos porque sus actividades y entornos de costes (materiales físicos vs. horas de desarrollo) son completamente diferentes.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 8,
+      "pregunta": "La empresa está tratando de decidir sobre si cerrar o no una línea de producción. Para ello necesitará la contabilidad:",
+      "opciones": {
+        "a": "Analítica.",
+        "b": "Sobre todo analítica, pero también financiera.",
+        "c": "Financiera fundamentalmente.",
+        "d": "Sobre todo financiera, pero también analítica."
+      },
+      "explicacion": "Para tomar una decisión estratégica como cerrar una línea de producción, la principal fuente de información es la contabilidad analítica, ya que proporciona datos detallados sobre los costes fijos, variables y márgenes de contribución específicos de esa línea. Sin embargo, también se necesita la contabilidad financiera para evaluar el impacto global en los estados financieros de la empresa (por ejemplo, provisiones por despido, deterioro de activos). Ejemplo práctico: Si una empresa de ropa quiere cerrar su línea de 'ropa de invierno', usará la contabilidad analítica para ver si esa línea pierde dinero operativamente, pero mirará la financiera para saber cómo afectará la venta de la maquinaria a su balance general.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 9,
+      "pregunta": "El monismo radical puro sirve para:",
+      "opciones": {
+        "a": "Relacionar las contabilidades financiera y analítica.",
+        "b": "Aplicar la contabilidad financiera.",
+        "c": "Entender las aplicaciones de la contabilidad analítica.",
+        "d": "Analizar los estados financieros."
+      },
+      "explicacion": "En la organización contable, el 'monismo' es un sistema donde la contabilidad financiera y la contabilidad analítica (de costes) están integradas en un único sistema de cuentas. El monismo radical puro busca una conexión total y continua entre ambas, registrando los movimientos internos y externos en un mismo plan de cuentas. Ejemplo práctico: Imagina un único gran libro de registro donde, al comprar madera (gasto financiero), automáticamente se clasifica y asigna al coste de fabricación de una mesa específica (coste analítico) sin necesidad de llevar dos sistemas de software separados.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 10,
+      "pregunta": "El Plan General Contable se aplica a:",
+      "opciones": {
+        "a": "La contabilidad analítica.",
+        "b": "Ambas contabilidades por igual.",
+        "c": "Financiera fundamentalmente, pero también analítica.",
+        "d": "La contabilidad financiera."
+      },
+      "explicacion": "El Plan General Contable (PGC) es el texto legal que regula la contabilidad de las empresas en España (y normativas similares en otros países), y su ámbito de aplicación es estrictamente la contabilidad financiera (externa). Su objetivo es homogeneizar la información que se presenta a terceros (Estado, inversores, bancos). La contabilidad analítica es interna y libre, no está sujeta al PGC. Ejemplo práctico: Cuando una empresa presenta sus cuentas anuales en el Registro Mercantil para pagar impuestos o pedir un préstamo, debe seguir las reglas del PGC (contabilidad financiera). Pero si el gerente quiere saber cuánto cuesta fabricar un tornillo, puede calcularlo como prefiera sin seguir el PGC (contabilidad analítica).",
+      "respuesta_correcta": "d"
+    }
+  ]
+}
