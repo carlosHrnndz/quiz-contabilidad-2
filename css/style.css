@@ -895,6 +895,40 @@ body.light-theme .explanation-container {
     border-color: var(--accent-color);
 }
 
+body.light-theme .app-container {
+    background: none;
+    /* Remove the dark radial gradient */
+}
+
+body.light-theme .nav-btn.secondary {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+body.light-theme .btn-count {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .option-card {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+body.light-theme .option-card:hover {
+    background: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+body.light-theme .nav-btn.wrong-btn {
+    background: rgba(220, 38, 38, 0.1);
+    border: 1px solid rgba(220, 38, 38, 0.2);
+}
+
+body.light-theme .nav-btn.wrong-btn:hover {
+    background: rgba(220, 38, 38, 0.15);
+}
+
 .splash-footer {
     margin-top: 30px;
     padding-bottom: 20px;
