@@ -240,17 +240,7 @@ class QuizApp {
             this.ui.btnResetProgress.addEventListener('click', () => this.resetProgress());
         }
 
-        // Ver Marcadas desde el splash
-        if (this.ui.btnViewMarked) {
-            this.ui.btnViewMarked.addEventListener('click', async () => {
-                const inputCode = this.ui.sessionCodeInput.value.trim().toLowerCase();
-                if (inputCode && inputCode !== this.sessionCode) {
-                    this.saveSessionCode();
-                    await this.loadProgress();
-                }
-                this.showMarkedFromSplash();
-            });
-        }
+        // Ranking / Leaderboard (opens directly from splash)
         if (this.ui.btnRanking) {
             this.ui.btnRanking.addEventListener('click', () => this.openLeaderboard());
         }
@@ -532,7 +522,8 @@ class QuizApp {
             'quiz': 'Responde preguntas y obtén tu puntuación.',
             'exam': '40 preguntas aleatorias. Simulación real.',
             'smart': 'Repaso inteligente de tus fallos más frecuentes.',
-            'study': 'Ve directamente la respuesta correcta.'
+            'study': 'Ve directamente la respuesta correcta.',
+            'marked': 'Repasa únicamente tus preguntas marcadas con 📌.'
         };
         this.ui.modeDescription.textContent = d[mode] || d['quiz'];
     }
@@ -581,8 +572,24 @@ class QuizApp {
     startQuiz(resume = false) {
         this.saveSessionCode();
         const md = this.getModeData();
-        let filtered = this.allQuestions.filter(q => this.selectedUnits.has(Number(q.unidad)));
-        if (filtered.length === 0) { alert('Selecciona al menos una unidad.'); return; }
+        let filtered;
+
+        if (this.mode === 'marked') {
+            // Use bookmarked question IDs from quiz mode (marks are always quiz-mode marks)
+            const markedIds = new Set(this.modeData.quiz.pendingQuestions || []);
+            if (markedIds.size === 0) {
+                alert('⚠️ No tienes preguntas marcadas aún. Marca preguntas con el botón 📌 durante el quiz.');
+                return;
+            }
+            filtered = this.allQuestions.filter(q => markedIds.has(q.id));
+            if (filtered.length === 0) {
+                alert('⚠️ Las preguntas marcadas no están en los datos cargados.');
+                return;
+            }
+        } else {
+            filtered = this.allQuestions.filter(q => this.selectedUnits.has(Number(q.unidad)));
+            if (filtered.length === 0) { alert('Selecciona al menos una unidad.'); return; }
+        }
 
         if (this.mode === 'exam') {
             if (!resume) {
@@ -643,7 +650,7 @@ class QuizApp {
 
         this.ui.splashScreen.classList.add('hidden');
         this.ui.quizApp.classList.remove('hidden');
-        const icons = { quiz: '🎓', exam: '⏱️', smart: '🧠', study: '📖' };
+        const icons = { quiz: '🎓', exam: '⏱️', smart: '🧠', study: '📖', marked: '📌' };
         this.ui.modeBtn.innerText = icons[this.mode] || '🎓';
 
         // Show/hide Nuevo Examen button
@@ -896,7 +903,7 @@ class QuizApp {
             const newMode = this.mode === 'study' ? 'quiz' : 'study';
             this.setMode(newMode);
             this.getModeData().currentQuestionIndex = currentIdx; // restore in new mode
-            const icons = { quiz: '🎓', exam: '⏱️', smart: '🧠', study: '📖' };
+            const icons = { quiz: '🎓', exam: '⏱️', smart: '🧠', study: '📖', marked: '📌' };
             this.ui.modeBtn.innerText = icons[this.mode] || '🎓';
             this.renderQuestion();
         });
