@@ -844,8 +844,10 @@ class QuizApp {
         }
 
         this.ui.modeBtn.addEventListener('click', () => {
+            const currentIdx = this.getModeData().currentQuestionIndex || 0; // save position
             const newMode = this.mode === 'study' ? 'quiz' : 'study';
             this.setMode(newMode);
+            this.getModeData().currentQuestionIndex = currentIdx; // restore in new mode
             const icons = { quiz: '🎓', exam: '⏱️', smart: '🧠', study: '📖' };
             this.ui.modeBtn.innerText = icons[this.mode] || '🎓';
             this.renderQuestion();
