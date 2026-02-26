@@ -103,6 +103,7 @@ class QuizApp {
             btnWrong: document.getElementById('btn-wrong'),
             pendingCount: document.getElementById('pending-count'),
             wrongCount: document.getElementById('wrong-count'),
+            btnViewMarked: document.getElementById('btn-view-marked'),
             questionArea: document.querySelector('.question-area'),
 
             // Modals
@@ -237,7 +238,17 @@ class QuizApp {
             this.ui.btnResetProgress.addEventListener('click', () => this.resetProgress());
         }
 
-        // Ranking / Leaderboard (opens directly from splash)
+        // Ver Marcadas desde el splash
+        if (this.ui.btnViewMarked) {
+            this.ui.btnViewMarked.addEventListener('click', async () => {
+                const inputCode = this.ui.sessionCodeInput.value.trim().toLowerCase();
+                if (inputCode && inputCode !== this.sessionCode) {
+                    this.saveSessionCode();
+                    await this.loadProgress();
+                }
+                this.showMarkedFromSplash();
+            });
+        }
         if (this.ui.btnRanking) {
             this.ui.btnRanking.addEventListener('click', () => this.openLeaderboard());
         }
@@ -874,19 +885,28 @@ class QuizApp {
             this.showSplash();
         });
 
-        const togglePending = () => {
+        // 📝 Single click = toggle mark; long-press / right-click = open list
+        this.ui.btnPending.addEventListener('click', () => {
             const md = this.getModeData();
             const idx = md.currentQuestionIndex || 0;
             const q = this.questions[idx];
             if (!q) return;
             const pending = new Set(md.pendingQuestions || []);
-            if (pending.has(q.id)) pending.delete(q.id);
-            else pending.add(q.id);
+            if (pending.has(q.id)) {
+                pending.delete(q.id);
+                this.ui.btnPending.title = 'Marcar pregunta';
+            } else {
+                pending.add(q.id);
+                this.ui.btnPending.title = 'Desmarcar pregunta';
+            }
             md.pendingQuestions = Array.from(pending);
+            this.saveProgress();
             this.renderQuestion();
-        };
-        this.ui.btnPending.addEventListener('contextmenu', (e) => { e.preventDefault(); togglePending(); });
-        this.ui.btnPending.addEventListener('touchstart', () => { this.longPressTimer = setTimeout(togglePending, 500); });
+        });
+
+        const showMarkedList = () => this.showPendingList();
+        this.ui.btnPending.addEventListener('contextmenu', (e) => { e.preventDefault(); showMarkedList(); });
+        this.ui.btnPending.addEventListener('touchstart', () => { this.longPressTimer = setTimeout(showMarkedList, 600); });
         this.ui.btnPending.addEventListener('touchend', () => clearTimeout(this.longPressTimer));
 
         document.addEventListener('keydown', (e) => {
@@ -950,11 +970,45 @@ class QuizApp {
     showPendingList() {
         const md = this.getModeData();
         const pendingIds = new Set(md.pendingQuestions || []);
-        // Map q.id strings back to array indices for current question list
         const indices = [];
         this.questions.forEach((q, idx) => { if (pendingIds.has(q.id)) indices.push(idx); });
         indices.sort((a, b) => a - b);
+        if (indices.length === 0) { alert('No tienes preguntas marcadas en este modo.'); return; }
         this.showList(indices, this.ui.modalPending, this.ui.pendingList);
+    }
+
+    showMarkedFromSplash() {
+        // Called from splash — uses allQuestions as reference since quiz may not be active
+        const md = this.getModeData('quiz'); // show quiz marks by default from splash
+        const pendingIds = new Set(md.pendingQuestions || []);
+        if (pendingIds.size === 0) { alert('No tienes preguntas marcadas aún.'); return; }
+
+        const container = this.ui.pendingList;
+        container.innerHTML = '';
+        this.allQuestions.forEach(q => {
+            if (!pendingIds.has(q.id)) return;
+            const d = document.createElement('div');
+            d.className = 'pending-item';
+            d.style.display = 'flex';
+            d.style.justifyContent = 'space-between';
+            d.style.alignItems = 'center';
+            d.innerHTML = `
+                <span>U${q.unidad} · P${q.numero} — ${q.pregunta.substring(0, 50)}${q.pregunta.length > 50 ? '...' : ''}</span>
+                <button style="background:none;border:none;color:#e74c3c;cursor:pointer;font-size:1.1rem;" data-qid="${q.id}" title="Quitar marca">✕</button>
+            `;
+            d.querySelector('button').addEventListener('click', (e) => {
+                e.stopPropagation();
+                const qid = e.currentTarget.dataset.qid;
+                const p = new Set(md.pendingQuestions || []);
+                p.delete(qid);
+                md.pendingQuestions = Array.from(p);
+                this.saveProgress();
+                // refresh list
+                this.showMarkedFromSplash();
+            });
+            container.appendChild(d);
+        });
+        this.ui.modalPending.classList.remove('hidden');
     }
     showWrongList() { this.showList(this.getWrongAnswerIndices(), this.ui.modalWrong, this.ui.wrongList); }
 
