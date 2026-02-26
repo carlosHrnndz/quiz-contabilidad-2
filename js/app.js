@@ -99,7 +99,9 @@ class QuizApp {
             explanationText: document.getElementById('explanation-text'),
             btnPrev: document.getElementById('btn-prev'),
             btnNext: document.getElementById('btn-next'),
-            btnPending: document.getElementById('btn-pending'),
+            btnMark: document.getElementById('btn-mark'),
+            btnListMarked: document.getElementById('btn-list-marked'),
+            btnPending: document.getElementById('btn-list-marked'), // alias for showPendingList calls
             btnWrong: document.getElementById('btn-wrong'),
             pendingCount: document.getElementById('pending-count'),
             wrongCount: document.getElementById('wrong-count'),
@@ -685,8 +687,13 @@ class QuizApp {
         if (imgEl) imgEl.onclick = () => this.openZoom(`data/img/${q.imagen}`);
 
         const pendingSet = new Set(md.pendingQuestions || []);
-        const isPending = pendingSet.has(q.id);
-        this.ui.btnPending.style.background = isPending ? 'rgba(255, 167, 38, 0.3)' : '';
+        const isMarked = pendingSet.has(q.id);
+        // Highlight the mark button if this question is bookmarked
+        if (this.ui.btnMark) {
+            this.ui.btnMark.style.background = isMarked ? 'rgba(255, 193, 7, 0.35)' : '';
+            this.ui.btnMark.style.borderColor = isMarked ? '#ffc107' : '';
+            this.ui.btnMark.title = isMarked ? 'Desmarcar pregunta 📌' : 'Marcar pregunta 📌';
+        }
         this.ui.pendingCount.innerText = pendingSet.size || '';
         this.ui.wrongCount.innerText = this.getWrongAnswerIndices().length || '';
 
@@ -857,6 +864,27 @@ class QuizApp {
         this.ui.btnWrong.addEventListener('click', () => this.showWrongList());
         this.ui.btnHome.addEventListener('click', () => this.showSplash());
 
+        // 📌 Mark button — toggle bookmark on current question
+        if (this.ui.btnMark) {
+            this.ui.btnMark.addEventListener('click', () => {
+                const md = this.getModeData();
+                const idx = md.currentQuestionIndex || 0;
+                const q = this.questions[idx];
+                if (!q) return;
+                const pending = new Set(md.pendingQuestions || []);
+                if (pending.has(q.id)) pending.delete(q.id);
+                else pending.add(q.id);
+                md.pendingQuestions = Array.from(pending);
+                this.saveProgress();
+                this.renderQuestion(); // re-render to update highlight
+            });
+        }
+
+        // 📝 List button — open marked questions list
+        if (this.ui.btnListMarked) {
+            this.ui.btnListMarked.addEventListener('click', () => this.showPendingList());
+        }
+
         // Nuevo Examen button (exam mode only)
         if (this.ui.btnNewExam) {
             this.ui.btnNewExam.addEventListener('click', () => this.newExam());
@@ -885,29 +913,7 @@ class QuizApp {
             this.showSplash();
         });
 
-        // 📝 Single click = toggle mark; long-press / right-click = open list
-        this.ui.btnPending.addEventListener('click', () => {
-            const md = this.getModeData();
-            const idx = md.currentQuestionIndex || 0;
-            const q = this.questions[idx];
-            if (!q) return;
-            const pending = new Set(md.pendingQuestions || []);
-            if (pending.has(q.id)) {
-                pending.delete(q.id);
-                this.ui.btnPending.title = 'Marcar pregunta';
-            } else {
-                pending.add(q.id);
-                this.ui.btnPending.title = 'Desmarcar pregunta';
-            }
-            md.pendingQuestions = Array.from(pending);
-            this.saveProgress();
-            this.renderQuestion();
-        });
 
-        const showMarkedList = () => this.showPendingList();
-        this.ui.btnPending.addEventListener('contextmenu', (e) => { e.preventDefault(); showMarkedList(); });
-        this.ui.btnPending.addEventListener('touchstart', () => { this.longPressTimer = setTimeout(showMarkedList, 600); });
-        this.ui.btnPending.addEventListener('touchend', () => clearTimeout(this.longPressTimer));
 
         document.addEventListener('keydown', (e) => {
             if (!this.ui.splashScreen.classList.contains('hidden')) return;
