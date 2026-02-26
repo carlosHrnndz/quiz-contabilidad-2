@@ -50,8 +50,6 @@ class QuizApp {
             quizApp: document.getElementById('quiz-app'),
             sessionCodeInput: document.getElementById('session-code'),
             btnLoadSession: document.getElementById('btn-load-session'),
-            btnExport: document.getElementById('btn-export'),
-            btnImport: document.getElementById('btn-import'),
 
             // Header Buttons
             btnTheme: document.getElementById('btn-theme'),
@@ -65,7 +63,6 @@ class QuizApp {
             unitGrid: document.getElementById('unit-grid'),
             btnSelectAll: document.getElementById('btn-select-all'),
             btnSelectNone: document.getElementById('btn-select-none'),
-            btnStart: document.getElementById('btn-start'),
             selectedCount: document.getElementById('selected-count'),
 
             // Stats
@@ -205,9 +202,12 @@ class QuizApp {
 
         this.ui.searchInput.addEventListener('input', (e) => this.handleSearch(e.target.value));
 
-        // ... existing listeners ...
+        // Mode buttons — each starts the quiz directly
         this.ui.modeBtns.forEach(btn => {
-            btn.addEventListener('click', () => this.setMode(btn.dataset.mode));
+            btn.addEventListener('click', () => {
+                this.setMode(btn.dataset.mode);
+                this.startQuiz(this.resumeAvailable);
+            });
         });
 
         const units = Object.keys(this.unitQuestionCounts).map(Number).sort((a, b) => a - b);
@@ -221,9 +221,7 @@ class QuizApp {
             this.selectedUnits.add(u);
         });
 
-        this.ui.btnStart.addEventListener('click', () => {
-            this.startQuiz(this.resumeAvailable);
-        });
+
         /* Smart Stats Button: Auto-load if code is typed but not loaded */
         this.ui.btnStats.addEventListener('click', async () => {
             const inputCode = this.ui.sessionCodeInput.value.trim().toLowerCase();
@@ -552,8 +550,6 @@ class QuizApp {
         let count = 0;
         this.selectedUnits.forEach(u => count += this.unitQuestionCounts[u] || 0);
         this.ui.selectedCount.textContent = `Preguntas seleccionadas: ${count}`;
-        this.ui.btnStart.disabled = count === 0;
-        this.ui.btnStart.style.opacity = count === 0 ? '0.5' : '1';
     }
 
     showSplash() {
