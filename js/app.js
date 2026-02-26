@@ -664,7 +664,7 @@ class QuizApp {
         if (imgEl) imgEl.onclick = () => this.openZoom(`data/img/${q.imagen}`);
 
         const pendingSet = new Set(md.pendingQuestions || []);
-        const isPending = pendingSet.has(idx);
+        const isPending = pendingSet.has(q.id);
         this.ui.btnPending.style.background = isPending ? 'rgba(255, 167, 38, 0.3)' : '';
         this.ui.pendingCount.innerText = pendingSet.size || '';
         this.ui.wrongCount.innerText = this.getWrongAnswerIndices().length || '';
@@ -672,7 +672,7 @@ class QuizApp {
         this.ui.optionsContainer.innerHTML = '';
         this.ui.feedbackArea.className = 'feedback-area hidden';
 
-        const userAnswer = (md.userAnswers || {})[idx];
+        const userAnswer = (md.userAnswers || {})[q.id];
         const showCorrect = this.mode === 'study' || !!userAnswer;
 
         Object.entries(q.opciones).forEach(([key, text]) => {
@@ -721,11 +721,11 @@ class QuizApp {
     handleOptionSelect(key) {
         const md = this.getModeData();
         const idx = md.currentQuestionIndex || 0;
-        if ((md.userAnswers || {})[idx]) return; // already answered
         const q = this.questions[idx];
+        if ((md.userAnswers || {})[q.id]) return; // already answered
         const isCorrect = key.toLowerCase() === q.respuesta_correcta;
         if (!md.userAnswers) md.userAnswers = {};
-        md.userAnswers[idx] = key.toLowerCase();
+        md.userAnswers[q.id] = key.toLowerCase(); // keyed by stable question ID
         if (isCorrect) md.score = (md.score || 0) + 1;
         // Stats only tracked in Quiz mode
         if (this.mode === 'quiz') this.updateGlobalStats(q, isCorrect);
@@ -866,9 +866,11 @@ class QuizApp {
         const togglePending = () => {
             const md = this.getModeData();
             const idx = md.currentQuestionIndex || 0;
+            const q = this.questions[idx];
+            if (!q) return;
             const pending = new Set(md.pendingQuestions || []);
-            if (pending.has(idx)) pending.delete(idx);
-            else pending.add(idx);
+            if (pending.has(q.id)) pending.delete(q.id);
+            else pending.add(q.id);
             md.pendingQuestions = Array.from(pending);
             this.renderQuestion();
         };
@@ -909,10 +911,10 @@ class QuizApp {
         const md = this.getModeData();
         const answers = md.userAnswers || {};
         const ids = [];
-        for (const [idx, ans] of Object.entries(answers)) {
-            const q = this.questions[Number(idx)];
-            if (q && ans !== q.respuesta_correcta) ids.push(Number(idx));
-        }
+        this.questions.forEach((q, idx) => {
+            const ans = answers[q.id];
+            if (ans && ans !== q.respuesta_correcta) ids.push(idx);
+        });
         return ids.sort((a, b) => a - b);
     }
 
@@ -936,8 +938,12 @@ class QuizApp {
 
     showPendingList() {
         const md = this.getModeData();
-        const pending = (md.pendingQuestions || []).slice().sort((a, b) => a - b);
-        this.showList(pending, this.ui.modalPending, this.ui.pendingList);
+        const pendingIds = new Set(md.pendingQuestions || []);
+        // Map q.id strings back to array indices for current question list
+        const indices = [];
+        this.questions.forEach((q, idx) => { if (pendingIds.has(q.id)) indices.push(idx); });
+        indices.sort((a, b) => a - b);
+        this.showList(indices, this.ui.modalPending, this.ui.pendingList);
     }
     showWrongList() { this.showList(this.getWrongAnswerIndices(), this.ui.modalWrong, this.ui.wrongList); }
 
@@ -945,10 +951,11 @@ class QuizApp {
         const md = this.getModeData();
         const total = this.questions.length;
         const correct = md.score || 0;
+        const answered = Object.keys(md.userAnswers || {}).length;
         const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
 
         this.ui.statCorrect.innerText = correct;
-        this.ui.statWrong.innerText = Object.keys(md.userAnswers || {}).length - correct;
+        this.ui.statWrong.innerText = answered - correct;
         this.ui.statScore.innerText = percent + '%';
         this.ui.modalResults.classList.remove('hidden');
         this.ui.btnReviewWrong.style.display = (this.getWrongAnswerIndices().length > 0) ? 'block' : 'none';
