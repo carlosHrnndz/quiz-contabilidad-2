@@ -18,30 +18,31 @@ class QuizApp {
     constructor() {
         this.allQuestions = [];
         this.questions = [];
-        this.currentQuestionIndex = 0;
-        this.userAnswers = {};
-        this.pendingQuestions = new Set();
         this.mode = 'quiz';
-        this.score = 0;
         this.selectedUnits = new Set();
         this.unitQuestionCounts = {};
         this.sessionCode = '';
         this.firebaseInitialized = false;
         this.resumeAvailable = false;
 
-        // V5 Global Stats
-        this.globalStats = {
-            totalAttempts: 0,
-            totalCorrect: 0,
-            unitStats: {},
-            questionHistory: {},
-            srsData: {} // V7: SRS { id: { interval: 0, repetitions: 0, ef: 2.5, nextReview: 0 } }
+        // Per-mode data — each mode tracks its own progress independently
+        this.modeData = {
+            quiz: {
+                userAnswers: {}, score: 0, currentQuestionIndex: 0, selectedUnits: [], pendingQuestions: [],
+                globalStats: { totalAttempts: 0, totalCorrect: 0, unitStats: {}, questionHistory: {}, srsData: {} }
+            },
+            exam: { userAnswers: {}, score: 0, currentQuestionIndex: 0, selectedUnits: [], pendingQuestions: [] },
+            smart: { userAnswers: {}, score: 0, currentQuestionIndex: 0, selectedUnits: [], pendingQuestions: [] },
+            study: { currentQuestionIndex: 0, selectedUnits: [] }
         };
 
         // Swipe vars
         this.touchStartX = 0;
         this.touchEndX = 0;
         this.longPressTimer = null;
+
+        // Convenience getters (always point to current mode's data)
+        // Use getModeData() / getQuizStats() in methods instead.
 
         this.ui = {
             // Splash
@@ -88,6 +89,7 @@ class QuizApp {
             scoreVal: document.getElementById('score-val'),
             modeBtn: document.getElementById('btn-mode-toggle'),
             btnRestart: document.getElementById('btn-restart'),
+            btnNewExam: document.getElementById('btn-new-exam'),
             btnHome: document.getElementById('btn-home'),
             progressBar: document.getElementById('progress-fill'),
             questionText: document.getElementById('question-text'),
@@ -314,6 +316,27 @@ class QuizApp {
         } catch (e) { console.warn(e); }
     }
 
+    // =====================
+    // Per-mode helpers
+    // =====================
+    getModeData(mode) {
+        mode = mode || this.mode;
+        if (!this.modeData[mode]) {
+            this.modeData[mode] = { userAnswers: {}, score: 0, currentQuestionIndex: 0, selectedUnits: [], pendingQuestions: [] };
+        }
+        return this.modeData[mode];
+    }
+
+    getQuizStats() {
+        if (!this.modeData.quiz.globalStats) {
+            this.modeData.quiz.globalStats = { totalAttempts: 0, totalCorrect: 0, unitStats: {}, questionHistory: {}, srsData: {} };
+        }
+        return this.modeData.quiz.globalStats;
+    }
+
+    // =====================
+    // Firebase / Storage
+    // =====================
     getFirebaseRef() {
         if (!this.firebaseInitialized || !this.sessionCode) return null;
         return firebase.database().ref(`sessions_conta2/${this.sessionCode}`);
@@ -322,17 +345,36 @@ class QuizApp {
     async syncToCloud() {
         const ref = this.getFirebaseRef();
         if (!ref) return;
-        const data = {
-            userAnswers: this.userAnswers,
-            pendingQuestions: Array.from(this.pendingQuestions),
-            currentQuestionIndex: this.currentQuestionIndex,
-            score: this.score,
-            mode: this.mode,
-            selectedUnits: Array.from(this.selectedUnits),
-            globalStats: this.globalStats,
-            timestamp: Date.now()
+        // Serialize pendingQuestions (Sets) before saving
+        const serialized = this._serializeModeData();
+        try { await ref.set({ modeData: serialized, timestamp: Date.now() }); } catch (e) { }
+    }
+
+    _serializeModeData() {
+        const out = {};
+        for (const [mode, data] of Object.entries(this.modeData)) {
+            out[mode] = { ...data, pendingQuestions: Array.from(data.pendingQuestions || []) };
+        }
+        return out;
+    }
+
+    _deserializeModeData(raw) {
+        const defaults = {
+            quiz: {
+                userAnswers: {}, score: 0, currentQuestionIndex: 0, selectedUnits: [], pendingQuestions: [],
+                globalStats: { totalAttempts: 0, totalCorrect: 0, unitStats: {}, questionHistory: {}, srsData: {} }
+            },
+            exam: { userAnswers: {}, score: 0, currentQuestionIndex: 0, selectedUnits: [], pendingQuestions: [] },
+            smart: { userAnswers: {}, score: 0, currentQuestionIndex: 0, selectedUnits: [], pendingQuestions: [] },
+            study: { currentQuestionIndex: 0, selectedUnits: [] }
         };
-        try { await ref.set(data); } catch (e) { }
+        for (const mode of Object.keys(defaults)) {
+            if (raw[mode]) {
+                defaults[mode] = { ...defaults[mode], ...raw[mode] };
+                defaults[mode].pendingQuestions = raw[mode].pendingQuestions || [];
+            }
+        }
+        return defaults;
     }
 
     async loadFromCloud() {
@@ -359,13 +401,24 @@ class QuizApp {
     }
 
     applyData(data) {
-        this.userAnswers = data.userAnswers || {};
-        this.pendingQuestions = new Set(data.pendingQuestions || []);
-        this.currentQuestionIndex = data.currentQuestionIndex || 0;
-        this.score = data.score || 0;
-        if (data.mode) this.setMode(data.mode);
-        if (data.selectedUnits) this.selectedUnits = new Set(data.selectedUnits);
-        if (data.globalStats) this.globalStats = data.globalStats;
+        // Support both new format (modeData) and legacy flat format
+        if (data.modeData) {
+            this.modeData = this._deserializeModeData(data.modeData);
+        } else if (data.userAnswers !== undefined) {
+            // Legacy: migrate flat data into quiz mode
+            this.modeData.quiz.userAnswers = data.userAnswers || {};
+            this.modeData.quiz.score = data.score || 0;
+            this.modeData.quiz.currentQuestionIndex = data.currentQuestionIndex || 0;
+            this.modeData.quiz.pendingQuestions = data.pendingQuestions || [];
+            if (data.selectedUnits) this.modeData.quiz.selectedUnits = data.selectedUnits;
+            if (data.globalStats) this.modeData.quiz.globalStats = data.globalStats;
+        }
+        // Restore selected units from active mode if available
+        const md = this.getModeData();
+        if (md.selectedUnits && md.selectedUnits.length > 0) {
+            this.selectedUnits = new Set(md.selectedUnits);
+        }
+        this.resumeAvailable = true;
     }
 
     loadStoredSessionCode() {
@@ -387,17 +440,8 @@ class QuizApp {
     }
 
     saveProgress() {
-        const data = {
-            userAnswers: this.userAnswers,
-            pendingQuestions: Array.from(this.pendingQuestions),
-            currentQuestionIndex: this.currentQuestionIndex,
-            score: this.score,
-            mode: this.mode,
-            selectedUnits: Array.from(this.selectedUnits),
-            globalStats: this.globalStats,
-            timestamp: Date.now()
-        };
-        localStorage.setItem(this.getStorageKey(), JSON.stringify(data));
+        const serialized = this._serializeModeData();
+        localStorage.setItem(this.getStorageKey(), JSON.stringify({ modeData: serialized, timestamp: Date.now() }));
         this.syncToCloud();
     }
 
@@ -406,16 +450,15 @@ class QuizApp {
             const cloud = await this.loadFromCloud();
             if (cloud) {
                 this.setupCloudListener();
-                this.resumeAvailable = true;
                 return true;
             }
         }
         const stored = localStorage.getItem(this.getStorageKey());
         if (stored) {
             this.applyData(JSON.parse(stored));
-            this.resumeAvailable = true;
             return true;
-        } return false;
+        }
+        return false;
     }
 
     async loadData() {
@@ -514,64 +557,65 @@ class QuizApp {
 
     startQuiz(resume = false) {
         this.saveSessionCode();
+        const md = this.getModeData();
         let filtered = this.allQuestions.filter(q => this.selectedUnits.has(Number(q.unidad)));
         if (filtered.length === 0) { alert('Selecciona al menos una unidad.'); return; }
 
         if (this.mode === 'exam') {
-            if (filtered.length > 40) {
-                const s = filtered.sort(() => 0.5 - Math.random());
-                filtered = s.slice(0, 40);
+            if (!resume) {
+                // Fresh exam: pick 40 random questions
+                const shuffled = filtered.sort(() => 0.5 - Math.random());
+                filtered = shuffled.slice(0, Math.min(40, shuffled.length));
+                filtered.sort((a, b) => a.unidad - b.unidad || a.numero - b.numero);
             }
-            filtered.sort((a, b) => a.unidad - b.unidad || a.numero - b.numero);
         } else if (this.mode === 'smart') {
-            // V7 SRS Logic
+            const stats = this.getQuizStats(); // Smart repaso uses quiz's SRS data
             const now = Date.now();
-            if (this.globalStats.srsData && Object.keys(this.globalStats.srsData).length > 0) {
-                // Filter items due for review
-                filtered = filtered.filter(q => {
-                    const srs = this.globalStats.srsData[q.id];
-                    return !srs || srs.nextReview <= now; // Include seen-and-due OR never-seen-in-srs (optional, but maybe stick to seen)
+            if (stats.srsData && Object.keys(stats.srsData).length > 0) {
+                let due = filtered.filter(q => {
+                    const srs = stats.srsData[q.id];
+                    return !srs || srs.nextReview <= now;
                 });
-
-                // If filtering reduced it too much (e.g. < 10), maybe add some new ones or oldest reviews?
-                // For now, let's keep it strict: only what needs review.
-                if (filtered.length === 0) {
-                    alert("¡No tienes repasos pendientes! Se añadirán preguntas difíciles.");
-                    // Fallback to old logic (most wrong)
-                    filtered = this.allQuestions.filter(q => this.selectedUnits.has(Number(q.unidad)));
+                if (due.length === 0) {
+                    alert('¡No tienes repasos pendientes! Usando preguntas difíciles.');
                 } else {
-                    // Sort by relative urgency (who is most overdue?)
-                    // overflow = now - nextReview. Bigger is more overdue.
+                    filtered = due;
                     filtered.sort((a, b) => {
-                        const sA = this.globalStats.srsData[a.id] ? (now - this.globalStats.srsData[a.id].nextReview) : 0;
-                        const sB = this.globalStats.srsData[b.id] ? (now - this.globalStats.srsData[b.id].nextReview) : 0;
+                        const sA = stats.srsData[a.id] ? (now - stats.srsData[a.id].nextReview) : 0;
+                        const sB = stats.srsData[b.id] ? (now - stats.srsData[b.id].nextReview) : 0;
                         return sB - sA;
                     });
                 }
             } else {
-                // Fallback V5 logic
+                // Fallback: most wrong in quiz mode
                 filtered.sort((a, b) => {
-                    const sA = this.globalStats.questionHistory[a.id] || { wrong: 0 };
-                    const sB = this.globalStats.questionHistory[b.id] || { wrong: 0 };
-                    return sB.wrong - sA.wrong;
+                    const sA = (stats.questionHistory[a.id] || { wrong: 0 }).wrong;
+                    const sB = (stats.questionHistory[b.id] || { wrong: 0 }).wrong;
+                    return sB - sA;
                 });
             }
-
             if (filtered.length > 50) filtered = filtered.slice(0, 50);
         }
 
         this.questions = filtered;
 
+        // Save selected units per mode
+        md.selectedUnits = Array.from(this.selectedUnits);
+
         if (!resume) {
-            this.currentQuestionIndex = 0;
-            this.userAnswers = {};
-            this.pendingQuestions.clear();
-            this.score = 0;
+            md.userAnswers = {};
+            md.score = 0;
+            md.currentQuestionIndex = 0;
+            md.pendingQuestions = [];
+            if (this.mode === 'exam') md._examQuestionIds = filtered.map(q => q.id);
         } else {
-            // Basic validation
-            if (this.currentQuestionIndex >= this.questions.length) {
-                this.currentQuestionIndex = 0;
+            // Restore exam question list from saved ids
+            if (this.mode === 'exam' && md._examQuestionIds) {
+                const idSet = new Set(md._examQuestionIds);
+                const ordered = md._examQuestionIds.map(id => this.allQuestions.find(q => q.id === id)).filter(Boolean);
+                if (ordered.length > 0) this.questions = ordered;
             }
+            if (md.currentQuestionIndex >= this.questions.length) md.currentQuestionIndex = 0;
         }
 
         this.ui.splashScreen.classList.add('hidden');
@@ -579,47 +623,57 @@ class QuizApp {
         const icons = { quiz: '🎓', exam: '⏱️', smart: '🧠', study: '📖' };
         this.ui.modeBtn.innerText = icons[this.mode] || '🎓';
 
+        // Show/hide Nuevo Examen button
+        if (this.ui.btnNewExam) {
+            this.ui.btnNewExam.style.display = this.mode === 'exam' ? '' : 'none';
+        }
+
         this.setupCloudListener();
-        // Defer render to next frame to prevent click-through from "Comenzar" button
         requestAnimationFrame(() => this.renderQuestion());
     }
 
+    newExam() {
+        if (!confirm('¿Generar un examen nuevo? Se perderá el progreso del examen actual.')) return;
+        // Reset only exam mode data
+        this.modeData.exam = { userAnswers: {}, score: 0, currentQuestionIndex: 0, selectedUnits: Array.from(this.selectedUnits), pendingQuestions: [] };
+        this.saveProgress();
+        this.startQuiz(false); // false = fresh start for exam
+    }
+
     renderQuestion() {
-        const q = this.questions[this.currentQuestionIndex];
+        const md = this.getModeData();
+        const idx = md.currentQuestionIndex || 0;
+        const q = this.questions[idx];
         if (!q) return;
 
-        this.ui.questionCounter.innerText = `${this.currentQuestionIndex + 1} / ${this.questions.length}`;
+        this.ui.questionCounter.innerText = `${idx + 1} / ${this.questions.length}`;
         this.ui.unitBadge.innerText = `Unidad ${q.unidad} · Pregunta ${q.numero}`;
-        this.ui.scoreVal.innerText = this.score;
-        this.ui.progressBar.style.width = `${((this.currentQuestionIndex + 1) / this.questions.length) * 100}%`;
+        this.ui.scoreVal.innerText = md.score || 0;
+        this.ui.progressBar.style.width = `${((idx + 1) / this.questions.length) * 100}%`;
 
-        // V7 Visuals
         let html = '';
         if (q.imagen) {
             html += `<div class="question-image-container">
-                <img src="data/img/${q.imagen}" class="question-image" onclick="new QuizApp().openZoom('data/img/${q.imagen}')" alt="Imagen pregunta">
+                <img src="data/img/${q.imagen}" class="question-image" alt="Imagen pregunta">
             </div>`;
         }
         html += q.pregunta;
         this.ui.questionText.innerHTML = html;
 
-        // Re-bind zoom click manually since onclick in template string might lose context or scope issues
-        // Better: Delegate or bind after HTML set
         const imgEl = this.ui.questionText.querySelector('.question-image');
-        if (imgEl) {
-            imgEl.onclick = () => this.openZoom(`data/img/${q.imagen}`);
-        }
+        if (imgEl) imgEl.onclick = () => this.openZoom(`data/img/${q.imagen}`);
 
-        const isPending = this.pendingQuestions.has(this.currentQuestionIndex);
+        const pendingSet = new Set(md.pendingQuestions || []);
+        const isPending = pendingSet.has(idx);
         this.ui.btnPending.style.background = isPending ? 'rgba(255, 167, 38, 0.3)' : '';
-        this.ui.pendingCount.innerText = this.pendingQuestions.size || '';
+        this.ui.pendingCount.innerText = pendingSet.size || '';
         this.ui.wrongCount.innerText = this.getWrongAnswerIndices().length || '';
 
         this.ui.optionsContainer.innerHTML = '';
         this.ui.feedbackArea.className = 'feedback-area hidden';
 
-        const userAnswer = this.userAnswers[this.currentQuestionIndex];
-        const showCorrect = this.mode === 'study' || (userAnswer);
+        const userAnswer = (md.userAnswers || {})[idx];
+        const showCorrect = this.mode === 'study' || !!userAnswer;
 
         Object.entries(q.opciones).forEach(([key, text]) => {
             const btn = document.createElement('div');
@@ -646,19 +700,17 @@ class QuizApp {
         if (userAnswer) {
             const isCorrect = userAnswer === q.respuesta_correcta;
             this.ui.feedbackArea.classList.remove('hidden');
-            this.ui.feedbackText.innerText = isCorrect ? "¡Correcto!" : `Incorrecto. Era ${q.respuesta_correcta.toUpperCase()}`;
+            this.ui.feedbackText.innerText = isCorrect ? '¡Correcto!' : `Incorrecto. Era ${q.respuesta_correcta.toUpperCase()}`;
             this.ui.feedbackArea.style.borderLeft = `4px solid ${isCorrect ? 'var(--correct-color)' : 'var(--incorrect-color)'}`;
         }
 
-        // Show explanation if available and appropriate
         if (showCorrect && q.explicacion) {
             this.ui.explanationContainer.classList.remove('hidden');
             this.ui.explanationText.innerText = q.explicacion;
-            // Ensure feedback area is visible if in Study mode (where userAnswer might be null)
             if (this.mode === 'study' && !userAnswer) {
                 this.ui.feedbackArea.classList.remove('hidden');
-                this.ui.feedbackText.innerText = "Modo Estudio: Ver explicación abajo";
-                this.ui.feedbackArea.style.borderLeft = "4px solid var(--accent-color)";
+                this.ui.feedbackText.innerText = 'Modo Estudio: Ver explicación abajo';
+                this.ui.feedbackArea.style.borderLeft = 'solid 4px var(--accent-color)';
             }
         } else {
             this.ui.explanationContainer.classList.add('hidden');
@@ -667,66 +719,63 @@ class QuizApp {
     }
 
     handleOptionSelect(key) {
-        if (this.userAnswers[this.currentQuestionIndex]) return;
-        const q = this.questions[this.currentQuestionIndex];
+        const md = this.getModeData();
+        const idx = md.currentQuestionIndex || 0;
+        if ((md.userAnswers || {})[idx]) return; // already answered
+        const q = this.questions[idx];
         const isCorrect = key.toLowerCase() === q.respuesta_correcta;
-        this.userAnswers[this.currentQuestionIndex] = key.toLowerCase();
-        if (isCorrect) this.score++;
-        this.updateGlobalStats(q, isCorrect);
+        if (!md.userAnswers) md.userAnswers = {};
+        md.userAnswers[idx] = key.toLowerCase();
+        if (isCorrect) md.score = (md.score || 0) + 1;
+        // Stats only tracked in Quiz mode
+        if (this.mode === 'quiz') this.updateGlobalStats(q, isCorrect);
         this.renderQuestion();
     }
 
     updateGlobalStats(q, isCorrect) {
-        if (!this.globalStats.unitStats) this.globalStats.unitStats = {};
-        if (!this.globalStats.questionHistory) this.globalStats.questionHistory = {};
-
-        this.globalStats.totalAttempts = (this.globalStats.totalAttempts || 0) + 1;
-        if (isCorrect) this.globalStats.totalCorrect = (this.globalStats.totalCorrect || 0) + 1;
+        // Only ever called for Quiz mode — writes to modeData.quiz.globalStats
+        const stats = this.getQuizStats();
+        stats.totalAttempts = (stats.totalAttempts || 0) + 1;
+        if (isCorrect) stats.totalCorrect = (stats.totalCorrect || 0) + 1;
 
         const u = q.unidad;
-        if (!this.globalStats.unitStats[u]) this.globalStats.unitStats[u] = { correct: 0, attempts: 0 };
-        this.globalStats.unitStats[u].attempts++;
-        if (isCorrect) this.globalStats.unitStats[u].correct++;
+        if (!stats.unitStats[u]) stats.unitStats[u] = { correct: 0, attempts: 0 };
+        stats.unitStats[u].attempts++;
+        if (isCorrect) stats.unitStats[u].correct++;
 
         const qid = q.id;
-        if (!this.globalStats.questionHistory[qid]) this.globalStats.questionHistory[qid] = { correct: 0, wrong: 0 };
-        if (isCorrect) this.globalStats.questionHistory[qid].correct++;
-        else this.globalStats.questionHistory[qid].wrong++;
+        if (!stats.questionHistory[qid]) stats.questionHistory[qid] = { correct: 0, wrong: 0 };
+        if (isCorrect) stats.questionHistory[qid].correct++;
+        else stats.questionHistory[qid].wrong++;
 
         this.updateSRS(qid, isCorrect);
         this.saveProgress();
     }
 
-    // V7: SM-2 Simplified Algorithm
+    // V7: SM-2 Simplified Algorithm — always in quiz's SRS data
     updateSRS(qid, isCorrect) {
-        if (!this.globalStats.srsData) this.globalStats.srsData = {};
-
-        let item = this.globalStats.srsData[qid] || { interval: 0, repetitions: 0, ef: 2.5, nextReview: 0 };
+        const stats = this.getQuizStats();
+        if (!stats.srsData) stats.srsData = {};
+        let item = stats.srsData[qid] || { interval: 0, repetitions: 0, ef: 2.5, nextReview: 0 };
 
         if (isCorrect) {
             if (item.repetitions === 0) item.interval = 1;
             else if (item.repetitions === 1) item.interval = 6;
             else item.interval = Math.round(item.interval * item.ef);
-
             item.repetitions++;
             if (item.ef < 2.5) item.ef += 0.1;
         } else {
             item.repetitions = 0;
-            item.interval = 0; // Reset to learn again
+            item.interval = 0;
             item.ef = Math.max(1.3, item.ef - 0.2);
         }
-
-        // Calculate next review in ms
-        const daysInMs = 24 * 60 * 60 * 1000;
-        // If interval is 0 (wrong), review now (or very soon, e.g. 1 min, but 0 keeps it in pool)
-        // If interval > 0, review in X days
-        item.nextReview = Date.now() + (item.interval * daysInMs);
-
-        this.globalStats.srsData[qid] = item;
+        item.nextReview = Date.now() + (item.interval * 24 * 60 * 60 * 1000);
+        stats.srsData[qid] = item;
     }
 
     showStats() {
-        const stats = this.globalStats;
+        // Stats are ONLY for Quiz mode
+        const stats = this.getQuizStats();
         const total = stats.totalAttempts || 0;
         const correct = stats.totalCorrect || 0;
         const acc = total > 0 ? Math.round((correct / total) * 100) : 0;
@@ -735,17 +784,16 @@ class QuizApp {
         this.ui.statTotalAnswered.innerText = total;
 
         const units = [];
-        if (stats.unitStats) {
-            for (const [u, data] of Object.entries(stats.unitStats)) {
-                const rate = data.attempts > 0 ? (data.correct / data.attempts) : 1;
-                units.push({ u, rate, attempts: data.attempts });
-            }
+        for (const [u, data] of Object.entries(stats.unitStats || {})) {
+            const rate = data.attempts > 0 ? (data.correct / data.attempts) : 1;
+            units.push({ u, rate, attempts: data.attempts });
         }
         units.sort((a, b) => a.rate - b.rate);
 
         this.ui.weakUnitsList.innerHTML = '';
-        if (units.length === 0) this.ui.weakUnitsList.innerHTML = '<div class="empty-state">No hay datos suficientes aún.</div>';
-        else {
+        if (units.length === 0) {
+            this.ui.weakUnitsList.innerHTML = '<div class="empty-state">No hay datos de Quiz aún.</div>';
+        } else {
             units.slice(0, 5).forEach(item => {
                 const p = Math.round(item.rate * 100);
                 const d = document.createElement('div');
@@ -758,34 +806,24 @@ class QuizApp {
     }
 
     resetProgress() {
-        if (!confirm('⚠️ ¿Estás seguro? Se borrarán TODAS las estadísticas y el progreso guardado.')) return;
+        if (!confirm('⚠️ ¿Estás seguro? Se borrarán TODAS las estadísticas y el progreso de todos los modos.')) return;
 
-        // Clear local storage
         localStorage.removeItem(this.getStorageKey());
 
-        // Clear Firebase if connected
         if (this.firebaseInitialized && this.sessionCode) {
-            try {
-                const ref = this.getFirebaseRef();
-                if (ref) ref.remove();
-            } catch (e) { console.warn('Error clearing Firebase:', e); }
+            try { const ref = this.getFirebaseRef(); if (ref) ref.remove(); } catch (e) { }
         }
 
-        // Reset in-memory state
-        this.globalStats = {
-            totalAttempts: 0,
-            totalCorrect: 0,
-            unitStats: {},
-            questionHistory: {},
-            srsData: {}
+        this.modeData = {
+            quiz: {
+                userAnswers: {}, score: 0, currentQuestionIndex: 0, selectedUnits: [], pendingQuestions: [],
+                globalStats: { totalAttempts: 0, totalCorrect: 0, unitStats: {}, questionHistory: {}, srsData: {} }
+            },
+            exam: { userAnswers: {}, score: 0, currentQuestionIndex: 0, selectedUnits: [], pendingQuestions: [] },
+            smart: { userAnswers: {}, score: 0, currentQuestionIndex: 0, selectedUnits: [], pendingQuestions: [] },
+            study: { currentQuestionIndex: 0, selectedUnits: [] }
         };
-        this.userAnswers = {};
-        this.pendingQuestions = new Set();
-        this.score = 0;
-        this.currentQuestionIndex = 0;
         this.resumeAvailable = false;
-
-        // Close stats modal and refresh splash
         this.ui.modalStats.classList.add('hidden');
         this.showSplash();
         alert('✅ Progreso eliminado correctamente.');
@@ -798,6 +836,12 @@ class QuizApp {
         this.ui.btnWrong.addEventListener('click', () => this.showWrongList());
         this.ui.btnRestart.addEventListener('click', () => this.showSplash());
         this.ui.btnHome.addEventListener('click', () => this.showSplash());
+
+        // Nuevo Examen button (exam mode only)
+        if (this.ui.btnNewExam) {
+            this.ui.btnNewExam.addEventListener('click', () => this.newExam());
+            this.ui.btnNewExam.style.display = 'none'; // hidden by default
+        }
 
         this.ui.modeBtn.addEventListener('click', () => {
             const newMode = this.mode === 'study' ? 'quiz' : 'study';
@@ -820,8 +864,12 @@ class QuizApp {
         });
 
         const togglePending = () => {
-            if (this.pendingQuestions.has(this.currentQuestionIndex)) this.pendingQuestions.delete(this.currentQuestionIndex);
-            else this.pendingQuestions.add(this.currentQuestionIndex);
+            const md = this.getModeData();
+            const idx = md.currentQuestionIndex || 0;
+            const pending = new Set(md.pendingQuestions || []);
+            if (pending.has(idx)) pending.delete(idx);
+            else pending.add(idx);
+            md.pendingQuestions = Array.from(pending);
             this.renderQuestion();
         };
         this.ui.btnPending.addEventListener('contextmenu', (e) => { e.preventDefault(); togglePending(); });
@@ -838,8 +886,10 @@ class QuizApp {
     }
 
     nextQuestion() {
-        if (this.currentQuestionIndex < this.questions.length - 1) {
-            this.currentQuestionIndex++;
+        const md = this.getModeData();
+        const idx = md.currentQuestionIndex || 0;
+        if (idx < this.questions.length - 1) {
+            md.currentQuestionIndex = idx + 1;
             this.renderQuestion();
         } else {
             this.showResults();
@@ -847,15 +897,19 @@ class QuizApp {
     }
 
     prevQuestion() {
-        if (this.currentQuestionIndex > 0) {
-            this.currentQuestionIndex--;
+        const md = this.getModeData();
+        const idx = md.currentQuestionIndex || 0;
+        if (idx > 0) {
+            md.currentQuestionIndex = idx - 1;
             this.renderQuestion();
         }
     }
 
     getWrongAnswerIndices() {
+        const md = this.getModeData();
+        const answers = md.userAnswers || {};
         const ids = [];
-        for (const [idx, ans] of Object.entries(this.userAnswers)) {
+        for (const [idx, ans] of Object.entries(answers)) {
             const q = this.questions[Number(idx)];
             if (q && ans !== q.respuesta_correcta) ids.push(Number(idx));
         }
@@ -863,7 +917,7 @@ class QuizApp {
     }
 
     showList(indices, modal, container) {
-        if (indices.length === 0) { alert("Lista vacía"); return; }
+        if (indices.length === 0) { alert('Lista vacía'); return; }
         container.innerHTML = '';
         indices.forEach(idx => {
             const q = this.questions[idx];
@@ -871,7 +925,7 @@ class QuizApp {
             d.className = 'pending-item';
             d.innerText = `U${q.unidad} · P${q.numero} - ${q.pregunta.substring(0, 40)}...`;
             d.onclick = () => {
-                this.currentQuestionIndex = idx;
+                this.getModeData().currentQuestionIndex = idx;
                 this.renderQuestion();
                 modal.classList.add('hidden');
             };
@@ -880,17 +934,22 @@ class QuizApp {
         modal.classList.remove('hidden');
     }
 
-    showPendingList() { this.showList(Array.from(this.pendingQuestions).sort((a, b) => a - b), this.ui.modalPending, this.ui.pendingList); }
+    showPendingList() {
+        const md = this.getModeData();
+        const pending = (md.pendingQuestions || []).slice().sort((a, b) => a - b);
+        this.showList(pending, this.ui.modalPending, this.ui.pendingList);
+    }
     showWrongList() { this.showList(this.getWrongAnswerIndices(), this.ui.modalWrong, this.ui.wrongList); }
 
     showResults() {
+        const md = this.getModeData();
         const total = this.questions.length;
-        const correct = this.score;
+        const correct = md.score || 0;
         const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
 
         this.ui.statCorrect.innerText = correct;
-        this.ui.statWrong.innerText = Object.keys(this.userAnswers).length - correct;
-        this.ui.statScore.innerText = percent + "%";
+        this.ui.statWrong.innerText = Object.keys(md.userAnswers || {}).length - correct;
+        this.ui.statScore.innerText = percent + '%';
         this.ui.modalResults.classList.remove('hidden');
         this.ui.btnReviewWrong.style.display = (this.getWrongAnswerIndices().length > 0) ? 'block' : 'none';
 
