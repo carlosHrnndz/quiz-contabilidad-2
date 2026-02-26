@@ -88,7 +88,6 @@ class QuizApp {
             unitBadge: document.getElementById('unit-badge'),
             scoreVal: document.getElementById('score-val'),
             modeBtn: document.getElementById('btn-mode-toggle'),
-            btnRestart: document.getElementById('btn-restart'),
             btnNewExam: document.getElementById('btn-new-exam'),
             btnHome: document.getElementById('btn-home'),
             progressBar: document.getElementById('progress-fill'),
@@ -845,7 +844,6 @@ class QuizApp {
         this.ui.btnPrev.addEventListener('click', () => this.prevQuestion());
         this.ui.btnPending.addEventListener('click', () => this.showPendingList());
         this.ui.btnWrong.addEventListener('click', () => this.showWrongList());
-        this.ui.btnRestart.addEventListener('click', () => this.showSplash());
         this.ui.btnHome.addEventListener('click', () => this.showSplash());
 
         // Nuevo Examen button (exam mode only)
