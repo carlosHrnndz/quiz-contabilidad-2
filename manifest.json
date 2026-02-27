@@ -1,16 +1,24 @@
 {
-  "name": "Contabilidad II Quiz",
+  "name": "ContaQuiz II",
   "short_name": "ContaQuiz II",
   "description": "Test interactivo de Contabilidad II de Gestión",
-  "start_url": ".",
+  "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#0a0a0a",
+  "orientation": "portrait",
+  "background_color": "#1a1a2e",
   "theme_color": "#64b5f6",
   "icons": [
     {
-      "src": "icon.png",
+      "src": "icon-192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }

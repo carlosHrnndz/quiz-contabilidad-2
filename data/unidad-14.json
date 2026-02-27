@@ -1,0 +1,126 @@
+{
+  "unidad": 14,
+  "titulo": "Autoevaluación Contabilidad de Gestión",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "El balance de situación previsional...",
+      "opciones": {
+        "a": "Incluye solo los presupuestos flexibles.",
+        "b": "No tiene aplicación a largo plazo.",
+        "c": "Incluye el presupuesto de tesorería.",
+        "d": "Solo afecta al corto plazo."
+      },
+      "explicacion": "El balance de situación previsional es un estado financiero proyectado que muestra la situación patrimonial esperada de la empresa en el futuro. Para elaborarlo, es imprescindible integrar el presupuesto de tesorería, ya que este determina el saldo final de efectivo (caja y bancos) que figurará en el activo del balance. Ejemplo práctico: Si una empresa proyecta comprar una máquina el próximo año, el presupuesto de tesorería reflejará la salida de dinero, y el balance previsional mostrará la disminución en la cuenta de bancos y el aumento en el inmovilizado material.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 2,
+      "pregunta": "Por lo que respecta a la estructuración del balance, ¿cómo se suelen ordenar las partidas de activo en la práctica española?",
+      "opciones": {
+        "a": "De menor a mayor liquidez.",
+        "b": "De mayor a menor liquidez.",
+        "c": "De manera indiferente.",
+        "d": "Según el nivel de producción."
+      },
+      "explicacion": "En España, el Plan General de Contabilidad establece que las partidas del activo en el balance de situación se ordenan de menor a mayor liquidez. Es decir, se empieza por los activos más difíciles de convertir en dinero en efectivo (como edificios o maquinaria) y se termina con los más líquidos (como el dinero en la cuenta bancaria). Ejemplo práctico: En un balance español, primero verás el 'Inmovilizado Material' (una nave industrial) en la parte superior del activo no corriente, y al final del activo corriente verás 'Efectivo y otros activos líquidos equivalentes' (el dinero en la caja registradora).",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 3,
+      "pregunta": "¿Qué es el activo de una empresa?",
+      "opciones": {
+        "a": "Las obligaciones de la empresa en un momento determinado.",
+        "b": "Los bienes y derechos que la empresa posee en un momento determinado.",
+        "c": "Los recursos no exigibles tales como el capital social, las reservas y los resultados.",
+        "d": "El conjunto de deudas cuyo plazo de vencimiento es superior al año."
+      },
+      "explicacion": "El activo de una empresa representa el conjunto de bienes, derechos y otros recursos controlados económicamente por la empresa, resultantes de sucesos pasados, de los que se espera que la empresa obtenga beneficios o rendimientos económicos en el futuro. Ejemplo práctico: Un bien sería una furgoneta de reparto que posee la empresa, y un derecho sería una factura pendiente de cobro a un cliente (derecho de cobro). Ambos forman parte del activo.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 4,
+      "pregunta": "¿Cuáles son las partidas más habituales del activo fijo?",
+      "opciones": {
+        "a": "Los inmovilizados comercial, económico y productivo.",
+        "b": "Los inmovilizados productivo, financiero y de distribución.",
+        "c": "Los inmovilizados inmaterial, material y financiero.",
+        "d": "Los inmovilizados material, económico y productivo."
+      },
+      "explicacion": "El activo fijo, también conocido como activo no corriente, está compuesto por aquellos elementos que van a permanecer en la empresa durante más de un año. Sus partidas más habituales se clasifican en inmovilizado inmaterial (intangible), inmovilizado material (tangible) e inmovilizado financiero (inversiones a largo plazo). Ejemplo práctico: Una empresa de software tiene como activo fijo: sus patentes de código (inmaterial), sus servidores físicos (material) y acciones a largo plazo en una startup asociada (financiero).",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 5,
+      "pregunta": "¿Qué es el Inmovilizado Inmaterial?",
+      "opciones": {
+        "a": "Los elementos de carácter duradero y de naturaleza intangible.",
+        "b": "Los recursos humanos de la empresa.",
+        "c": "Los elementos fungibles y de naturaleza tangible.",
+        "d": "La producción sobrante de la empresa."
+      },
+      "explicacion": "El inmovilizado inmaterial (o intangible) agrupa aquellos activos no monetarios sin apariencia física, pero que son susceptibles de valoración económica y tienen una duración superior a un año en la empresa. Ejemplo práctico: Una marca comercial reconocida, una patente de invención, una concesión administrativa o un software informático (como un ERP) son inmovilizados inmateriales, ya que aportan valor a la empresa a largo plazo pero no se pueden tocar físicamente.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 6,
+      "pregunta": "¿Cuáles de los siguientes son elementos representativos del inmovilizado material?",
+      "opciones": {
+        "a": "La red de distribución y el alcance comercial de la empresa.",
+        "b": "Los edificios, maquinarias y equipos informáticos.",
+        "c": "Las comunicaciones y conexiones entre los diferentes departamentos o sedes.",
+        "d": "La oferta formativa y de promoción del personal de la empresa."
+      },
+      "explicacion": "El inmovilizado material comprende los elementos patrimoniales tangibles, muebles o inmuebles, que se utilizan en la actividad de la empresa de forma continuada (más de un año) y no están destinados a la venta. Ejemplo práctico: En una fábrica de muebles, la nave industrial donde operan (edificio), las sierras de corte (maquinaria) y los ordenadores de la oficina (equipos informáticos) son ejemplos clásicos de inmovilizado material.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 7,
+      "pregunta": "¿Qué son las materias primas de la empresa?",
+      "opciones": {
+        "a": "Aquellas existencias que están inmersas en el proceso de fabricación, no estando aún aptas para la comercialización.",
+        "b": "Aquellas existencias que están dispuestas para ser comercializadas sin requerir ninguna transformación.",
+        "c": "Aquellas existencias que están destinadas a servir de continente de los productos terminados.",
+        "d": "Aquellas existencias que están destinadas a la fabricación de los productos objeto."
+      },
+      "explicacion": "Las materias primas son los recursos básicos que una empresa adquiere para transformarlos mediante su proceso productivo en productos terminados. La opción 'a' describe productos en curso, la 'b' mercaderías y la 'c' envases. Ejemplo práctico: En una fábrica de muebles, la madera y los tornillos son las materias primas que se transformarán para fabricar las mesas (productos objeto).",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 8,
+      "pregunta": "En el grupo de cuentas \"activo realizable\" del activo circulante se incluyen...",
+      "opciones": {
+        "a": "Las deudas por operaciones del tráfico de la empresa, así como otras derivadas de relaciones internas o externas.",
+        "b": "Los bienes y materiales que son almacenados para ser vendidos o incorporados al proceso productivo.",
+        "c": "Los elementos o bienes que son tangibles, con consistencia material y duraderos.",
+        "d": "Los elementos tangibles, intangibles e inversiones financieras estables destinados a servir a la actividad empresarial."
+      },
+      "explicacion": "El activo realizable está formado por los derechos de cobro a favor de la empresa (deudas de terceros hacia la empresa) que se convertirán en liquidez a corto plazo. La opción 'b' se refiere a existencias y las 'c' y 'd' a inmovilizado. Ejemplo práctico: Si una empresa vende ordenadores y un cliente le debe 1.000 euros a pagar en 30 días (una factura pendiente), ese derecho de cobro es un activo realizable, ya que pronto se convertirá en dinero disponible.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 9,
+      "pregunta": "¿Qué recursos se contemplan en el pasivo no exigible?",
+      "opciones": {
+        "a": "El dinero disponible por la empresa.",
+        "b": "Los anticipos de remuneraciones, sueldos o salarios adelantados al personal.",
+        "c": "El capital social, las reservas y los resultados.",
+        "d": "Las subvenciones, compensaciones o devoluciones de impuestos."
+      },
+      "explicacion": "El pasivo no exigible, también conocido como Patrimonio Neto o fondos propios, agrupa los recursos aportados por los socios (capital) y los generados por la propia empresa (reservas y resultados). Se llama 'no exigible' porque la empresa no tiene la obligación de devolverlos a terceros ajenos. Ejemplo práctico: Si tres socios aportan 10.000 euros cada uno para fundar una empresa, esos 30.000 euros forman el capital social. Es un pasivo no exigible porque no hay que devolverlo en una fecha determinada, a diferencia de un préstamo bancario.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 10,
+      "pregunta": "¿Qué es el pasivo exigible a largo plazo?",
+      "opciones": {
+        "a": "Las deudas que tiene la empresa con sus proveedores habituales.",
+        "b": "El conjunto de deudas cuyo plazo de vencimiento es superior al año.",
+        "c": "Las deudas que tiene la empresa con los distintos organismos de la Seguridad Social, la Hacienda Pública, etc.",
+        "d": "El conjunto de deudas cuyo plazo de vencimiento es inferior al año."
+      },
+      "explicacion": "El pasivo exigible a largo plazo (o pasivo no corriente) comprende todas aquellas obligaciones y deudas que la empresa debe liquidar en un plazo superior a un año. Las opciones 'a', 'c' y 'd' suelen referirse a pasivo corriente (a corto plazo). Ejemplo práctico: Si una empresa pide un préstamo hipotecario a un banco para comprar una nave industrial y tiene que devolverlo en 15 años, esa deuda se clasifica como pasivo exigible a largo plazo porque su vencimiento supera el ciclo normal de explotación de un año.",
+      "respuesta_correcta": "b"
+    }
+  ]
+}

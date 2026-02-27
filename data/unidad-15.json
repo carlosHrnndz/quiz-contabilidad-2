@@ -1,0 +1,126 @@
+{
+  "unidad": 15,
+  "titulo": "Autoevaluación de Contabilidad de Gestión",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "El presupuesto de la cuenta de resultados...",
+      "opciones": {
+        "a": "Recoge los datos de la contabilidad financiera.",
+        "b": "Se emplea en la contabilidad de gestión.",
+        "c": "Es un presupuesto operativo.",
+        "d": "Todas las anteriores."
+      },
+      "explicacion": "El presupuesto de la cuenta de resultados forma parte de los presupuestos operativos de una empresa, ya que detalla los ingresos y gastos esperados de las operaciones normales durante un periodo. Ejemplo: Si una empresa fabrica zapatos, este presupuesto incluirá las ventas esperadas de zapatos y los costes de cuero y mano de obra directa, que son puramente operativos.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 2,
+      "pregunta": "La cuenta de resultados previsional se desarrollará...",
+      "opciones": {
+        "a": "Al año.",
+        "b": "A tres años.",
+        "c": "El tiempo es indiferente.",
+        "d": "Cada tres meses."
+      },
+      "explicacion": "En la planificación estratégica y financiera a medio plazo, la cuenta de resultados previsional suele proyectarse a tres años para tener una visión clara de la viabilidad y el crecimiento esperado sin perder precisión. Ejemplo: Una startup tecnológica elabora su cuenta previsional para los próximos 3 años para mostrar a los inversores cuándo alcanzarán el punto de equilibrio.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 3,
+      "pregunta": "¿Cuáles son los conceptos básicos de la cuenta de resultados?",
+      "opciones": {
+        "a": "Los ingresos, los gastos y los resultados obtenidos.",
+        "b": "Las ventas, la distribución y la red comercial.",
+        "c": "La producción, el rendimiento y las ganancias.",
+        "d": "El remanente en la fabricación, los ingresos extra y las subvenciones."
+      },
+      "explicacion": "La cuenta de resultados se estructura fundamentalmente restando los gastos a los ingresos para obtener el resultado final, que puede ser beneficio o pérdida. Ejemplo: Si una tienda ingresa 10.000 euros por ventas y gasta 6.000 euros en mercancía y luz, su resultado es un beneficio de 4.000 euros.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 4,
+      "pregunta": "En los ingresos de la empresa se incluyen...",
+      "opciones": {
+        "a": "Los costes de alquiler por la utilización de bienes de terceros.",
+        "b": "Las nuevas incorporaciones a la compañía.",
+        "c": "Las partidas de ingresos, directos o indirectos, que se prevean que van a generarse en los periodos a considerar.",
+        "d": "Las partidas de gastos previstas a las que se deben hacer frente para desarrollar la actividad empresarial."
+      },
+      "explicacion": "Los ingresos en un presupuesto incluyen todas las entradas de valor económico esperadas, ya sean por la actividad principal (directos) o secundarias (indirectos). Ejemplo: Un hotel prevé ingresos directos por el alquiler de habitaciones e ingresos indirectos por las comisiones de excursiones turísticas que contratan sus huéspedes.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 5,
+      "pregunta": "¿Qué son las subvenciones de capital?",
+      "opciones": {
+        "a": "Las aportaciones realizadas a fondo perdido por entidades públicas para el establecimiento de la estructura básica de la empresa.",
+        "b": "Los ingresos provenientes de la gestión financiera de la empresa en concepto de intereses de préstamos y créditos concedidos.",
+        "c": "Las aportaciones realizadas a fondo perdido por entidades públicas para asegurar a la empresa una rentabilidad mínima.",
+        "d": "Los descuentos o bonos que realizan los proveedores sobre el precio de compra de tarifa."
+      },
+      "explicacion": "Las subvenciones de capital están destinadas a financiar activos no corrientes o la estructura básica, y no hay que devolverlas al ser a fondo perdido. Ejemplo: El gobierno otorga 50.000 euros a fondo perdido a una fábrica para que compre maquinaria nueva y más eficiente, fortaleciendo su estructura básica.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 6,
+      "pregunta": "¿Cuáles de los siguientes son gastos variables?",
+      "opciones": {
+        "a": "Honorarios de servicios profesionales y gastos financieros.",
+        "b": "Salarios de mano de obra indirecta y amortizaciones.",
+        "c": "Arrendamientos y primas de seguros.",
+        "d": "Variaciones de existencias y salarios."
+      },
+      "explicacion": "Los gastos variables cambian en proporción directa al volumen de producción o ventas. Las variaciones de existencias y los salarios vinculados a la producción fluctúan según lo que se fabrique. Ejemplo: Una pizzería gastará más en harina (existencias) y en horas de cocineros (salarios) si vende 500 pizzas un fin de semana que si vende solo 100.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 7,
+      "pregunta": "¿Qué ocurre si las existencias al final del ejercicio son superiores a las que había al comienzo del mismo?",
+      "opciones": {
+        "a": "Que figurará como un gasto que disminuirá el beneficio del ejercicio.",
+        "b": "Que la diferencia figurará como un ingreso incrementando el beneficio del ejercicio.",
+        "c": "No afecta al beneficio del ejercicio.",
+        "d": "Que el nivel de ventas se incrementará."
+      },
+      "explicacion": "La variación de existencias se calcula como Existencias Finales - Existencias Iniciales. Si las finales son mayores, significa que la empresa ha producido o comprado más de lo que ha vendido, y esa acumulación de inventario se contabiliza como un ingreso (o menor gasto) en la cuenta de resultados para neutralizar el gasto de compras/producción de bienes no vendidos, incrementando así el beneficio contable del ejercicio. Ejemplo práctico: Si una tienda de móviles empieza el año con 10 teléfonos (valorados en 1.000 euros) y termina con 50 teléfonos (valorados en 5.000 euros), esos 4.000 euros de diferencia positiva se reflejan como un ingreso por variación de existencias, ya que son activos que la empresa ahora posee y que aumentan su patrimonio, mejorando el resultado del ejercicio.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 8,
+      "pregunta": "¿Qué son los gastos fijos o de estructura?",
+      "opciones": {
+        "a": "Aquellos que no están producidos directamente por el proceso de negocio.",
+        "b": "Los que no son necesarios para soportar la estructura y operaciones de la compañía.",
+        "c": "Los gastos comerciales que favorecen la venta de los productos o servicios, tales como promociones o regalos.",
+        "d": "Los importes variables con los que se remunera a ciertos empleados de la compañía."
+      },
+      "explicacion": "Los gastos fijos o de estructura son aquellos en los que incurre la empresa independientemente de su volumen de producción o ventas. No están ligados directamente al proceso de fabricación o prestación del servicio (proceso de negocio directo), sino que son necesarios para mantener la empresa operativa. Ejemplo práctico: El alquiler del local de una fábrica de zapatos es un gasto fijo. Fabrique la empresa 100 pares de zapatos o ninguno durante un mes, tendrá que pagar exactamente la misma cantidad de alquiler. No es un coste directo de producir el zapato (como sí lo sería el cuero).",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 9,
+      "pregunta": "¿Cuál es el origen del concepto de \"amortización\"?",
+      "opciones": {
+        "a": "La depreciación de un producto dañado.",
+        "b": "La pérdida de valor de un activo a lo largo del tiempo.",
+        "c": "El aumento de valor de los bienes de la empresa que forman parte del inmovilizado.",
+        "d": "La pérdida de valor de los bienes como un gasto no deducible de la empresa."
+      },
+      "explicacion": "La amortización refleja contablemente la depreciación o pérdida de valor sistemática que sufren los activos fijos (inmovilizado) de una empresa debido a su uso, el paso del tiempo o la obsolescencia tecnológica. Ejemplo práctico: Si una empresa tecnológica compra un servidor por 10.000 euros y estima que su vida útil es de 5 años, no contabiliza el gasto de 10.000 euros de golpe. En su lugar, \"amortiza\" el servidor reconociendo una pérdida de valor (gasto) de 2.000 euros cada año durante esos 5 años, reflejando así su desgaste temporal.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 10,
+      "pregunta": "El objetivo del presupuesto de tesorería es:",
+      "opciones": {
+        "a": "Determinar la posición del efectivo en el largo plazo.",
+        "b": "Determinar la posición de las inversiones en el corto plazo.",
+        "c": "Determinar la deuda de proveedores.",
+        "d": "Determinar la posición del efectivo en el corto plazo."
+      },
+      "explicacion": "El presupuesto de tesorería (o flujo de caja) es una herramienta financiera que prevé las entradas y salidas de dinero en efectivo (liquidez) de una empresa durante un periodo específico, generalmente a corto plazo (meses o un año). Su objetivo principal es asegurar que la empresa tenga suficiente liquidez para afrontar sus pagos inmediatos. Ejemplo práctico: Una startup elabora su presupuesto de tesorería para los próximos 3 meses. Anota que cobrará 5.000 euros de clientes y tendrá que pagar 3.000 euros en nóminas y 1.000 euros de alquiler. Esto le permite determinar que su posición de efectivo a corto plazo será positiva (+1.000 euros), asegurando que no se quedará sin dinero para operar.",
+      "respuesta_correcta": "d"
+    }
+  ]
+}

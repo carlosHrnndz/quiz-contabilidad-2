@@ -1,0 +1,126 @@
+{
+  "unidad": 12,
+  "titulo": "Autoevaluación Unidad 12 - Contabilidad de Gestión",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "La planificación presupuestaria está ligada a la estrategia del departamento...",
+      "opciones": {
+        "a": "Financiero.",
+        "b": "Todos los departamentos.",
+        "c": "Comercial.",
+        "d": "De producción."
+      },
+      "explicacion": "La planificación presupuestaria es una herramienta integral que afecta a toda la organización, no solo a un área específica. Para que la estrategia global de la empresa tenga éxito, cada departamento debe alinear sus objetivos y recursos financieros. Ejemplo práctico: Si la empresa decide lanzar un nuevo producto, el departamento de producción necesita presupuesto para fabricarlo, marketing para promocionarlo, y recursos humanos para contratar personal extra. Todos los departamentos están involucrados.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 2,
+      "pregunta": "En general, el primer paso en la preparación de presupuestos es:",
+      "opciones": {
+        "a": "Los costes de producción.",
+        "b": "Los volúmenes y precios de ventas.",
+        "c": "El coste de personal.",
+        "d": "Los activos y pasivos."
+      },
+      "explicacion": "El presupuesto de ventas suele ser el punto de partida en el proceso presupuestario porque el nivel de ingresos y la cantidad de unidades a vender determinan las necesidades de producción, compras, personal y gastos operativos. Ejemplo práctico: Una fábrica de zapatos no puede saber cuántos cordones o cuero comprar ni cuántos operarios contratar si primero no estima cuántos zapatos espera vender el próximo año.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 3,
+      "pregunta": "El consumo de materiales dependerá...",
+      "opciones": {
+        "a": "De las unidades vendidas y de la evolución de los precios de las materias primas.",
+        "b": "De las necesidades específicas del cliente.",
+        "c": "Sólo del plan de producción de la empresa.",
+        "d": "De la evolución de los precios del mercado."
+      },
+      "explicacion": "El consumo o coste de materiales está directamente vinculado a la cantidad de producto que se necesita fabricar (que a su vez depende de las unidades que se esperan vender) y al coste unitario de esos materiales en el mercado. Ejemplo práctico: Si una panadería planea vender 1,000 barras de pan, necesitará una cantidad específica de harina. El coste total de ese consumo dependerá de cuánta harina use y de si el precio del saco de harina sube o baja durante el año.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 4,
+      "pregunta": "El activo fijo, en relación a las ventas, sigue una evolución...",
+      "opciones": {
+        "a": "Siempre proporcional.",
+        "b": "No necesariamente proporcional.",
+        "c": "Ascendente.",
+        "d": "Descendente."
+      },
+      "explicacion": "Los activos fijos (como maquinaria o edificios) tienen una capacidad instalada que permite absorber aumentos de ventas hasta cierto límite sin necesidad de adquirir nuevos activos. Por lo tanto, no crecen en la misma proporción exacta que las ventas. Ejemplo práctico: Un restaurante con 10 mesas (activo fijo) puede atender a 20 clientes un día y a 40 clientes al día siguiente (aumento de ventas) sin necesidad de comprar más mesas, hasta que alcance su capacidad máxima.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 5,
+      "pregunta": "El presupuesto de caja:",
+      "opciones": {
+        "a": "Representa un departamento dentro de la empresa.",
+        "b": "Está vinculado a la gestión administrativa.",
+        "c": "Nos indica una previsión de tesorería.",
+        "d": "Es muy útil en la determinación de los costes variables."
+      },
+      "explicacion": "El presupuesto de caja o flujo de efectivo es una herramienta financiera que proyecta las entradas y salidas de dinero en efectivo durante un período determinado, permitiendo prever si habrá liquidez suficiente. Ejemplo práctico: Una empresa puede tener muchas ventas a crédito, pero si los clientes pagan a 90 días, el presupuesto de caja alertará que en el mes 1 y 2 faltará dinero líquido (tesorería) para pagar los sueldos, permitiendo a la empresa pedir un préstamo a tiempo.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 6,
+      "pregunta": "¿En qué fase del proceso se encuentra el control presupuestario?",
+      "opciones": {
+        "a": "En la primera.",
+        "b": "En las intermedias.",
+        "c": "En la última.",
+        "d": "Es indiferente."
+      },
+      "explicacion": "El control presupuestario es la fase final del ciclo, donde se comparan los resultados reales obtenidos con los datos que se habían presupuestado inicialmente para identificar desviaciones y tomar medidas correctivas. Ejemplo práctico: A principio de año se presupuesta gastar 1,000 euros en material de oficina. Al final del año, se revisan las facturas y se ve que se gastaron 1,500 euros. Esta comparación y análisis de por qué se gastó de más es el control presupuestario.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 7,
+      "pregunta": "¿Qué mide la desviación en las ventas?",
+      "opciones": {
+        "a": "La diferencia entre la cifra de ventas presupuestada y la cifra de ventas real.",
+        "b": "La suma de las ventas reales.",
+        "c": "La previsión de ventas.",
+        "d": "El remanente de producción respecto a las ventas presupuestadas."
+      },
+      "explicacion": "Una desviación en contabilidad de gestión es simplemente la diferencia matemática entre lo que se planeó (presupuesto) y lo que realmente ocurrió (realidad). En el caso de las ventas, mide si se vendió más o menos de lo esperado. Ejemplo práctico: Si una tienda de ropa presupuestó vender 50,000 euros en diciembre, pero debido a una mala campaña navideña solo vendió 40,000 euros, la desviación en ventas es de -10,000 euros.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 8,
+      "pregunta": "Después de calcular las desviaciones...",
+      "opciones": {
+        "a": "Hay que ajustar necesariamente el precio del producto.",
+        "b": "Hay que realizar un análisis de las desviaciones obtenidas.",
+        "c": "Es suficiente con calcularlas.",
+        "d": "Debemos comparar el presupuesto con las ventas reales."
+      },
+      "explicacion": "El cálculo de las desviaciones por sí solo no aporta valor si no se investigan sus causas. El análisis permite a la dirección entender por qué los resultados reales difieren de los presupuestados y tomar medidas correctivas. Por ejemplo, si una empresa presupuesta gastar 1000 euros en materia prima y gasta 1200, calcular la desviación (200 euros desfavorables) es el primer paso. El análisis posterior revelará si fue porque el proveedor subió el precio o porque se desperdició material en la fábrica, permitiendo actuar en consecuencia.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 9,
+      "pregunta": "¿Qué refleja el presupuesto económico?",
+      "opciones": {
+        "a": "La evolución de los activos.",
+        "b": "El éxito en las ventas.",
+        "c": "La previsión de producción.",
+        "d": "El total de las ventas anuales."
+      },
+      "explicacion": "El presupuesto económico refleja la previsión de ingresos y gastos, lo que en última instancia impacta en el patrimonio y la evolución de los activos de la empresa al generar beneficios o pérdidas. Por ejemplo, si el presupuesto económico prevé altos beneficios por la venta de servicios tecnológicos, esto se traducirá en un aumento de los activos (como más efectivo en el banco o nuevas inversiones) en el balance general proyectado.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 10,
+      "pregunta": "¿Cuál de las siguientes puede ser causa de las desviaciones?",
+      "opciones": {
+        "a": "Distribución.",
+        "b": "Características materiales.",
+        "c": "Precio.",
+        "d": "Fabricación."
+      },
+      "explicacion": "Las desviaciones en contabilidad de gestión se dividen comúnmente en desviaciones técnicas (de cantidad o eficiencia) y desviaciones económicas (de precio). Una variación inesperada en el coste de los insumos o en el precio de venta es una causa directa y fundamental de desviación. Por ejemplo, si una fábrica presupuesta componentes electrónicos a 5 euros la unidad y debido a la inflación el precio sube a 7 euros, esta diferencia de precio causará una desviación económica desfavorable en el presupuesto de compras.",
+      "respuesta_correcta": "c"
+    }
+  ]
+}

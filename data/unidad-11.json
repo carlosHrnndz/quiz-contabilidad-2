@@ -1,0 +1,126 @@
+{
+  "unidad": 11,
+  "titulo": "Autoevaluación Unidad 11 - Contabilidad de Gestión",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "El aspecto fundamental en el estudio de los costes estándar lo constituye...",
+      "opciones": {
+        "a": "El análisis de desviaciones.",
+        "b": "El cálculo del balance previsional.",
+        "c": "La comparación de los costes fijos y variables.",
+        "d": "Los cambios en el nivel de actividad."
+      },
+      "explicacion": "Los costes estándar son estimaciones predeterminadas. El objetivo principal de establecerlos es poder compararlos posteriormente con los costes reales para identificar y analizar las desviaciones, permitiendo así el control de gestión y la toma de decisiones. Ejemplo práctico: Si una fábrica establece un coste estándar de 50 euros para producir una silla y el coste real termina siendo de 60 euros, el aspecto fundamental es analizar esa desviación de 10 euros para descubrir si hubo ineficiencias en el uso de materiales o mano de obra.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 2,
+      "pregunta": "Los costes estándares directos son...",
+      "opciones": {
+        "a": "Compuestos.",
+        "b": "Variables.",
+        "c": "Fijos.",
+        "d": "Simples."
+      },
+      "explicacion": "Los costes estándares directos (como la materia prima directa o la mano de obra directa) se consideran costes simples porque se pueden asignar de forma directa e inequívoca a un producto o centro de coste sin necesidad de utilizar criterios de reparto complejos. Ejemplo práctico: La madera utilizada para fabricar una mesa específica es un coste simple y directo, ya que se puede medir exactamente cuánta madera se consumió para ese producto en particular.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 3,
+      "pregunta": "El coeficiente de imputación se emplea:",
+      "opciones": {
+        "a": "En el cálculo de desviaciones sobre costes indirectos.",
+        "b": "En el cálculo de desviaciones sobre costes directos.",
+        "c": "En ambos.",
+        "d": "En ninguno."
+      },
+      "explicacion": "El coeficiente de imputación (o tasa de reparto) es una herramienta contable que se utiliza para asignar los costes indirectos (que no se pueden rastrear directamente a un producto) a los diferentes objetos de coste. Por lo tanto, es esencial para calcular las desviaciones de estos costes indirectos. Ejemplo práctico: El alquiler de la fábrica es un coste indirecto. Se utiliza un coeficiente de imputación (por ejemplo, 10 euros por hora máquina) para asignarlo a los productos. Si las horas máquina reales difieren de las estándar, se usa este coeficiente para calcular la desviación del coste indirecto.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 4,
+      "pregunta": "El análisis de desviaciones:",
+      "opciones": {
+        "a": "Se utiliza para informar sólo al departamento de recursos humanos.",
+        "b": "Consiste en comparar costes reales con costes estándar.",
+        "c": "Se utiliza para informar sólo a los accionistas.",
+        "d": "Compara costes fijos y variables."
+      },
+      "explicacion": "El análisis de desviaciones es el núcleo del control presupuestario y de costes estándar. Su definición exacta es la comparación sistemática entre los costes que realmente se han producido (costes reales) y los costes que se esperaba que se produjeran (costes estándar) para identificar ineficiencias. Ejemplo práctico: Una panadería presupuesta (estándar) gastar 200 euros en harina al mes. Al final del mes, revisan las facturas y ven que gastaron 250 euros (real). El análisis consiste en comparar ambos valores para detectar la desviación desfavorable de 50 euros.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 5,
+      "pregunta": "Las desviaciones económicas miden:",
+      "opciones": {
+        "a": "Desviaciones entre precio estándar y precio efectivo.",
+        "b": "Desviaciones en cantidad o consumo.",
+        "c": "Desviaciones técnicas.",
+        "d": "Cambios en el nivel de actividad."
+      },
+      "explicacion": "Las desviaciones económicas, también conocidas como desviaciones en precio, aíslan el efecto de los cambios en el coste unitario de los recursos. Miden exclusivamente la diferencia entre el precio que se esperaba pagar (estándar) y el precio que realmente se pagó (efectivo). Ejemplo práctico: Si el departamento de compras tiene un precio estándar de 2 euros por kilo de azúcar, pero debido a la inflación termina comprándolo a 2,50 euros el kilo, esa diferencia de 0,50 euros por kilo es la desviación económica, independientemente de la cantidad de azúcar que se haya utilizado.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 6,
+      "pregunta": "Las desviaciones se basan en variaciones sobre:",
+      "opciones": {
+        "a": "Costes reales.",
+        "b": "Costes operativos.",
+        "c": "Costes estándar.",
+        "d": "Ventas."
+      },
+      "explicacion": "En el sistema de costes estándar, el 'estándar' actúa como la norma o el punto de referencia (la línea base). Cualquier desviación o variación se calcula midiendo cuánto se ha alejado el resultado real de ese coste estándar predeterminado. Ejemplo práctico: Si el coste estándar de ensamblar un ordenador es de 100 euros (la base), y el coste real es de 115 euros, la desviación de 15 euros se basa y se calcula tomando como referencia el coste estándar inicial de 100 euros.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 7,
+      "pregunta": "La mano de obra es un coste...",
+      "opciones": {
+        "a": "Directo.",
+        "b": "Indirecto.",
+        "c": "Proporcional al volumen de producción.",
+        "d": "Independiente de cualquier otro coste."
+      },
+      "explicacion": "En el contexto de la contabilidad de costes de producción, la mano de obra (refiriéndose a la mano de obra directa, que es la norma general en estas preguntas básicas) se clasifica como un coste directo porque el tiempo y el salario de los trabajadores que fabrican el producto se pueden identificar y asignar directamente a ese producto específico. Ejemplo práctico: El salario del operario que está soldando las piezas de una bicicleta es un coste directo de esa bicicleta, a diferencia del salario del gerente de la planta, que sería un coste indirecto.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 8,
+      "pregunta": "Las causas internas de las desviaciones son:",
+      "opciones": {
+        "a": "Debidas a situaciones laborales.",
+        "b": "Derivadas de situaciones macroeconómicas.",
+        "c": "Aquellas ligadas a desviaciones en cantidad, vinculadas al rendimiento y a la productividad de los distintos factores que intervienen en la producción.",
+        "d": "Imposibles de determinar"
+      },
+      "explicacion": "Las desviaciones internas en contabilidad de gestión se refieren a ineficiencias o variaciones dentro del proceso productivo sobre las cuales la empresa tiene control directo. Están relacionadas con el uso de recursos (cantidad) y la eficiencia (rendimiento). Ejemplo práctico: Si una fábrica estima usar 10 kg de madera por mesa (estándar) pero usa 12 kg por errores de corte de los operarios, es una desviación interna por cantidad o rendimiento.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 9,
+      "pregunta": "Las desviaciones por causas externas:",
+      "opciones": {
+        "a": "Escapan al control de la gestión.",
+        "b": "Son debidas a procesos productivos.",
+        "c": "Son derivadas del entorno competitivo.",
+        "d": "A y c."
+      },
+      "explicacion": "Las desviaciones externas son provocadas por factores ajenos a la operativa interna de la empresa, como cambios en el mercado, inflación o acciones de la competencia. Por lo tanto, escapan al control directo de la gestión (opción a) y se derivan del entorno competitivo (opción c). Ejemplo práctico: Si el precio del acero sube a nivel mundial por nuevos aranceles, el coste de producción de una empresa automotriz aumenta. Es una desviación externa porque la empresa no controla el precio internacional del mercado.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 10,
+      "pregunta": "Si el consumo real ha sido de 40.000 unidades y el consumo estándar ha sido de 30.000 unidades, la desviación técnica es:",
+      "opciones": {
+        "a": "10.000 unidades.",
+        "b": "30.000 unidades.",
+        "c": "30.000 unidades.",
+        "d": "20.000 unidades."
+      },
+      "explicacion": "La desviación técnica (también conocida como desviación en cantidad o eficiencia) es la diferencia absoluta entre la cantidad real consumida y la cantidad estándar que se preveía consumir. Se calcula restando ambos valores: Consumo Real (40.000) - Consumo Estándar (30.000) = 10.000 unidades de desviación. Ejemplo práctico: Una panadería planeaba usar 30.000 kg de harina para su producción mensual. Debido a derrames y mermas, terminaron usando 40.000 kg. La desviación técnica es de 10.000 kg de harina usada en exceso.",
+      "respuesta_correcta": "a"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "unidad": 13,
+  "titulo": "Autoevaluación Contabilidad de Gestión",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "¿Qué indica el contraste entre las magnitudes previstas y las de la contabilidad?",
+      "opciones": {
+        "a": "Si ha existido o no desviación.",
+        "b": "El volumen de ventas.",
+        "c": "Los errores en la contabilidad.",
+        "d": "Las ventas previstas."
+      },
+      "explicacion": "El contraste entre lo que se preveía gastar o ingresar (presupuesto) y lo que realmente ocurrió (contabilidad) sirve para identificar desviaciones. Ejemplo práctico: Si una empresa presupuesta 1.000 euros para material de oficina y la contabilidad refleja un gasto real de 1.200 euros, el contraste indica una desviación negativa de 200 euros que debe ser analizada.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 2,
+      "pregunta": "Se llama \"presupuestos operativos\" a aquellos que se elaboran...",
+      "opciones": {
+        "a": "A largo plazo.",
+        "b": "A medio plazo.",
+        "c": "Independientemente del plazo que abarquen.",
+        "d": "A corto plazo."
+      },
+      "explicacion": "Los presupuestos operativos están diseñados para guiar las actividades diarias y recurrentes de la empresa, por lo que se centran en el corto plazo (generalmente un año o menos). Ejemplo práctico: El presupuesto de ventas mensual o el presupuesto de compras de materia prima para el próximo trimestre son operativos porque dictan las acciones inmediatas del negocio.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 3,
+      "pregunta": "¿Qué refleja el proceso presupuestario?",
+      "opciones": {
+        "a": "Los objetivos fijados por la empresa a corto plazo.",
+        "b": "Las cifras de ventas.",
+        "c": "Los objetivos de la empresa a largo plazo.",
+        "d": "La previsión de producción."
+      },
+      "explicacion": "El presupuesto es la traducción financiera de los planes de acción inmediatos de la empresa para alcanzar sus metas más próximas. Ejemplo práctico: Si el objetivo a corto plazo es aumentar la cuota de mercado local este año, el proceso presupuestario reflejará esto asignando mayores fondos a la publicidad local y contratación de vendedores para los próximos meses.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 4,
+      "pregunta": "El proceso presupuestario refleja los objetivos de la empresa de forma...",
+      "opciones": {
+        "a": "Cuantitativa.",
+        "b": "Cualitativa.",
+        "c": "General.",
+        "d": "Rotativa."
+      },
+      "explicacion": "A diferencia de los planes estratégicos que pueden ser cualitativos (ej. 'ser líderes en calidad'), los presupuestos deben expresarse en números, es decir, de forma cuantitativa (moneda, unidades, horas). Ejemplo práctico: El objetivo de 'mejorar la atención al cliente' se refleja cuantitativamente en el presupuesto como 'asignar 10.000 euros para un nuevo software de CRM y contratar a 2 operadores más'.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 5,
+      "pregunta": "¿Qué es imprescindible para que un programa de presupuestación sea eficaz?",
+      "opciones": {
+        "a": "Que el personal no sea partícipe del mismo.",
+        "b": "Una estructura organizativa definida.",
+        "c": "Una previsión por un período mayor al año.",
+        "d": "Que una sola persona concentre el poder decisorio sobre el mismo."
+      },
+      "explicacion": "Para que un presupuesto funcione, debe haber responsables claros para cada partida presupuestaria, lo cual requiere una estructura organizativa bien definida. Ejemplo práctico: Si el departamento de marketing excede su presupuesto en un 20%, una estructura definida permite identificar al Director de Marketing como el responsable de explicar y corregir esta desviación, evitando la dilución de responsabilidades.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 6,
+      "pregunta": "¿Cuál es la primera fase del proceso de planificación presupuestaria?",
+      "opciones": {
+        "a": "Coordinación de los presupuestos.",
+        "b": "Elaboración de planes, programas y presupuestos.",
+        "c": "Transmisión de las directrices generales a los responsables de la preparación de los presupuestos.",
+        "d": "Seguimiento y actualización de los presupuestos."
+      },
+      "explicacion": "Antes de hacer cálculos, la alta dirección debe comunicar las metas y límites generales para que los distintos departamentos sepan en qué basar sus números. Ejemplo práctico: El Director General reúne a los jefes de departamento y les transmite la directriz de 'reducir los costes operativos en un 5% para el próximo año'. Con esta premisa clara, cada responsable comienza a elaborar su presupuesto específico.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 7,
+      "pregunta": "¿Qué dirección sigue la negociación de los presupuestos?",
+      "opciones": {
+        "a": "De arriba abajo.",
+        "b": "De abajo arriba.",
+        "c": "Es unilateral.",
+        "d": "Es horizontal."
+      },
+      "explicacion": "En la gestión moderna, la negociación de presupuestos suele seguir un enfoque participativo o 'de abajo arriba' (bottom-up). Esto significa que los responsables de los departamentos o niveles inferiores proponen sus necesidades y estimaciones, las cuales se revisan y consolidan en niveles superiores. Ejemplo práctico: El jefe de ventas de una sucursal propone su presupuesto de gastos de viaje basado en las visitas planeadas, y luego la dirección general aprueba o ajusta este presupuesto consolidado de todas las sucursales.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 8,
+      "pregunta": "¿Cuál de las siguientes es una de las características generales de la elaboración de un presupuesto?",
+      "opciones": {
+        "a": "Pronosticabilidad",
+        "b": "Rentabilidad",
+        "c": "Rigidez",
+        "d": "No susceptible de revisión"
+      },
+      "explicacion": "Un presupuesto es fundamentalmente una estimación o pronóstico de ingresos y gastos futuros. Por lo tanto, la pronosticabilidad es una característica esencial, ya que implica anticipar escenarios financieros. No debe ser rígido ni inmodificable. Ejemplo práctico: Al elaborar el presupuesto del próximo año, una empresa pronostica sus ventas basándose en datos históricos y tendencias del mercado, anticipando así cuánto ingresará y cuánto podrá gastar.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 9,
+      "pregunta": "Los presupuestos intermedios se agrupan en dos grandes áreas:",
+      "opciones": {
+        "a": "Presupuestos de investigación y de desarrollo.",
+        "b": "Presupuestos de publicidad y administración.",
+        "c": "Presupuestos de compras y ventas.",
+        "d": "Presupuestos operativos y de inversiones."
+      },
+      "explicacion": "En la estructura presupuestaria de una empresa, los presupuestos intermedios o maestros suelen dividirse en dos grandes bloques: los operativos (que incluyen ventas, producción, gastos de administración, etc., y forman la cuenta de resultados proyectada) y los de inversiones o financieros (que detallan las compras de activos fijos y la financiación). Ejemplo práctico: Una fábrica de muebles tendrá un presupuesto operativo para la madera y salarios del mes, y un presupuesto de inversiones para la compra de una nueva máquina cortadora.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 10,
+      "pregunta": "El presupuesto de publicidad:",
+      "opciones": {
+        "a": "Solo es útil para los presupuestos fijos.",
+        "b": "No afecta a la preparación de presupuestos.",
+        "c": "Es un presupuesto de inversión.",
+        "d": "Corresponde a un presupuesto operativo."
+      },
+      "explicacion": "El presupuesto de publicidad forma parte de los gastos de comercialización o ventas, los cuales son necesarios para la operación diaria y la generación de ingresos de la empresa. Por ello, se clasifica dentro del presupuesto operativo, no como una inversión de capital a largo plazo. Ejemplo práctico: El gasto mensual en anuncios de redes sociales para promocionar un nuevo producto es un gasto operativo que se presupuesta para mantener y aumentar las ventas del periodo corriente.",
+      "respuesta_correcta": "d"
+    }
+  ]
+}
