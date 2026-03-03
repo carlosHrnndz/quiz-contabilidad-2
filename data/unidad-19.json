@@ -1,0 +1,126 @@
+{
+  "unidad": 19,
+  "titulo": "Autoevaluación de Contabilidad de Gestión - Modelo ABC",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "¿Qué es el concepto de ABC?",
+      "opciones": {
+        "a": "Un enfoque de costes que toma la información financiera y operacional disponible y la visualiza a través de un Modelo de Actividades.",
+        "b": "El método de costes directo, siempre y cuando se trate de costes estructurales.",
+        "c": "El método de costes indirectos, siempre y cuando hablemos de costes sistemáticos.",
+        "d": "Representa las siglas de Advanced Business Cooperation, método contable reconocido internacionalmente."
+      },
+      "explicacion": "El modelo ABC (Activity Based Costing o Costeo Basado en Actividades) es un sistema que asigna los costos indirectos a las actividades que los generan, y luego a los productos o servicios basados en su consumo de dichas actividades. Ejemplo práctico: Si una empresa fabrica zapatos y camisas, el modelo ABC no divide el costo de la electricidad a la mitad, sino que calcula cuánta electricidad consume la maquinaria para hacer zapatos frente a la de camisas, asignando el costo de forma más precisa.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 2,
+      "pregunta": "En el modelo ABC, ¿qué podemos destacar sobre las decisiones de los clientes?",
+      "opciones": {
+        "a": "El cálculo de los procesos del negocio permite identificar oportunidades de perfección de los mismos, mejorando el trato con los clientes.",
+        "b": "Son válidas las mismas consideraciones que para los productos. Es decir, se puede obtener la rentabilidad de cada tipo de cliente.",
+        "c": "Permite identificar las preferencias de los clientes respecto de nuestro producto.",
+        "d": "Todas las respuestas anteriores son correctas."
+      },
+      "explicacion": "El modelo ABC no solo se aplica a productos, sino también a clientes, permitiendo calcular el costo de servir a cada cliente y, por ende, su rentabilidad individual. Ejemplo práctico: Un cliente que compra mucho pero requiere entregas urgentes diarias, soporte técnico constante y devoluciones frecuentes puede ser menos rentable que un cliente que compra menos pero no requiere servicios adicionales. El ABC ayuda a ver esta rentabilidad real.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 3,
+      "pregunta": "Los clientes rentables...",
+      "opciones": {
+        "a": "Son nuestro primer objetivo de retención.",
+        "b": "Tienen alto potencial de crecimiento.",
+        "c": "Probablemente nunca generarán suficientes ganancias para justificar invertir en servirlos.",
+        "d": "Son muy poco fieles a la empresa."
+      },
+      "explicacion": "En la gestión empresarial, los clientes que generan mayor rentabilidad son el activo más valioso, por lo que las estrategias deben centrarse en fidelizarlos y retenerlos. Ejemplo práctico: Si un banco identifica mediante ABC que los clientes con nómina domiciliada y seguros contratados son los más rentables, creará programas de lealtad (como exención de comisiones o regalos) específicamente para retener a este grupo y evitar que se vayan a la competencia.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 4,
+      "pregunta": "¿Qué permite el costeo por actividades?",
+      "opciones": {
+        "a": "Lo mismo que los sistemas tradicionales de costeo.",
+        "b": "Una adecuada asignación de los costes indirectos a los productos y clientes.",
+        "c": "Identificar productos con operaciones más sencillas.",
+        "d": "Mejorar las ventas en los puntos de distribución."
+      },
+      "explicacion": "La principal ventaja del costeo por actividades (ABC) frente a los métodos tradicionales es su capacidad para rastrear y asignar los costos indirectos (overhead) de manera lógica y precisa, basándose en el uso real de las actividades. Ejemplo práctico: En lugar de asignar el costo del departamento de control de calidad basándose en las horas de mano de obra directa (método tradicional), el ABC lo asigna basándose en el número de inspecciones que requiere cada producto, logrando una distribución mucho más justa y exacta.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 5,
+      "pregunta": "¿Qué ocurre si las decisiones sobre los productos no son las correctas?",
+      "opciones": {
+        "a": "Puede transcurrir un corto periodo de tiempo hasta su recuperación.",
+        "b": "Las consecuencias negativas son fáciles de subsanar.",
+        "c": "Representan un bajo coste económico.",
+        "d": "Pueden representar un elevado coste económico."
+      },
+      "explicacion": "Tomar decisiones erróneas sobre el catálogo de productos (como fijar precios incorrectos, descontinuar un producto rentable o impulsar uno que genera pérdidas) basándose en información de costos inexacta puede llevar a pérdidas financieras significativas. Ejemplo práctico: Si una empresa cree erróneamente que su producto estrella es muy rentable y baja su precio para vender más, pero en realidad los costos indirectos ocultos hacen que pierda dinero por cada unidad vendida, esta mala decisión representará un elevado costo económico que podría llevar a la quiebra.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 6,
+      "pregunta": "Desde el punto de vista del modelo ABC, ¿qué es un producto?",
+      "opciones": {
+        "a": "Aquello que utilizamos para producir un bien.",
+        "b": "Aquel bien terminado y puesto a la venta.",
+        "c": "Uno de los instrumentos utilizados por la empresa para conseguir sus objetivos.",
+        "d": "La materia prima empleada por la empresa en el proceso productivo."
+      },
+      "explicacion": "En el modelo ABC (Activity Based Costing), un producto no es solo el bien físico final, sino el resultado de un conjunto de actividades que consumen recursos. Se considera un instrumento o medio a través del cual la empresa logra sus objetivos estratégicos y financieros al satisfacer a los clientes. Ejemplo práctico: Para una empresa de software, su 'producto' (una app) es el instrumento que canaliza el esfuerzo de programación, marketing y soporte para generar ingresos y cumplir su objetivo de rentabilidad.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 7,
+      "pregunta": "Un producto, para hacerse un hueco en el mercado, debe...",
+      "opciones": {
+        "a": "Dirigirse a cualquier segmento de la población.",
+        "b": "Satisfacer alguna necesidad no atendida.",
+        "c": "Tener un precio concreto, independientemente de lo que los clientes estén dispuestos a pagar.",
+        "d": "Ser considerado como similar a otro ya existente."
+      },
+      "explicacion": "Para que un producto tenga éxito y logre posicionarse (hacerse un hueco), debe ofrecer valor real, lo cual se logra resolviendo un problema o satisfaciendo una necesidad que la competencia aún no ha cubierto adecuadamente. Ejemplo práctico: La creación de las aplicaciones de transporte compartido satisfizo la necesidad no atendida de pedir un vehículo de forma rápida, segura y rastreable desde un smartphone, algo que los servicios tradicionales no ofrecían en ese momento.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 8,
+      "pregunta": "Un factor que puede determinar el fracaso de un producto nuevo es:",
+      "opciones": {
+        "a": "La sobreestimación de la demanda.",
+        "b": "Que no se hayan utilizado adecuadamente los elementos de producción.",
+        "c": "Que los trabajadores de la empresa no estén debidamente motivados.",
+        "d": "Que la empresa use combustibles fósiles para el transporte del producto."
+      },
+      "explicacion": "Sobreestimar la demanda significa creer que se venderá mucho más de lo que el mercado realmente está dispuesto a comprar. Esto lleva a un exceso de producción, altos costos de inventario y pérdidas financieras, siendo una causa principal de fracaso. Ejemplo práctico: Una empresa lanza un nuevo sabor de bebida y produce 1 millón de botellas esperando un éxito masivo, pero a los consumidores no les gusta. La sobreestimación generó un enorme gasto irrecuperable.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 9,
+      "pregunta": "En las decisiones de rediseño de procesos:",
+      "opciones": {
+        "a": "Si no se han utilizado adecuadamente los elementos de producción, deberemos parar y empezar de nuevo.",
+        "b": "El costeo de los procesos del negocio permite identificar oportunidades de reingeniería de procesos.",
+        "c": "Debe actuarse de forma rápida para no perder ventaja competitiva.",
+        "d": "Debe dejarse pasar el tiempo para eliminar así el stock existente."
+      },
+      "explicacion": "El rediseño o reingeniería busca mejorar drásticamente la eficiencia. Conocer exactamente cuánto cuesta cada parte del proceso (costeo) permite detectar qué actividades son ineficientes, redundantes o demasiado caras, señalando dónde es necesario rediseñar. Ejemplo práctico: Un hospital analiza el costo de admisión de pacientes y descubre que el papeleo manual consume el 40% del presupuesto administrativo. Este dato de costeo identifica la oportunidad de rediseñar el proceso implementando un sistema digital.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 10,
+      "pregunta": "En la aplicación del rediseño de procesos, debemos...",
+      "opciones": {
+        "a": "Tener en cuenta solo un área de la empresa.",
+        "b": "Tomar las decisiones de forma unilateral.",
+        "c": "Definir los procesos clave del negocio.",
+        "d": "No tener en cuenta las actividades con problemas en el proceso."
+      },
+      "explicacion": "El rediseño de procesos no puede hacerse a ciegas ni de forma aislada. El primer paso fundamental es identificar y definir cuáles son los procesos clave (core business) que realmente aportan valor al cliente y a la empresa, para enfocar los esfuerzos de mejora en ellos. Ejemplo práctico: En una empresa de comercio electrónico, antes de cambiar toda la estructura, definen que sus procesos clave son la 'gestión de inventario' y la 'logística de envíos'. El rediseño se centrará en optimizar estas áreas críticas para asegurar entregas más rápidas y eficientes.",
+      "respuesta_correcta": "c"
+    }
+  ]
+}

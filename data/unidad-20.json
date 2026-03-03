@@ -1,0 +1,126 @@
+{
+  "unidad": 20,
+  "titulo": "Autoevaluación de Contabilidad de Gestión",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "En cuanto a las decisiones relacionadas con proveedores:",
+      "opciones": {
+        "a": "Los mejores son los que pueden entregar con el precio más bajo.",
+        "b": "Los mejores son los que pueden entregar con el coste más bajo, no el precio más bajo.",
+        "c": "Es importante quedarse con el más caro, pues siempre será de mayor calidad.",
+        "d": "Deben tomarse por la dirección de marketing."
+      },
+      "explicacion": "El precio es solo el valor de compra inicial, mientras que el coste incluye otros factores como transporte, calidad, mermas y tiempos de entrega (Coste Total de Propiedad). Ejemplo: Un proveedor A vende una pieza a 10 euros pero tarda un mes en entregar, causando paros en producción. El proveedor B la vende a 12 euros pero entrega al día siguiente. El proveedor B tiene un precio mayor, pero un coste total menor para la empresa.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 2,
+      "pregunta": "Los accionistas esperan que:",
+      "opciones": {
+        "a": "Alguna de sus inversiones reporte beneficios.",
+        "b": "Ninguna de sus inversiones le produzcan nunca pérdidas, por ello planifican minuciosamente sus estrategias.",
+        "c": "El valor de su capital se incremente gracias a las decisiones que toma la alta gerencia.",
+        "d": "Aumente el dividendo ejercicio tras ejercicio."
+      },
+      "explicacion": "Los accionistas invierten su dinero con la expectativa de que la empresa genere rentabilidad y, por ende, el valor de su participación (capital) crezca a lo largo del tiempo gracias a una buena gestión. Ejemplo: Si compras acciones de una empresa tecnológica por 1000 euros, esperas que las decisiones del CEO (como lanzar un nuevo producto exitoso) hagan que en unos años esas acciones valgan 1500 euros.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 3,
+      "pregunta": "Las empresas que adoptan una Administración Basada en el Valor:",
+      "opciones": {
+        "a": "Maximizan el valor de los accionistas ya que cumplen con las expectativas de los mismos.",
+        "b": "Lo hacen para que resulte mucho más sencillo contabilizar sus costes.",
+        "c": "Esperan obtener productos de alta calidad, aunque el beneficio pueda verse reducido.",
+        "d": "Destinan una parte de sus beneficios a potenciar programas de Responsabilidad Social Corporativa."
+      },
+      "explicacion": "La Administración Basada en el Valor (VBM por sus siglas en inglés) tiene como objetivo principal alinear todas las decisiones y procesos de la empresa hacia la creación de riqueza para el accionista. Ejemplo: Una empresa decide cerrar una división que genera ventas pero no alcanza a cubrir su coste de capital, reasignando esos recursos a un proyecto de software que promete una rentabilidad muy superior a lo que esperan los inversores, maximizando así su valor.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 4,
+      "pregunta": "El desempeño, característica basada en la gerencia de valor:",
+      "opciones": {
+        "a": "Si el producto no satisface una necesidad, debemos eliminarlo de la cadena de producción.",
+        "b": "Debemos utilizar siempre el método de costes indirectos para valorar las existencias.",
+        "c": "Se debe medir, a través del benchmarking, si el desempeño global de la empresa está mejorando o no.",
+        "d": "Se mide por el grado de esfuerzo y esmero de la plantilla laboral en sus tareas."
+      },
+      "explicacion": "Para saber si realmente se está creando valor, el desempeño no puede medirse de forma aislada; debe compararse con las mejores prácticas del mercado o competidores directos (benchmarking) para identificar áreas de mejora. Ejemplo: Una cadena de comida rápida mide su tiempo de entrega promedio y lo compara con el líder del sector. Si descubren que son un 20% más lentos, implementan mejoras en la cocina para igualar o superar ese desempeño global.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 5,
+      "pregunta": "¿Qué es el coste de capital?",
+      "opciones": {
+        "a": "Es un enfoque de costes que toma la información financiera y operacional disponible y la visualiza a través de un Modelo de Actividades.",
+        "b": "Es aquel que solo se fija en el coste producido por los empleados de categoría más baja.",
+        "c": "Es la tasa de interés que tiene que pagar una empresa para poder financiarse y aumentar sus reservas de capital.",
+        "d": "Es la tasa de retorno que los accionistas esperan recibir por su inversión."
+      },
+      "explicacion": "El coste de capital representa el rendimiento mínimo que una empresa debe generar para satisfacer a sus inversores (accionistas y acreedores). Si no se alcanza, se destruye valor. Ejemplo: Si los inversores de una startup exigen un 15% de retorno anual debido al alto riesgo del negocio, ese 15% es el coste de capital. Cualquier nuevo proyecto que emprenda la startup debe proyectar ganancias superiores a ese porcentaje para ser considerado viable.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 6,
+      "pregunta": "¿Qué es el valor económico agregado?",
+      "opciones": {
+        "a": "Consiste en determinar la rentabilidad obtenida por la empresa, deduciendo de la utilidad de operación neta de impuestos el coste de capital de los recursos propios y externos.",
+        "b": "Consiste en el conjunto de bienes y servicios que produce una empresa respecto del PIB.",
+        "c": "Consiste en determinar la productividad obtenida por la empresa, deduciendo los salarios de los empleados.",
+        "d": "Las penalizaciones contractuales por retrasos de abastecimiento."
+      },
+      "explicacion": "El Valor Económico Agregado (EVA) es una métrica financiera que calcula el verdadero beneficio económico de una empresa. Se obtiene restando a la utilidad operativa después de impuestos el costo financiero total del capital (tanto propio como ajeno) empleado para generar esa utilidad. Ejemplo práctico: Si una empresa genera 100.000 euros de utilidad operativa neta, pero el costo de mantener sus préstamos y el rendimiento exigido por los accionistas suma 80.000 euros, su EVA es de 20.000 euros. Si el costo de capital fuera 110.000 euros, estaría destruyendo valor a pesar de tener utilidad contable.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 7,
+      "pregunta": "¿Qué permite el valor económico agregado?",
+      "opciones": {
+        "a": "Calcular sin ningún esfuerzo el coste de los productos terminados.",
+        "b": "Averiguar en qué departamento se está gastando más de lo estipulado inicialmente.",
+        "c": "Invertir los recursos financieros de la empresa en aquellas áreas que contribuyen de manera directa en la generación de valor.",
+        "d": "Ninguna de las respuestas anteriores es correcta."
+      },
+      "explicacion": "El EVA no es solo una métrica de evaluación, sino una herramienta de gestión. Al identificar qué áreas o proyectos generan un retorno superior a su costo de capital, la dirección puede reasignar recursos hacia esas áreas rentables, maximizando la riqueza de los accionistas. Ejemplo práctico: Una empresa tecnológica tiene dos divisiones: Software y Hardware. Al calcular el EVA, descubre que Software genera un EVA positivo de 50.000 euros, mientras que Hardware tiene un EVA negativo de -10.000 euros. La empresa utilizará esta información para invertir más recursos en la división de Software, ya que es la que realmente está creando valor económico.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 8,
+      "pregunta": "En cuanto al capital invertido, podemos decir que:",
+      "opciones": {
+        "a": "Nunca se podrá recuperar por más inversiones que se realicen.",
+        "b": "Viene a ser los activos fijos, más el capital de trabajo operativo más otros activos.",
+        "c": "Es el pasivo fijo más el capital de trabajo operativo.",
+        "d": "Representa el dinero invertido en efectivo."
+      },
+      "explicacion": "El capital invertido representa el total de recursos que una empresa utiliza para sus operaciones y para generar rentabilidad. Contablemente, se compone de los activos fijos (maquinaria, edificios) más el capital de trabajo neto operativo (inventarios, cuentas por cobrar menos cuentas por pagar) y otros activos necesarios para la operación. Ejemplo práctico: Para abrir una cafetería, el capital invertido no es solo el dinero en la caja (efectivo). Incluye la máquina de café y el mobiliario (activos fijos), más el inventario de granos de café y leche, menos lo que aún se le debe al proveedor de servilletas (capital de trabajo operativo).",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 9,
+      "pregunta": "La Gerencia Estratégica de Costes busca:",
+      "opciones": {
+        "a": "Utilizar la información de costes para tomar decisiones que conlleven a la generación de valor de la empresa.",
+        "b": "Saber dónde se encuentra cada cosa para que sea mucho más sencillo realizar el inventario.",
+        "c": "Realizar un buen inventario de nuestras instalaciones y nuestras fábricas para ver si nos hemos dejado de contabilizar algo importante.",
+        "d": "Optimizar solo los costes de pedido, almacenaje y ruptura."
+      },
+      "explicacion": "A diferencia de la contabilidad de costos tradicional, que se enfoca principalmente en el registro y control, la Gerencia Estratégica de Costes utiliza los datos financieros para formular estrategias, lograr ventajas competitivas y, en última instancia, crear valor. No se trata solo de reducir gastos, sino de gastar inteligentemente. Ejemplo práctico: Una empresa de zapatillas decide no usar el material más barato para las suelas (lo que reduciría el costo contable inmediato), sino invertir en un material más caro pero mucho más duradero y ligero. Esta decisión estratégica de costos aumenta el valor percibido por el cliente, permitiendo cobrar un precio premium y generando mayor valor global para la empresa.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 10,
+      "pregunta": "¿Qué aporta la Gerencia Estratégica de Costes?",
+      "opciones": {
+        "a": "Valor añadido a todos los departamentos de la empresa menos al departamento de compras.",
+        "b": "Información empresarial útil para promover la ventaja competitiva en las empresas.",
+        "c": "Una visión minimalista a la gerencia.",
+        "d": "Capacidad de reducir los costes superfluos, a través de dar a las compras visión estratégica."
+      },
+      "explicacion": "El principal aporte de la Gerencia Estratégica de Costes es proporcionar información clave que permite a la empresa posicionarse mejor frente a sus competidores. Ayuda a identificar en qué actividades de la cadena de valor la empresa es superior y cómo puede explotar esa ventaja (ya sea por liderazgo en costos o por diferenciación). Ejemplo práctico: Una aerolínea de bajo costo utiliza la gerencia estratégica de costos para analizar cada paso del vuelo. Descubre que al estandarizar su flota a un solo modelo de avión, reduce drásticamente los costos de mantenimiento y entrenamiento. Esta información le permite ofrecer billetes más baratos que la competencia, consolidando su ventaja competitiva en el mercado.",
+      "respuesta_correcta": "b"
+    }
+  ]
+}

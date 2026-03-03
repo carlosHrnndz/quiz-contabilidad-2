@@ -1,0 +1,126 @@
+{
+  "unidad": 18,
+  "titulo": "Autoevaluación de Contabilidad de Gestión",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "¿En qué consiste la Gerencia Estratégica de Costes (GEC)?",
+      "opciones": {
+        "a": "En contabilizar el coste anual de lanzamiento y el coste anual de posesión.",
+        "b": "En identificar los ingresos, calculados a partir de las ventas de la unidad pronosticada, y los precios medios.",
+        "c": "En la utilización que la gerencia hace de la información de costes, para tomar decisiones que incrementen el valor de los accionistas.",
+        "d": "En calcular el coste anual destinado a representación institucional estratégica de la empresa."
+      },
+      "explicacion": "La Gerencia Estratégica de Costes (GEC) se enfoca en usar la información de costos no solo para el control interno, sino como una herramienta clave para la toma de decisiones estratégicas que busquen una ventaja competitiva y, en última instancia, aumentar el valor para los accionistas. Por ejemplo, una empresa podría usar la GEC para decidir si fabricar un componente internamente o externalizarlo, analizando no solo el costo directo, sino también el impacto en la calidad, el tiempo de entrega y la flexibilidad estratégica.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 2,
+      "pregunta": "Sobre el análisis de la cadena de valores y su relación con el ABC:",
+      "opciones": {
+        "a": "Es necesario señalar que la filosofía de la gestión de las actividades tiene su antecedente en los trabajos de Porter.",
+        "b": "Es un enfoque de costes que toma la información financiera y operacional disponible y la visualiza a través de un Modelo de Actividades.",
+        "c": "Es necesario indicar que la ideología de los accionistas y fundadores afecta a la línea editorial del medio de comunicación.",
+        "d": "Es un enfoque de costes basado en la concepción de economía planificada."
+      },
+      "explicacion": "El análisis de la cadena de valor, popularizado por Michael Porter, desglosa una empresa en sus actividades estratégicamente relevantes para comprender el comportamiento de los costos y las fuentes de diferenciación existentes y potenciales. El Costeo Basado en Actividades (ABC) se alinea con esta filosofía al asignar costos a las actividades en lugar de a los productos, reconociendo que son las actividades las que consumen recursos. Por ejemplo, si Porter identifica la 'logística de entrada' como una actividad clave, el ABC ayudaría a medir con precisión los costos asociados a esa actividad específica (recepción, almacenamiento, etc.).",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 3,
+      "pregunta": "¿Cuál es el primer paso en la cadena de valor de Porter?",
+      "opciones": {
+        "a": "El diseño de nuevos productos, servicios y procesos.",
+        "b": "La investigación y desarrollo de productos y servicios de alta calidad y bajo precio.",
+        "c": "La realización de las operaciones a través de las tecnologías productivas más eficientes y eliminando toda actividad que no añada valor.",
+        "d": "El servicio posventa al cliente, que se encarga de mantener e incrementar la clientela."
+      },
+      "explicacion": "En el modelo genérico de la cadena de valor de Porter, las actividades primarias suelen comenzar con la logística de entrada, pero en un contexto más amplio de desarrollo de producto, la investigación y desarrollo (I+D) es a menudo el paso inicial crucial antes de que la producción o la logística puedan ocurrir. La opción 'b' refleja esta etapa inicial de concepción y diseño. Por ejemplo, antes de que Apple pueda fabricar y vender un nuevo iPhone, debe pasar por una extensa fase de I+D para diseñar el hardware y el software.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 4,
+      "pregunta": "El concepto de posicionamiento estratégico:",
+      "opciones": {
+        "a": "Se utiliza solo en conceptos de marketing, nunca para referirse a los costes de una empresa.",
+        "b": "Es necesario señalar que, en función del mismo, el análisis de costes puede variar sensiblemente, según la manera de competir que haya elegido la empresa.",
+        "c": "Tiene como objetivo saber desde dónde se parte en el momento de la toma de decisiones de inversiones.",
+        "d": "Se utiliza para determinar las fortalezas de la estructura de la empresa respecto de su gestión."
+      },
+      "explicacion": "El posicionamiento estratégico define cómo una empresa elige competir en el mercado (por ejemplo, liderazgo en costos vs. diferenciación). Esta elección fundamental dicta cómo la empresa debe gestionar sus costos. Una empresa enfocada en el liderazgo en costos (como Ryanair) tendrá un análisis y control de costos muy diferente, centrado en la minimización extrema, en comparación con una empresa enfocada en la diferenciación (como Emirates), donde los costos se analizan en función del valor añadido que proporcionan a la experiencia del cliente.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 5,
+      "pregunta": "Uno de los Seis Principios del Posicionamiento Estratégico de Porter es:",
+      "opciones": {
+        "a": "La estrategia de la compañía le debe hacer posible transmitir una propuesta de valor o establecer beneficios, diferentes a los que ofrece la competencia\".",
+        "b": "\"Lo primero es tener la meta correcta: disminuir el retorno sobre la inversion a largo plazo\".",
+        "c": "\"La estrategia no necesita reflejarse en una cadena de valor distintiva\".",
+        "d": "\"La compañía nunca deberá renunciar a algunos productos, servicios o actividades con el fin de ser diferente\"."
+      },
+      "explicacion": "Michael Porter establece que la esencia de la estrategia es elegir realizar las actividades de forma distinta a los rivales para ofrecer una mezcla de valor única. Si no hay una propuesta de valor diferente, no hay ventaja competitiva. Ejemplo práctico: Apple no solo vende teléfonos, ofrece un ecosistema integrado y una experiencia de usuario única que la diferencia de otros fabricantes, justificando así su posicionamiento.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 6,
+      "pregunta": "En la cadena de valor, ¿qué significa que la estrategia involucra continuidad de dirección?",
+      "opciones": {
+        "a": "Que solamente los gerentes podrán intervenir en la toma de decisiones estratégicas.",
+        "b": "Que lo oportuno es cambiar cada seis meses al gerente.",
+        "c": "Que lo oportuno es mantener durante más de 25 años al mismo equipo directivo.",
+        "d": "Que una compañía debe definir distintivamente su propuesta de valor, aunque esto signifique dejar a un lado ciertas oportunidades."
+      },
+      "explicacion": "La continuidad de dirección implica mantener el rumbo estratégico a lo largo del tiempo, lo cual requiere hacer renuncias (trade-offs). Mantener la dirección significa rechazar oportunidades que no se alinean con la propuesta de valor central. Ejemplo práctico: Southwest Airlines se mantiene fiel a su estrategia de bajo coste, renunciando a ofrecer vuelos con asientos de primera clase, asegurando así la continuidad de su modelo.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 7,
+      "pregunta": "La diferenciación de productos en el análisis de costes de marketing es...",
+      "opciones": {
+        "a": "Poco importante.",
+        "b": "Definitiva para el éxito.",
+        "c": "Moderadamente importante.",
+        "d": "Indiferente."
+      },
+      "explicacion": "En el análisis de costes de marketing, la diferenciación es crucial porque el objetivo principal es posicionar el producto en la mente del consumidor como algo único. Sin diferenciación, el producto compite solo por precio. Ejemplo práctico: Red Bull invierte masivamente en marketing de deportes extremos para diferenciar su bebida de cualquier marca blanca, haciendo que esta inversión sea definitiva para su éxito.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 8,
+      "pregunta": "El posicionamiento estratégico puede influenciar de forma significativa...",
+      "opciones": {
+        "a": "La diferenciación de productos.",
+        "b": "El liderazgo de costes.",
+        "c": "El papel del análisis de costes.",
+        "d": "El análisis de costes de la competencia."
+      },
+      "explicacion": "El posicionamiento estratégico determina para qué y cómo se utiliza la información de costes. Si la estrategia es liderazgo en costes, el análisis se centrará en la reducción de gastos; si es diferenciación, buscará optimizar los costes que aportan valor. Ejemplo práctico: Una aerolínea de bajo coste utiliza el análisis de costes para eliminar servicios superfluos, mientras que una premium lo usa para asegurar la calidad del catering dentro de márgenes rentables.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 9,
+      "pregunta": "¿Cuáles de las siguientes son causas estructurales de costes?",
+      "opciones": {
+        "a": "Simplicidad y novedad.",
+        "b": "Nivel de ventas y distribución.",
+        "c": "Productividad y rendimiento.",
+        "d": "Escala y tecnología."
+      },
+      "explicacion": "Las causas estructurales de costes son decisiones estratégicas fundamentales que determinan la estructura económica de la empresa a largo plazo. La escala y la tecnología empleada definen la base de costes antes de la producción. Ejemplo práctico: Construir una megafábrica automatizada (alta escala y tecnología) crea una estructura de costes fijos muy diferente a la de un pequeño taller manual.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 10,
+      "pregunta": "¿Cómo es el grado de integración en la causal básica de extensión?",
+      "opciones": {
+        "a": "Vertical.",
+        "b": "Horizontal.",
+        "c": "Paralelo.",
+        "d": "Invertido."
+      },
+      "explicacion": "En la gestión estratégica de costes, al analizar la extensión de la empresa, el grado de integración se refiere típicamente a la integración vertical. Esto indica qué proporción de la cadena de valor es propiedad de la empresa. Ejemplo práctico: Zara tiene un alto grado de integración vertical porque diseña, fabrica y distribuye su propia ropa, controlando los costes de manera diferente a una marca que subcontrata todo.",
+      "respuesta_correcta": "a"
+    }
+  ]
+}

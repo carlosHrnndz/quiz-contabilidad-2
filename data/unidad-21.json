@@ -1,0 +1,126 @@
+{
+  "unidad": 21,
+  "titulo": "Autoevaluación de Contabilidad de Gestión: Teoría de las Restricciones",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "¿Cuál de las siguientes definiciones coincide con la de \"teoría de las restricciones\"?",
+      "opciones": {
+        "a": "Es un conjunto de procesos de pensamiento que utiliza la lógica de la causa y efecto para entender lo que sucede y así encontrar maneras de mejorar.",
+        "b": "Se trata de un conjunto de procesos que analiza el comportamiento de cada departamento y limitar el gasto que se produce en ellos.",
+        "c": "Se trata de una construcción ideológica por la que toda restricción en el gasto de la empresa reduce la calidad del producto final.",
+        "d": "Método de selección interna para la configuración de las plantillas laborales en una empresa."
+      },
+      "explicacion": "La Teoría de las Restricciones (TOC) es una filosofía de gestión que identifica la restricción más importante (el cuello de botella) que obstaculiza el logro de un objetivo y la mejora sistemáticamente. Utiliza la lógica de causa y efecto para resolver problemas. Ejemplo práctico: En una fábrica de muebles, si el ensamblaje toma 10 minutos pero el barnizado toma 30, el barnizado es la restricción. La TOC ayuda a entender que mejorar el ensamblaje no aumentará las ventas; se debe enfocar el esfuerzo en optimizar el proceso de barnizado.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 2,
+      "pregunta": "¿Qué es el throughput?",
+      "opciones": {
+        "a": "Evalúa el volumen de trabajo y de información.",
+        "b": "Trata de dar respuesta a la Teoría de las restricciones.",
+        "c": "Evalúa los conocimientos adquiridos derivados de la producción en cadena.",
+        "d": "Es el plan de control del stock en la empresa."
+      },
+      "explicacion": "El throughput (o rendimiento) en el contexto de la gestión de operaciones y la TOC, se refiere a la tasa a la que el sistema genera dinero a través de las ventas, o en un sentido más amplio, el volumen de trabajo o información que fluye a través de un sistema. Ejemplo práctico: En un centro de atención telefónica, el throughput no es cuántas llamadas se reciben, sino cuántos problemas de clientes se resuelven efectivamente por hora (volumen de trabajo completado que aporta valor).",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 3,
+      "pregunta": "Las dos restricciones que impiden el logro de la empresa son:",
+      "opciones": {
+        "a": "Las restricciones económicas y físicas.",
+        "b": "Las restricciones económicas y tecnológicas.",
+        "c": "Las restricciones físicas y políticas.",
+        "d": "Las restricciones financieras y económicas."
+      },
+      "explicacion": "Según la Teoría de las Restricciones, los obstáculos que limitan a un sistema se dividen principalmente en físicos (tangibles) y políticos (intangibles). Ejemplo práctico: Una restricción física es tener una sola máquina empaquetadora que limita la producción diaria a 1000 unidades. Una restricción política es una norma interna de la empresa que prohíbe contratar turnos nocturnos, lo que impide usar la máquina las 24 horas del día aunque haya demanda.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 4,
+      "pregunta": "La continuidad en la búsqueda de la mejora requiere de:",
+      "opciones": {
+        "a": "Una inversión económica razonable en los departamentos que lo necesiten.",
+        "b": "Un sistema de medición y de un método que involucre y fomente la participación del personal.",
+        "c": "Una renovación de la tecnología en los puntos críticos determinados.",
+        "d": "Un departamento de I+D."
+      },
+      "explicacion": "Para que la mejora continua sea sostenible, es indispensable poder medir los resultados (para saber si realmente se está mejorando) e involucrar a los trabajadores, ya que ellos ejecutan los procesos y conocen los problemas reales. Ejemplo práctico: Si un restaurante quiere servir la comida más rápido, necesita medir el tiempo desde que se toma el pedido hasta que se sirve (sistema de medición) y hacer reuniones semanales con los camareros y cocineros para que aporten ideas sobre cómo evitar retrasos (participación del personal).",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 5,
+      "pregunta": "El sistema DBR se define como:",
+      "opciones": {
+        "a": "Programar las entregas de productos a los clientes utilizando fechas de entrega teóricas.",
+        "b": "Optimizar los programas de las restricciones de capacidad.",
+        "c": "Programar el lanzamiento de productos basándose en técnicas de mercado.",
+        "d": "Un análisis de la rentabilidad de los productos."
+      },
+      "explicacion": "El sistema DBR (Drum-Buffer-Rope o Tambor-Amortiguador-Cuerda) es una metodología de planificación de la producción subordinada a la restricción del sistema para optimizar su capacidad. Ejemplo práctico: Imagina una tropa de boy scouts caminando. El niño más lento es el 'Tambor' que marca el ritmo de todos. La 'Cuerda' es la regla de que nadie puede adelantarse demasiado al niño lento. El 'Amortiguador' es el espacio que se deja para que si el niño lento tropieza, la marcha no se detenga de inmediato. Así se optimiza el avance de todo el grupo basándose en su restricción de capacidad.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 6,
+      "pregunta": "Entre las etapas del modelo DBR, hallamos:",
+      "opciones": {
+        "a": "Cada una de las operaciones precedentes se programará en retrospectiva para que todas las partes estén disponibles justo a tiempo para la siguiente operación.",
+        "b": "Definir cómo se compran (cantidad y periodicidad) la otra parte del producto que forma parte del producto final a través del ensamble.",
+        "c": "Programar, remontándonos hacia atrás en el tiempo, partiendo del cuello de botella.",
+        "d": "Todas las respuestas anteriores son correctas."
+      },
+      "explicacion": "El modelo DBR (Drum-Buffer-Rope o Tambor-Amortiguador-Cuerda) es un método de ejecución de la Teoría de Restricciones. Implica programar la producción basándose en el cuello de botella (el tambor), protegerlo con inventario (el amortiguador) y liberar materiales al sistema al ritmo que dicta el cuello de botella (la cuerda). Esto requiere programar hacia atrás desde el cuello de botella, asegurar que las piezas lleguen justo a tiempo y definir las compras en función de este ritmo. Ejemplo práctico: En una fábrica de bicicletas, si la estación de pintura es el cuello de botella, se programa hacia atrás para que los marcos soldados lleguen justo a tiempo para pintarse, y se compran las llantas (ensamble final) al ritmo exacto en que salen las bicicletas pintadas.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 7,
+      "pregunta": "¿Qué puntos son esenciales para determinar el \"rope\"?",
+      "opciones": {
+        "a": "Los puntos de intersección de las cuerdas.",
+        "b": "Los puntos de divergencia.",
+        "c": "Los costes fijos.",
+        "d": "Las magnitudes financieras."
+      },
+      "explicacion": "En el sistema DBR, la 'cuerda' (rope) es el mecanismo de comunicación que dicta cuándo liberar material al sistema. Los puntos de divergencia son críticos porque es donde un material común se divide para convertirse en diferentes productos finales. Si la cuerda no controla bien estos puntos, se podría ensamblar el producto equivocado, consumiendo capacidad valiosa y creando inventario innecesario. Ejemplo práctico: Una fábrica produce láminas de metal que pueden cortarse para hacer puertas o capós de coche (punto de divergencia). La 'cuerda' debe indicar exactamente qué cortar basándose en lo que el cuello de botella necesita procesar a continuación, evitando que se hagan demasiadas puertas y falten capós.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 8,
+      "pregunta": "¿Cómo deben instruirse los recursos para que funcionen según la regla del Correcaminos?",
+      "opciones": {
+        "a": "Si un recurso no tiene nada que hacer, que no haga nada.",
+        "b": "Si un recurso está inactivo debe activarse de inmediato.",
+        "c": "Si un recurso puede incrementarse que lo haga tan rápido como le sea posible.",
+        "d": "Los recursos activos deben disminuirse."
+      },
+      "explicacion": "La regla del 'Correcaminos' en la gestión de operaciones establece que un trabajador o máquina debe trabajar a su máxima velocidad cuando hay trabajo disponible, pero si no hay trabajo (para evitar la sobreproducción o porque el cuello de botella no lo requiere), debe detenerse por completo. Producir por producir solo genera exceso de inventario. Ejemplo práctico: Si un operario empaca cajas muy rápido pero el camión de reparto (cuello de botella) solo viene una vez al día, el operario debe empacar lo necesario y luego detenerse o hacer otra tarea de mantenimiento, en lugar de llenar el almacén de cajas que no se van a enviar.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 9,
+      "pregunta": "¿Qué es un recurso cuello botella?",
+      "opciones": {
+        "a": "Es aquél cuya capacidad es menor o igual a la demanda que hay de él.",
+        "b": "Es aquél cuya capacidad es mayor que la demanda que hay de él",
+        "c": "Es aquél cuyo uso implica su destrucción.",
+        "d": "Es aquél cuya eficiencia económica se reduce a medida que aumenta su consumo."
+      },
+      "explicacion": "Un cuello de botella es cualquier recurso en un sistema de producción cuya capacidad máxima es igual o inferior a la demanda que se le exige. Este recurso limita la producción total de todo el sistema. Ejemplo práctico: En una pizzería, si los cocineros pueden preparar 50 pizzas por hora, pero el horno solo tiene capacidad para hornear 30 pizzas por hora, el horno es el cuello de botella porque su capacidad (30) es menor a la demanda potencial del sistema (50).",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 10,
+      "pregunta": "¿Qué implica el principio de Manufactura sincronizada número 2?",
+      "opciones": {
+        "a": "El valor marginal del tiempo en un recurso cuello de botella es igual al throughput que se dejaría de procesar.",
+        "b": "El valor marginal del tiempo en un recurso que no es cuello de botella es insignificante.",
+        "c": "El nivel de utilización de un \"recurso no cuello de botella\" es controlado por otras restricciones del sistema.",
+        "d": "Todas piezas deben estar ordenadas de forma lineal al entrar en el tren de procesado."
+      },
+      "explicacion": "En la manufactura sincronizada (basada en la Teoría de Restricciones), una hora perdida en un cuello de botella es una hora perdida para todo el sistema. Por lo tanto, el costo o valor de ese tiempo no es solo el costo operativo de la máquina, sino el 'throughput' (dinero generado por las ventas) de los productos que no se pudieron fabricar en esa hora. Ejemplo práctico: Si una fábrica gana $5,000 por hora en ventas de productos terminados y la máquina empaquetadora es el cuello de botella, si esa máquina se avería por una hora, la empresa no pierde solo el salario del operario, pierde exactamente $5,000 de throughput.",
+      "respuesta_correcta": "a"
+    }
+  ]
+}

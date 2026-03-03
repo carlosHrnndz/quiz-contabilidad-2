@@ -1,0 +1,126 @@
+{
+  "unidad": 23,
+  "titulo": "Autoevaluación de Sistemas de Información y Gestión del Conocimiento",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "Una de las actividades básicas de los sistemas de información es:",
+      "opciones": {
+        "a": "Las telecomunicaciones.",
+        "b": "La automatización de procesos.",
+        "c": "Soportes de almacenamiento.",
+        "d": "Los sistemas estratégicos."
+      },
+      "explicacion": "Los sistemas de información tienen actividades básicas como la entrada, procesamiento, almacenamiento y salida de datos. Los soportes de almacenamiento son fundamentales para guardar la información procesada para su uso futuro. Ejemplo práctico: Un disco duro o una base de datos en la nube donde una empresa guarda el historial de compras de sus clientes.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 2,
+      "pregunta": "Los DSS son",
+      "opciones": {
+        "a": "Sistemas transaccionales.",
+        "b": "Sistemas de apoyo a las decisiones.",
+        "c": "Sistemas informáticos.",
+        "d": "Sistemas operativos."
+      },
+      "explicacion": "DSS significa Decision Support Systems (Sistemas de Soporte a la Decisión). Son sistemas informáticos que analizan grandes volúmenes de datos y presentan opciones para ayudar a los gerentes a tomar decisiones informadas. Ejemplo práctico: Un software que analiza las tendencias de ventas pasadas y sugiere cuántos productos de un tipo específico se deben fabricar para el próximo trimestre.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 3,
+      "pregunta": "La sociedad de la información se caracteriza por:",
+      "opciones": {
+        "a": "La globalidad.",
+        "b": "La investigación.",
+        "c": "La automatización.",
+        "d": "A y c."
+      },
+      "explicacion": "La sociedad de la información se define por la interconexión global (globalidad) y el uso intensivo de tecnologías para automatizar procesos y manejar datos (automatización). Ejemplo práctico: Una empresa multinacional que utiliza sistemas automatizados en la nube para coordinar su producción en Asia y sus ventas en Europa en tiempo real.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 4,
+      "pregunta": "La buena información es:",
+      "opciones": {
+        "a": "Relevante y adecuada.",
+        "b": "Interna.",
+        "c": "Sencilla.",
+        "d": "Breve."
+      },
+      "explicacion": "Para que la información sea útil en la toma de decisiones, debe ser pertinente al problema en cuestión (relevante) y estar en el formato y momento correctos (adecuada). Ejemplo práctico: Si un gerente necesita decidir si abrir una nueva tienda, la información sobre el tráfico peatonal en esa calle específica es relevante y adecuada, mientras que un informe de ventas globales de hace 10 años no lo es.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 5,
+      "pregunta": "En una empresa, la información externa es:",
+      "opciones": {
+        "a": "La que generan las empresas.",
+        "b": "La dirigida a los clientes.",
+        "c": "Aquella que proviene del exterior.",
+        "d": "Aquella que las empresas envían a su entorno."
+      },
+      "explicacion": "La información externa es la que se recopila del entorno de la empresa, fuera de sus límites organizacionales, como datos del mercado, competidores o regulaciones. Ejemplo práctico: Un estudio de mercado comprado a una agencia consultora sobre las nuevas tendencias de consumo de la Generación Z.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 6,
+      "pregunta": "Un factor clave en la gestión del conocimiento es:",
+      "opciones": {
+        "a": "La globalización del comercio.",
+        "b": "La actividad de la empresa.",
+        "c": "La cultura corporativa.",
+        "d": "El coste."
+      },
+      "explicacion": "La gestión del conocimiento requiere que los empleados estén dispuestos a compartir lo que saben. Una cultura corporativa que fomente la colaboración, el aprendizaje continuo y la confianza es esencial para que esto ocurra. Ejemplo práctico: Una empresa tecnológica que promueve espacios abiertos y reuniones informales para que los ingenieros compartan ideas y soluciones a problemas técnicos.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 7,
+      "pregunta": "Una ventaja empresarial de la gestión de la tecnología es:",
+      "opciones": {
+        "a": "La disminución de errores.",
+        "b": "La mayor dedicación de recursos productivos.",
+        "c": "El aumento de costes de I + D.",
+        "d": "Mayores ventas."
+      },
+      "explicacion": "Una buena gestión tecnológica permite automatizar tareas repetitivas y estandarizar procesos, lo que reduce significativamente el margen de error humano. Ejemplo práctico: Implementar un sistema de escaneo de códigos de barras en un almacén en lugar de registrar los inventarios a mano, evitando así errores de conteo o de tipeo.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 8,
+      "pregunta": "El segmento del software es:",
+      "opciones": {
+        "a": "Un tipo de investigación.",
+        "b": "La electrónica de consumo.",
+        "c": "La fabricación de componentes informáticos.",
+        "d": "Una parte de la industria digital."
+      },
+      "explicacion": "El software (programas, aplicaciones, sistemas operativos) es un componente fundamental de la industria digital o tecnológica, diferenciándose del hardware (fabricación de componentes físicos) y de la electrónica de consumo tradicional. Ejemplo práctico: Microsoft o Adobe son empresas que pertenecen al segmento del software dentro de la gran industria digital, ya que crean productos intangibles (código) en lugar de fabricar los ordenadores físicos.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 9,
+      "pregunta": "La información corporativa:",
+      "opciones": {
+        "a": "Es la información que las empresas reciben de su entorno.",
+        "b": "La obtenida de los clientes.",
+        "c": "Es la información que las empresas envían a su entorno.",
+        "d": "Aquella que las empresas consideran confidencial."
+      },
+      "explicacion": "La información corporativa se refiere a los datos, mensajes y comunicaciones que una organización emite hacia el exterior (su entorno), como accionistas, clientes, medios de comunicación y la sociedad en general, para proyectar su imagen, resultados o valores. Ejemplo práctico: Cuando una empresa publica su informe anual de sostenibilidad o emite un comunicado de prensa sobre un nuevo producto, está enviando información corporativa a su entorno.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 10,
+      "pregunta": "La información se caracteriza por:",
+      "opciones": {
+        "a": "Ser prácticamente indivisible.",
+        "b": "Consumirse por el uso.",
+        "c": "Tener un valor constante.",
+        "d": "Ser discriminatoria."
+      },
+      "explicacion": "Una de las características económicas de la información es que suele ser indivisible en su consumo o utilidad; es decir, un fragmento de información a menudo no tiene valor a menos que se tenga el conjunto completo que le da contexto. Además, a diferencia de los bienes físicos, no se agota al usarse. Ejemplo práctico: Si compras un libro de texto, leer solo la mitad de una fórmula matemática no te sirve de nada; necesitas la fórmula completa (indivisibilidad). Además, el hecho de que tú leas la fórmula no impide que otro estudiante también la lea (no se consume por el uso).",
+      "respuesta_correcta": "a"
+    }
+  ]
+}

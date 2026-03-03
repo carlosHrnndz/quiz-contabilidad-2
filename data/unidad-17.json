@@ -1,0 +1,126 @@
+{
+  "unidad": 17,
+  "titulo": "Autoevaluación de Contabilidad de Gestión",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "El cash-flow bruto recoge:",
+      "opciones": {
+        "a": "Los resultados antes de los costes generales.",
+        "b": "El beneficio.",
+        "c": "Los ingresos.",
+        "d": "Los activos."
+      },
+      "explicacion": "El cash-flow bruto, o flujo de caja bruto, se refiere a los fondos generados por las operaciones de la empresa antes de deducir los costes generales, amortizaciones y provisiones. Es una medida de la capacidad de la empresa para generar efectivo a partir de su actividad principal. Por ejemplo, si una empresa vende productos por 100.000€ y sus costes directos de producción son 60.000€, su cash-flow bruto sería de 40.000€, antes de descontar alquileres, salarios administrativos, etc.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 2,
+      "pregunta": "La autofinanciación extraordinaria:",
+      "opciones": {
+        "a": "Proviene de las operaciones típicas de la empresa.",
+        "b": "Se origina al comienzo del ejercicio.",
+        "c": "Es típica de las actividades complementarias de la empresa.",
+        "d": "Es financiación ajena."
+      },
+      "explicacion": "La autofinanciación extraordinaria se genera a partir de actividades que no forman parte de la explotación habitual o típica de la empresa. Son ingresos excepcionales o atípicos. Por ejemplo, la venta de un edificio o maquinaria obsoleta que la empresa ya no utiliza generaría fondos que se considerarían autofinanciación extraordinaria, ya que la empresa no se dedica habitualmente a la venta de inmuebles o maquinaria usada.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 3,
+      "pregunta": "La financiación ajena puede originarse por:",
+      "opciones": {
+        "a": "Proveedores.",
+        "b": "Entidades financieras.",
+        "c": "Depósitos de terceros.",
+        "d": "Todos los anteriores."
+      },
+      "explicacion": "La financiación ajena engloba todos aquellos recursos financieros que la empresa obtiene de terceros y que conllevan una obligación de devolución, generalmente con un coste asociado (intereses). Esto incluye el crédito comercial concedido por los proveedores (aplazamiento de pagos), los préstamos y créditos otorgados por bancos o entidades financieras, y cualquier otro depósito o fianza recibida de terceros. Por ejemplo, si una empresa compra mercancía y el proveedor le permite pagar a 60 días, está obteniendo financiación ajena de ese proveedor.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 4,
+      "pregunta": "Los presupuestos a corto plazo deben:",
+      "opciones": {
+        "a": "Realizarse mensualmente.",
+        "b": "Realizarse diariamente.",
+        "c": "Realizarse trimestralmente.",
+        "d": "Cambiarse frecuentemente."
+      },
+      "explicacion": "Los presupuestos a corto plazo, como el presupuesto de tesorería, suelen elaborarse con una periodicidad mensual para permitir un control detallado y un seguimiento cercano de las desviaciones. Aunque pueden existir desgloses semanales o diarios para la gestión operativa de la caja, el marco temporal estándar para la planificación y control a corto plazo es el mes. Por ejemplo, un director financiero revisará el presupuesto de cobros y pagos cada mes para asegurar que la empresa tendrá suficiente liquidez para afrontar sus nóminas y facturas.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 5,
+      "pregunta": "El Fondo de Maniobra afecta negativamente a la tesorería de una empresa si:",
+      "opciones": {
+        "a": "Baja de un periodo a otro.",
+        "b": "Sube de un periodo a otro.",
+        "c": "No varía de un periodo a otro.",
+        "d": "Se incrementan los fondos propios."
+      },
+      "explicacion": "El Fondo de Maniobra (FM) es la parte del activo corriente financiada con recursos a largo plazo. Una disminución del FM de un periodo a otro significa que la empresa tiene menos recursos a largo plazo financiando su circulante, lo que puede indicar problemas de liquidez o un aumento de las deudas a corto plazo, afectando negativamente a la tesorería. Por ejemplo, si el FM baja porque la empresa ha utilizado efectivo para pagar una deuda a largo plazo anticipadamente, su tesorería disponible a corto plazo se verá reducida.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 6,
+      "pregunta": "La autofinanciación en la empresa implica:",
+      "opciones": {
+        "a": "El acceso a recursos propios suficientes para acometer inversiones.",
+        "b": "El acceso a socios externos para ampliaciones de capital.",
+        "c": "El acceso a financiación bancaria.",
+        "d": "El incremento de ingresos."
+      },
+      "explicacion": "La autofinanciación consiste en la retención de beneficios por parte de la empresa para financiar su propio crecimiento o inversiones, en lugar de repartirlos como dividendos. Por lo tanto, implica generar y acumular recursos propios internamente. Por ejemplo, si una empresa gana 100.000€ en un año y decide no repartir dividendos, sino utilizar ese dinero para comprar nueva maquinaria, está utilizando la autofinanciación para acometer esa inversión.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 7,
+      "pregunta": "Las subvenciones de capital son un tipo de financiación:",
+      "opciones": {
+        "a": "Exigible.",
+        "b": "Propia.",
+        "c": "Bancaria.",
+        "d": "Extraordinaria."
+      },
+      "explicacion": "Las subvenciones de capital son fondos concedidos por las administraciones públicas a las empresas, generalmente para financiar inversiones en inmovilizado. Se consideran financiación extraordinaria porque no provienen de la actividad ordinaria de la empresa ni de aportaciones regulares de los socios, sino de una concesión puntual y excepcional por parte del sector público. Por ejemplo, si una empresa recibe una subvención del gobierno para instalar paneles solares en su fábrica, esta es una fuente de financiación extraordinaria.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 8,
+      "pregunta": "Los balances previsionales a largo plazo:",
+      "opciones": {
+        "a": "Implican unos supuestos mensuales.",
+        "b": "Exigen asumir criterios para varios ejercicios.",
+        "c": "No afectan al fondo de maniobra.",
+        "d": "Solo tienen en cuenta las inversiones."
+      },
+      "explicacion": "Los balances previsionales a largo plazo son herramientas de planificacion financiera que proyectan la situacion patrimonial de la empresa a futuro, generalmente abarcando mas de un ano contable (ejercicio). Por lo tanto, requieren establecer hipotesis y criterios macroeconomicos y empresariales que se mantendran o evolucionaran a lo largo de varios anos. Ejemplo practico: Si una empresa tecnologica planea expandirse a otro pais en 5 anos, su balance previsional a largo plazo debera asumir criterios sobre la inflacion, tipos de interes y crecimiento de ventas para cada uno de esos 5 ejercicios, no solo mes a mes.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 9,
+      "pregunta": "Los dividendos a pagar:",
+      "opciones": {
+        "a": "Reducen la tesoreria.",
+        "b": "Afectan a los recursos propios.",
+        "c": "Reducen el beneficio.",
+        "d": "A y b."
+      },
+      "explicacion": "El pago de dividendos implica la salida de dinero en efectivo de la empresa para remunerar a los accionistas, lo que reduce directamente la cuenta de tesoreria (caja/bancos). Al mismo tiempo, los dividendos se pagan con cargo a los beneficios retenidos o reservas, que forman parte de los recursos propios (patrimonio neto) de la empresa, por lo que estos tambien se ven reducidos. No reducen el beneficio del ejercicio actual, sino que son una aplicacion (reparto) del mismo. Ejemplo practico: Si una empresa gana 100 euros (beneficio) y decide repartir 40 euros en dividendos, su tesoreria bajara en 40 euros al hacer la transferencia, y sus recursos propios (reservas) disminuiran en esos mismos 40 euros, manteniendo el equilibrio contable.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 10,
+      "pregunta": "Las inversiones en inmovilizado:",
+      "opciones": {
+        "a": "Generan tesoreria.",
+        "b": "Reducen el patrimonio neto.",
+        "c": "Pueden financiarse con deuda.",
+        "d": "Implican variacion del fondo de maniobra."
+      },
+      "explicacion": "Las inversiones en inmovilizado (activos a largo plazo como maquinaria, edificios o software) requieren grandes salidas de capital. Es una practica financiera comun y saludable financiar estas adquisiciones a largo plazo mediante recursos ajenos (deuda bancaria, emision de bonos) para no descapitalizar la empresa a corto plazo, alineando el plazo de la deuda con la vida util del activo. Ejemplo practico: Si una fabrica necesita comprar una nueva maquina ensambladora que cuesta 500.000 euros y durara 10 anos, en lugar de pagar todo en efectivo (lo que agotaria su tesoreria), pide un prestamo bancario a 7 anos. Asi, la inversion en inmovilizado se esta financiando con deuda.",
+      "respuesta_correcta": "c"
+    }
+  ]
+}

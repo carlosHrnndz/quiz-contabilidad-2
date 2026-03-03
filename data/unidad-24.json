@@ -1,0 +1,126 @@
+{
+  "unidad": 24,
+  "titulo": "Autoevaluación: Conceptos Básicos de Internet y Redes",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "Internet está basado en:",
+      "opciones": {
+        "a": "Una red LAN.",
+        "b": "Una red metropolitana.",
+        "c": "Una red WAN.",
+        "d": "Una serie de redes de distinto tipos conectadas entre sí"
+      },
+      "explicacion": "Internet es conocida como la 'red de redes'. No consiste en una única red local (LAN) o de área amplia (WAN), sino en la interconexión global de miles de redes de diferentes tipos y tamaños utilizando el conjunto de protocolos TCP/IP. Ejemplo práctico: Cuando envías un correo electrónico desde el Wi-Fi de tu casa (una red LAN), los datos viajan a través de la infraestructura de tu proveedor de internet, cruzan conexiones internacionales (redes WAN) y finalmente llegan a la red corporativa donde se aloja el servidor de correo del destinatario.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 2,
+      "pregunta": "El modelo de funcionamiento de internet es del tipo:",
+      "opciones": {
+        "a": "ICANN.",
+        "b": "Cliente-servidor.",
+        "c": "ESNIC.",
+        "d": "Microinformático"
+      },
+      "explicacion": "La arquitectura principal de Internet se basa en el modelo cliente-servidor. En este modelo, ciertos dispositivos (clientes) solicitan recursos o servicios, y otros dispositivos centralizados y potentes (servidores) procesan esas solicitudes y entregan la información. Ejemplo práctico: Al escribir la dirección de una página web en tu navegador (el cliente), este envía una petición al ordenador remoto donde está alojada la página (el servidor). El servidor procesa la petición y envía los archivos de vuelta a tu navegador para que puedas ver la web.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 3,
+      "pregunta": "La dirección IP refleja:",
+      "opciones": {
+        "a": "El nombre del ordenador.",
+        "b": "El sistema operativo.",
+        "c": "Forman parte de la CPU.",
+        "d": "La localización asignada a un usuario de internet."
+      },
+      "explicacion": "Una dirección IP (Internet Protocol) es un identificador numérico lógico y jerárquico asignado a cada dispositivo conectado a una red que utiliza el protocolo IP. Su función principal es identificar la interfaz de red del dispositivo y proporcionar su localización lógica dentro de la red para permitir el enrutamiento de datos. Ejemplo práctico: Piensa en la dirección IP como la dirección postal de tu casa. Si alguien quiere enviarte un paquete (datos), necesita saber tu dirección exacta (IP) para que el servicio de correos (los enrutadores de internet) sepa exactamente a qué ubicación física y lógica debe entregarlo.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 4,
+      "pregunta": "El dominio genérico .edu indica:",
+      "opciones": {
+        "a": "Entidad comercial.",
+        "b": "Institución educativa.",
+        "c": "Entidad gubernamental.",
+        "d": "Bases de datos."
+      },
+      "explicacion": "Los dominios de nivel superior (TLD) ayudan a clasificar el propósito o la naturaleza de una organización en Internet. El sufijo '.edu' proviene de la palabra inglesa 'education' y está reservado exclusivamente para instituciones educativas, principalmente universidades y centros de educación superior. Ejemplo práctico: Al ver una dirección web como 'mit.edu', el usuario sabe inmediatamente que está visitando el sitio de una institución educativa (el Instituto de Tecnología de Massachusetts), a diferencia de un dominio '.com' que indicaría una empresa con fines de lucro.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 5,
+      "pregunta": "El hipertexto implica:",
+      "opciones": {
+        "a": "La vinculación de un fragmento de texto a un enlace que puede ser otra página de Internet.",
+        "b": "El texto resaltado del sistema operativo.",
+        "c": "Un nexo de unión entre páginas webs.",
+        "d": "El texto utilizado en Internet."
+      },
+      "explicacion": "El hipertexto es un sistema de organización y presentación de información que permite conectar fragmentos de texto entre sí mediante enlaces (hyperlinks). Esto rompe la lectura lineal tradicional, permitiendo al usuario saltar de un documento a otro relacionado de forma interactiva. Ejemplo práctico: Cuando estás leyendo un artículo en Wikipedia y ves una palabra subrayada en color azul, al hacer clic sobre ella el navegador te lleva a otro artículo distinto que explica ese término específico. Esa palabra enlazada es un hipertexto.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 6,
+      "pregunta": "Una característica fundamental de las redes internas es:",
+      "opciones": {
+        "a": "La cantidad de datos almacenados.",
+        "b": "La lentitud de su transmisión.",
+        "c": "La necesidad de estar protegidas.",
+        "d": "La limitación en sus conexiones"
+      },
+      "explicacion": "Las redes internas, como las Intranets corporativas, se utilizan para compartir información, sistemas operativos y servicios de computación dentro de una organización. Dado que manejan datos privados, confidenciales y críticos para el negocio, su característica fundamental es la seguridad; deben estar fuertemente protegidas contra accesos no autorizados desde el exterior (Internet). Ejemplo práctico: Un banco tiene una red interna donde los empleados gestionan las cuentas de los clientes. Esta red utiliza firewalls avanzados y sistemas de autenticación para asegurar que ningún hacker desde Internet pueda acceder a esa información financiera sensible.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 7,
+      "pregunta": "En un sistema de comercio electrónico, la integridad garantiza:",
+      "opciones": {
+        "a": "La afluencia de clientes.",
+        "b": "Que no se modifiquen las distintas condiciones de la compra.",
+        "c": "La privacidad de los datos.",
+        "d": "Que cada cliente sea quien dice ser."
+      },
+      "explicacion": "En el ámbito de la seguridad de la información, la 'integridad' es el principio que asegura que los datos no sean alterados, borrados o modificados de manera no autorizada. En el contexto del comercio electrónico, garantiza que los detalles de una transacción (precio, cantidad, dirección de envío) permanezcan exactos e inalterados desde que el cliente confirma la compra hasta que se procesa. Ejemplo práctico: Si compras un ordenador portátil en una tienda online por 800 euros, la integridad del sistema garantiza que un ciberdelincuente (o un fallo en la red) no pueda interceptar la transacción y cambiar el precio a 8 euros o modificar la dirección de entrega antes de que el pedido llegue al vendedor.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 8,
+      "pregunta": "¿Cuál es una de las funciones de un sistema de información?",
+      "opciones": {
+        "a": "Informar a los clientes de las actividades de la empresa.",
+        "b": "Reunir información sobre la competencia.",
+        "c": "Recopilar datos tanto externos como internos.",
+        "d": "Contabilizar las operaciones financieras."
+      },
+      "explicacion": "Un sistema de información tiene como objetivo principal gestionar, recolectar, procesar y almacenar datos relevantes para la organización, proviniendo tanto de fuentes internas (ventas, inventario) como externas (tendencias del mercado, proveedores). Ejemplo práctico: Un sistema ERP en una tienda minorista recopila datos internos de las ventas diarias y el stock en almacén, pero también puede integrar datos externos como los tiempos de entrega de los proveedores para optimizar las compras.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 9,
+      "pregunta": "Los DSS sirven para:",
+      "opciones": {
+        "a": "Transmitir datos a grandes distancias.",
+        "b": "Desarrollar sistemas operativos.",
+        "c": "Permitir el acceso remoto a Internet.",
+        "d": "Resolver problemas combinando modelos y datos."
+      },
+      "explicacion": "Los Sistemas de Soporte a la Decisión (DSS por sus siglas en inglés) son herramientas informáticas diseñadas específicamente para ayudar a los gerentes a tomar decisiones en situaciones donde hay incertidumbre, combinando modelos analíticos complejos con grandes volúmenes de datos. Ejemplo práctico: Un gerente de logística utiliza un DSS para decidir la mejor ruta de distribución; el sistema combina datos de tráfico en tiempo real (datos) con algoritmos de optimización de rutas (modelos) para sugerir el camino más eficiente.",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 10,
+      "pregunta": "Los sistemas de administración de las relaciones con el cliente (CRM):",
+      "opciones": {
+        "a": "Permiten la ejecución y automatización de los procesos de negocio",
+        "b": "Coordinan todas las áreas funcionales.",
+        "c": "Son una herramienta de toma de decisiones grupales.",
+        "d": "Ofrecen una visión completa de los flujos de información interna y externa."
+      },
+      "explicacion": "Un CRM (Customer Relationship Management) centraliza todas las interacciones entre una empresa y sus clientes. Al hacerlo, proporciona una visión integral que abarca flujos de información interna (qué vendedor lo atendió, qué compró) y externa (quejas del cliente, interacciones). Ejemplo práctico: Cuando un cliente llama a soporte técnico, el agente usa el CRM para ver no solo el historial de compras del cliente (interno), sino también los correos electrónicos previos que el cliente ha enviado (externo), permitiendo una atención personalizada.",
+      "respuesta_correcta": "d"
+    }
+  ]
+}

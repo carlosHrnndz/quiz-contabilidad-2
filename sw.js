@@ -1,4 +1,4 @@
-const CACHE_NAME = 'contaquiz2-v5';
+const CACHE_NAME = 'contaquiz2-v6';
 
 const STATIC_ASSETS = [
     './',
@@ -27,6 +27,15 @@ const DATA_ASSETS = [
     './data/unidad-13.json',
     './data/unidad-14.json',
     './data/unidad-15.json',
+    './data/unidad-16.json',
+    './data/unidad-17.json',
+    './data/unidad-18.json',
+    './data/unidad-19.json',
+    './data/unidad-20.json',
+    './data/unidad-21.json',
+    './data/unidad-22.json',
+    './data/unidad-23.json',
+    './data/unidad-24.json',
 ];
 
 // Install — cache everything

@@ -1,0 +1,126 @@
+{
+  "unidad": 16,
+  "titulo": "Autoevaluación de Contabilidad de Gestión",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "La planificación financiera exige:",
+      "opciones": {
+        "a": "Definir políticas de personal.",
+        "b": "Establecer un criterio de sistemas informáticos.",
+        "c": "Crear una base jurídica.",
+        "d": "Enfocarse en el corto plazo."
+      },
+      "explicacion": "La planificación financiera integral requiere cuantificar todas las políticas operativas de la empresa, incluyendo las de recursos humanos, ya que los salarios y costes asociados son una partida fundamental del presupuesto. Ejemplo práctico: Si una empresa planea expandirse, su planificación financiera debe incluir la política de personal para saber cuántos nuevos empleados contratará y cuánto costarán sus salarios y seguros sociales a lo largo del tiempo.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 2,
+      "pregunta": "Es fundamental al planificar:",
+      "opciones": {
+        "a": "Ser realista respecto a la situación de la empresa.",
+        "b": "Considerar la situación económica general.",
+        "c": "Analizar los mercados potenciales.",
+        "d": "Todos los anteriores."
+      },
+      "explicacion": "Una planificación efectiva requiere una visión holística. Se debe conocer la capacidad interna, el entorno macroeconómico y la demanda del mercado para tomar decisiones acertadas. Ejemplo práctico: Para lanzar un nuevo producto tecnológico, la empresa debe saber si tiene capacidad financiera y de producción (realismo interno), si el país está en crecimiento o recesión (economía general) y si los clientes realmente desean comprar ese producto (mercados potenciales).",
+      "respuesta_correcta": "d"
+    },
+    {
+      "numero": 3,
+      "pregunta": "El concepto de \"estrategia\":",
+      "opciones": {
+        "a": "Es más limitado que el de planificación.",
+        "b": "Es más amplio que el de planificación.",
+        "c": "Se englobaría dentro de la planificación.",
+        "d": "No está relacionado con la planificación."
+      },
+      "explicacion": "La planificación es el proceso general y sistemático de establecer metas y los medios para alcanzarlas. La estrategia es el plan de acción específico que se diseña dentro de ese marco general para lograr los objetivos propuestos. Ejemplo práctico: El plan general de una empresa es aumentar sus ventas un 20% en dos años. La estrategia (englobada en ese plan) será diferenciarse de la competencia ofreciendo un servicio al cliente premium 24/7.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 4,
+      "pregunta": "Si la planificación no es participativa:",
+      "opciones": {
+        "a": "Podría provocar conflictos internos.",
+        "b": "Sería obligatoria.",
+        "c": "Se bloquearía.",
+        "d": "No sería útil."
+      },
+      "explicacion": "Cuando la planificación se impone desde la alta dirección sin consultar a los departamentos que deben ejecutarla, se generan resistencias, falta de compromiso y metas poco realistas, lo que deriva en fricciones. Ejemplo práctico: Si el director general impone un objetivo de ventas inalcanzable sin consultar al equipo comercial sobre la realidad de la calle, los vendedores se frustrarán y surgirán conflictos graves entre el departamento de ventas y la dirección.",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 5,
+      "pregunta": "El plan de inversiones está vinculado a:",
+      "opciones": {
+        "a": "La financiación de clientes.",
+        "b": "Los dividendos.",
+        "c": "La financiación a largo plazo.",
+        "d": "La financiación de proveedores."
+      },
+      "explicacion": "Por el principio de equilibrio financiero, las inversiones (activos a largo plazo como maquinaria o edificios) deben financiarse con recursos a largo plazo (patrimonio neto o deudas a largo plazo) para no comprometer la liquidez inmediata de la empresa. Ejemplo práctico: Si una fábrica compra una nueva nave industrial que usará durante 20 años, lo correcto es financiarla con un préstamo hipotecario a 15 años (largo plazo), y no utilizando el dinero que debe pagar a sus proveedores el mes que viene.",
+      "respuesta_correcta": "c"
+    },
+    {
+      "numero": 6,
+      "pregunta": "El presupuesto de capital estará compuesto de:",
+      "opciones": {
+        "a": "Un presupuesto parcial de inversiones y de fuentes financieras",
+        "b": "Un presupuesto de ventas.",
+        "c": "Un presupuesto general.",
+        "d": "Un estudio de mercado."
+      },
+      "explicacion": "El presupuesto de capital se encarga de planificar las inversiones a largo plazo (en qué activos fijos se va a gastar el dinero) y de dónde se obtendrán los fondos para pagarlas (las fuentes de financiación). Ejemplo práctico: Una empresa de logística elabora su presupuesto de capital incluyendo la compra de una nueva flota de camiones (presupuesto de inversiones) y detallando que se pagará un 40% con reservas propias de la empresa y un 60% mediante un préstamo bancario (fuentes financieras).",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 7,
+      "pregunta": "Los recursos necesarios para una inversión pueden surgir de:",
+      "opciones": {
+        "a": "Un incremento del activo.",
+        "b": "Un incremento del pasivo.",
+        "c": "Un incremento de ventas.",
+        "d": "Una disminución del pasivo."
+      },
+      "explicacion": "Para financiar una nueva inversión (que es un incremento del activo), la empresa necesita obtener fondos. Estos fondos pueden provenir de fondos propios (patrimonio neto) o de financiación ajena (pasivo). Por lo tanto, un incremento del pasivo (como pedir un préstamo) proporciona los recursos necesarios. Ejemplo práctico: Si una empresa quiere comprar una nueva máquina (inversión/activo) por 10.000€, puede ir al banco y pedir un préstamo por esa cantidad. Al recibir el préstamo, su pasivo se incrementa en 10.000€, obteniendo así los recursos para la inversión.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 8,
+      "pregunta": "¿Qué entendemos por gastos de inversión?",
+      "opciones": {
+        "a": "La adquisición de activos que forman parte de la estructura económica fija.",
+        "b": "La adquisición de pasivos.",
+        "c": "La venta de activos.",
+        "d": "Una disminución del pasivo."
+      },
+      "explicacion": "Los gastos de inversión (o CAPEX, Capital Expenditure) se refieren a la compra, mejora o mantenimiento de activos a largo plazo (activos no corrientes o fijos) que formarán parte de la estructura económica de la empresa por más de un ciclo de explotación. Ejemplo práctico: La compra de un local comercial, la adquisición de una flota de furgonetas de reparto o la compra de patentes de software. Todos estos son activos que permanecerán en la empresa a largo plazo para generar valor, a diferencia de la compra de mercaderías (gasto operativo).",
+      "respuesta_correcta": "a"
+    },
+    {
+      "numero": 9,
+      "pregunta": "La inversión en circulante se suele dar:",
+      "opciones": {
+        "a": "Cuando las ventas y los ingresos bajan.",
+        "b": "Cuando el volumen de compras e ingresos sube.",
+        "c": "Cuando se aceleran los cobros de clientes.",
+        "d": "Cuando se amplía capital."
+      },
+      "explicacion": "El activo circulante (o corriente) incluye existencias, deudores (clientes) y tesorería. Cuando una empresa experimenta un aumento en su volumen de actividad (más compras y más ventas/ingresos), naturalmente necesita mantener más inventario en el almacén y, al vender más, aumentará el saldo de clientes pendientes de cobro. Esto requiere una mayor inversión en estos elementos del circulante. Ejemplo práctico: Una tienda de juguetes en la campaña de Navidad. Al prever un aumento masivo de ventas (ingresos), necesita comprar muchos más juguetes a sus proveedores (compras) meses antes. Ese aumento de stock en el almacén es una inversión en circulante necesaria para afrontar el pico de demanda.",
+      "respuesta_correcta": "b"
+    },
+    {
+      "numero": 10,
+      "pregunta": "El fondo de maniobra disminuye:",
+      "opciones": {
+        "a": "Al disminuir las ventas y por tanto las compras.",
+        "b": "Al incrementarse el periodo de cobro de los clientes.",
+        "c": "Al incrementarse el periodo de pago a proveedores.",
+        "d": "Con las inversiones."
+      },
+      "explicacion": "El fondo de maniobra (Activo Corriente - Pasivo Corriente) representa la parte del activo corriente financiada con recursos a largo plazo. Si la actividad de la empresa se contrae (disminuyen las ventas y las compras), los saldos de clientes (activo corriente) y de existencias (activo corriente) tienden a bajar, lo que reduce las necesidades operativas de fondos y, en consecuencia, el fondo de maniobra necesario para operar. Ejemplo práctico: Una fábrica de paraguas en un año de sequía extrema. Vende menos, por lo que compra menos tela y varillas. Su inventario baja y tiene menos facturas pendientes de cobrar a las tiendas. Al reducirse su activo corriente operativo, su fondo de maniobra disminuye.",
+      "respuesta_correcta": "a"
+    }
+  ]
+}
