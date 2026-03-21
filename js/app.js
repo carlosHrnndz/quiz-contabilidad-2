@@ -737,7 +737,7 @@ class QuizApp {
 
         if (showCorrect && q.explicacion) {
             this.ui.explanationContainer.classList.remove('hidden');
-            this.ui.explanationText.innerText = q.explicacion;
+            this.ui.explanationText.innerHTML = this.renderMarkdown(q.explicacion);
             if (this.mode === 'study' && !userAnswer) {
                 this.ui.feedbackArea.classList.remove('hidden');
                 this.ui.feedbackText.innerText = 'Modo Estudio: Ver explicación abajo';
@@ -1133,6 +1133,17 @@ class QuizApp {
         } catch (e) {
             alert("Error al enviar");
         }
+    }
+    // Convert basic markdown (**bold** and \n line breaks) to HTML
+    renderMarkdown(text) {
+        if (!text) return '';
+        return text
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+            .replace(/\\n/g, '<br>')
+            .replace(/\n/g, '<br>');
     }
 }
 
